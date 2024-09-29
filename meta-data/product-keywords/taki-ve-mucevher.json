@@ -1,7 +1,15 @@
 [
     {
         "tümü": [
-            "kolye"
+            "kolye",
+            [
+                "bileklik",
+                "bracelet"
+            ],
+            "taç$",
+            "broş$",
+            "yüzük$",
+            "bilezik"
         ]
     }
 ]

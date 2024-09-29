@@ -8,7 +8,7 @@ const keywordConditions = Object.keys(h1).map(group => ({
             return {
                 $regexMatch: { 
                     input: "$title", 
-                    regex: `${keyword.trim()}$`,  // Add '$' to ensure the keyword is at the end of the string
+                    regex: `${keyword.trim()}`,  // Add '$' to ensure the keyword is at the end of the string
                     options: "i"  // 'i' for case-insensitive matching
                 }
             };

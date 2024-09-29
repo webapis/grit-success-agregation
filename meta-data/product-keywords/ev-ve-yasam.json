@@ -1,14 +1,33 @@
 [
     {
         "depolama": [
-            "katlanabilir kasa"
+            "katlanabilir kasa",
+            "kutu"
         ],
         "mobilya": [
             "koltuk",
             "dolap",
             "sandalye",
             "sehpa",
-            "bank"
+            "bank",
+            "kitaplık",
+            "gazetelik",
+            "tabure",
+            "tabure",
+            "minder",
+            "çekmece kulbu",
+            "konsol",
+            "puf",
+            "masa",
+            [
+                "yatak başlığı",
+                "yatak başı"
+            ],
+            "paravan",
+            "dresuar"
+        ],
+        "mobilya-bahçe": [
+            "şezlong"
         ],
         "dekorasyon": [
             "küp",
@@ -17,14 +36,29 @@
             [
                 "obje"
             ],
-            "mumluk",
-            "pilli mum",
-            "şömine"
-
+            "şömine",
+            "ayna",
+            "vazo",
+            "tablo",
+            "sepet",
+            "Dekoratif Bitki",
+            "çerçeve",
+            "saksı",
+            "yılbaşı ağacı",
+            "askı"
         ],
         "aydınlatma": [
             "aydınlatma",
-            "fener"
+            "fener",
+            "abajur",
+            "şamdan",
+            "mumluk",
+            [
+                "pilli mum",
+                "mum"
+            ],
+            "lambader",
+            "masa lambası"
         ],
         "sofra": [
             "supla",
@@ -38,12 +72,33 @@
             "tatlı çatalı",
             "kase",
             "peçete halkası",
-            "kumaş peçete"
+            "kumaş peçete",
+            "bardak altlığı",
+            "bardak",
+            "servis – sunum gereçleri",
+            "fincan",
+            "servis tahtası",
+            "servis tabağı",
+            "sürahi",
+            "tepsi",
+            "açacak",
+            "şarap kadehi",
+            "demlik"
         ],
         "ev tekstil": [
             "battaniye",
             "yastık",
-            "mutfak önlüğü"
+            "mutfak önlüğü",
+            "halı",
+            "kilim",
+            "runner",
+            [
+                "nevresim takımı",
+                "nevresim seti"
+            ]
+        ],
+        "ofis, kırtasiye": [
+            "dosyalık"
         ]
     }
 ]
