@@ -1,7 +1,17 @@
 [
     {
         "kozmetik": [
-            "parfüm"
+            "parfüm",
+            "dudak parlatıcısı",
+            "vücut spreyi"
+        ],
+        "cilt bakımı": [
+            "vücut kremi",
+            "duş jeli",
+            "vücut peelingi",
+            "vücut yağı",
+            "nemlendirici",
+            "vücut losyonu"
         ]
     }
 ]
