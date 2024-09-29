@@ -16,7 +16,9 @@
             [
                 "tulum",
                 "tuluım",
-                "jumpsuit"
+                "jumpsuit",
+                "playsuit",
+                "overall"
             ],
             [
                 "kazak",
@@ -25,7 +27,8 @@
             ],
             [
                 "hırka",
-                "сardigan"
+                "сardigan",
+                "Cardigan"
             ],
             "süveter",
             "takım elbise",
@@ -35,7 +38,10 @@
                 "blouse"
             ],
             "atlet",
-            "tunik",
+            [
+                "tunik",
+                "tunic"
+            ],
             "pareo",
             "tankini",
             "üst",
@@ -46,7 +52,8 @@
             [
                 "büstiyer",
                 "BÜSTİYER",
-                "BUSTİYER"
+                "BUSTİYER",
+                "bustier"
             ],
             [
                 "сrop",
@@ -59,6 +66,7 @@
             "top",
             "triko",
             "panço",
+            "polo",
             [
                 "tişört",
                 "tshirt",
@@ -68,7 +76,11 @@
             ],
             [
                 "SWEAT"
-            ]
+            ],
+            "HOODIE",
+            "kap$",
+            "kurdele",
+            "abiye$"
         ],
         "alt giyim": [
             [
@@ -77,13 +89,23 @@
                 "pants",
                 "TROUSER",
                 "palazzo",
-                "paça"
+                "paça",
+                "Wide-Leg Jean",
+                "pantalon",
+                "Straight Fit Jean",
+                "pant",
+                "yüksek bel",
+                "high-waist jeans"
             ],
             [
                 "şort",
                 "short"
             ],
-            "tayt",
+            [
+                "tayt",
+                "leggings",
+                "Legging"
+            ],
             [
                 "etek",
                 "skirt"
@@ -95,7 +117,13 @@
                 "loungwear altı",
                 "loungewear altı"
             ],
-            "eşofman altı"
+            [
+                "eşofman"
+            ],
+            [
+                "kapri",
+                "capris"
+            ]
         ],
         "dış giyim": [
             [
@@ -105,7 +133,10 @@
                 "jacket"
             ],
             "mont",
-            "kaban",
+            [
+                "kaban",
+                "coat"
+            ],
             "palto",
             [
                 "yelek",
@@ -127,60 +158,114 @@
             "manto"
         ],
         "çanta": [
-            "çanta",
+            [
+                "çanta",
+                "bag"
+            ],
             "Çanta",
-            "bavul",
+            [
+                "bavul",
+                "suitcase"
+            ],
             [
                 "сüzdan",
-                "Cüzdan"
+                "Cüzdan",
+                "wallet"
             ],
-            "kartlık",
+            [
+                "kartlık",
+                "card holder"
+            ],
             "torba",
             "portföy",
             [
                 "сlucth",
-                "Clucth"
+                "Clucth",
+                "Clutch"
             ],
             "travel organızer",
             "valiz",
             "anahtarlık",
-            "pasaport kılıfı"
+            "pasaport kılıfı",
+            [
+                "telefon Kılıfı",
+                "phone case"
+            ]
         ],
         "ayakkabı": [
+            [
+                "topuklu",
+                "pump"
+            ],
             "babet",
             "sandalet",
             "çizme",
-            "terlik",
+            [
+                "terlik",
+                "slippers",
+                "slide",
+                "slipper"
+            ],
             [
                 "stiletto",
                 "sitiletto"
             ],
             "platform ayakkabı",
-            "ayakkabı",
             "sneaker",
-            "bot$",
+            [
+                "bot$",
+                "boot"
+            ],
             "espadril",
             "espardenya",
             "loafer",
             "kar Botu",
             "yağmur botu",
-            "makosen"
+            [
+                "makosen",
+                "moccasin"
+            ],
+            "sandal",
+            [
+                "ayakkabı",
+                "Shoe"
+            ],
+            [
+                "ballerin",
+                "ballerina"
+            ]
         ],
         "başlık": [
-            "şapka",
-            "bere"
+            [
+                "şapka",
+                "hat$"
+            ],
+            "bere",
+            "kasket",
+            "Kulak Isıtıcı"
         ],
         "atkı": [
             "fular",
             "eşarp",
             "bandana",
             "boyunluk",
-            "şal",
-            "atkı$",
+            [
+                "şal",
+                "shawl"
+            ],
+            [
+                "atkı",
+                "scarf",
+                "foulard"
+            ],
             "kaşkol"
         ],
         "aksesuar": [
-            "kemer",
+            [
+                "kemer$",
+                "belt",
+                "kemeri$"
+            ],
             "kravat",
             "papyon",
             "boyun aksesuarı",
@@ -188,19 +273,36 @@
             "omuzluk",
             [
                 "çorap",
-                "socks"
+                "socks",
+                "çorabı"
             ],
             "yelpaze",
-            "eldiven",
+            [
+                "eldiven",
+                "gloves"
+            ],
             "mendil",
             "şemsiye",
             "maske$",
-            "KOL DÜĞMESİ"
+            "KOL DÜĞMESİ",
+            "keychain"
         ],
         "aksesuar-saç": [
             "toka seti",
-            "saç bandı",
-            "toka$"
+            [
+                "saç bandı",
+                "headband"
+            ],
+            "saç tacı",
+            [
+                "saç kravat",
+                "hair tie"
+            ],
+            [
+                "toka$",
+                "hair buckle"
+            ],
+            "saç aksesuarı"
         ],
         "saat": [
             "saat"
@@ -211,7 +313,8 @@
                 "gözlük kılıfı",
                 "gözlık kılıfı"
             ],
-            "güneş gözlüğü"
+            "güneş gözlüğü",
+            "göz Bandı"
         ],
         "plaj, havuz": [
             [
@@ -229,6 +332,11 @@
             [
                 "plaj havlusu",
                 "beach towel"
+            ],
+            [
+                "peştemal",
+                "peştemâli",
+                "sarong"
             ]
         ],
         "ev": [
@@ -238,7 +346,8 @@
             ],
             "gecelik",
             "sabahlık",
-            "babydoll"
+            "babydoll",
+            "tee-jama"
         ],
         "gelinlik": [
             "GELİNLİK"
@@ -254,7 +363,16 @@
             "jartiyer çorabı",
             "push-Up takım",
             "bel korse",
-            "boxer"
+            "boxer",
+            "korse$",
+            "tanga",
+            "teddy",
+            "thong",
+            "slip$",
+            "brazillian",
+            "jartiyer",
+            "İç Giyim",
+            "hipster"
         ]
     }
 ]

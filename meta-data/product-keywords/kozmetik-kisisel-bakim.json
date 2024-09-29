@@ -2,8 +2,15 @@
     {
         "kozmetik": [
             "parfüm",
-            "dudak parlatıcısı",
-            "vücut spreyi"
+            [
+                "dudak parlatıcısı",
+                "dudak parlatıcı"
+            ],
+            "vücut spreyi",
+            "koku seti",
+            "spray$",
+            "oda kokusu",
+            "dudak Dolgunlaştırıcı"
         ],
         "cilt bakımı": [
             "vücut kremi",
@@ -11,7 +18,25 @@
             "vücut peelingi",
             "vücut yağı",
             "nemlendirici",
-            "vücut losyonu"
+            "vücut losyonu",
+            "dudak bakımı seti",
+            "dudak yağı",
+            "DUDAK NEMLENDİRİCİ",
+            "dudak kremi",
+            "el kremi",
+            "vücut bakım ritüeli",
+            "dudak peelingi",
+            "göz serumu",
+            "peptit serum",
+            "yüz kremi",
+            "güneş koruyucu krem",
+            "yüz temizleme jeli",
+            "Göz ve Dudak Makyaj Temizleyicisi",
+            "yüz maskesi"
+        ],
+        "hijyen": [
+            "şampuan",
+            "sabun"
         ]
     }
 ]
