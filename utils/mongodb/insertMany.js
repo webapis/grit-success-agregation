@@ -56,4 +56,16 @@ export default insertData
         "marka": "adl"
     
 }
+
+ {
+        "image":  "https://cdn.qukasoft.com/f/435880/b2NhVUoyVTArYkI4Tmk4Z1RvTTZKYms9/p/yazlik-kadin-fileli-kemerli-hasir-fotr-sapka-6223-4887638-sw2982sh3648.webp",
+        "title": "Yazlık Kadın Fileli Kemerli Hasır Fötr Şapka turuncu 6223",
+        "price": "499,00",
+        "link": "https://www.baysapkaci.com.tr/yazlik-kadin-fileli-kemerli-hasir-fotr-sapka-turuncu-6223",
+        "currency": "TL",
+        "pageTitle": "Tüm Ürünler | Kasket-Fötr-Geniş Kenarlı Şapka-Plaj Çantası",
+        "pageUrl": "https://www.baysapkaci.com.tr/tumu-c-0",
+
+        "marka": "baysapkaci"
+    },
 */

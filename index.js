@@ -1,8 +1,12 @@
 import { MongoClient } from 'mongodb';
 import fs from 'fs';
-import firstpipe from './pipelines/firstpipe.js';
-import secondpipe from './pipelines/secondpipe.js'
-import thirdpipe from './pipelines/third.js'
+import firstpipe from './pipelines/h1/firstpipe.js';
+import secondpipe from './pipelines/h1/secondpipe.js'
+import thirdpipe from './pipelines/h1/third.js'
+import forthpipe from './pipelines/h2/forth.js'
+import fifthpipe from './pipelines/h2/fifth.js'
+import sixes from './pipelines/h2/sixes.js'
+import seventh from './pipelines/h2/seventh.js'
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
@@ -20,14 +24,21 @@ async function runAggregation() {
             firstpipe,
             secondpipe,
             thirdpipe,
+            forthpipe,
+            ...fifthpipe,
+            ...sixes,
+            ...seventh,
             {
                 // Optionally project only relevant fields
                 $project: {
                     title: 1,
                     h1: 1,
+                    h2: 2,
                     price: 1,
                     currency: 1,
-                    link: 1
+                    link: 1,
+                    pageUrl: 1,
+                    pageTitle: 1
                 }
             }
         ];
@@ -56,5 +67,5 @@ async function runAggregation() {
     }
 }
 
-// Execute the aggregation function
+
 runAggregation();
