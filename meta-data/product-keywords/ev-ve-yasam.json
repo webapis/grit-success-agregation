@@ -1,0 +1,49 @@
+[
+    {
+        "depolama": [
+            "katlanabilir kasa"
+        ],
+        "mobilya": [
+            "koltuk",
+            "dolap",
+            "sandalye",
+            "sehpa",
+            "bank"
+        ],
+        "dekorasyon": [
+            "küp",
+            "süs",
+            "duvar dekor",
+            [
+                "obje"
+            ],
+            "mumluk",
+            "pilli mum",
+            "şömine"
+
+        ],
+        "aydınlatma": [
+            "aydınlatma",
+            "fener"
+        ],
+        "sofra": [
+            "supla",
+            "amerikan servis",
+            "tabak",
+            "yemek bıçağı",
+            "yemek kaşığı",
+            "yemek çatalı",
+            "tatlı kaşığı",
+            "tatlı bıçağı",
+            "tatlı çatalı",
+            "kase",
+            "peçete halkası",
+            "kumaş peçete"
+        ],
+        "ev tekstil": [
+            "battaniye",
+            "yastık",
+            "mutfak önlüğü"
+        ]
+    }
+]

@@ -1,0 +1,189 @@
+[
+    {
+        "üst giyim": [
+            [
+                "elbise",
+                "elibise",
+                "ebise",
+                "ELBİSE",
+                "DRESS"
+            ],
+            [
+                "gömlek",
+                "shirt"
+            ],
+            [
+                "tulum",
+                "tuluım",
+                "jumpsuit"
+            ],
+            [
+                "kazak",
+                "knit",
+                "Vanilla 139429950001d3"
+            ],
+            [
+                "hırka",
+                "сardigan"
+            ],
+            "süveter",
+            "takım elbise",
+            [
+                "bluz",
+                "blouse"
+            ],
+            "atlet",
+            "tunik",
+            "pareo",
+            "tankini",
+            "üst",
+            [
+                "kimono",
+                "KİMONO"
+            ],
+            [
+                "büstiyer",
+                "BÜSTİYER",
+                "BUSTİYER"
+            ],
+            [
+                "сrop",
+                "Crop"
+            ],
+            "body",
+            "pelerin",
+            "bolero",
+            "kaftan",
+            "top",
+            "triko",
+            [
+                "tişört",
+                "tshirt",
+                "tişört",
+                "tsihrt",
+                "t-Shirt"
+            ],
+            [
+                "SWEAT"
+            ]
+        ],
+        "alt giyim": [
+            [
+                "pantolon",
+                "mom jean",
+                "pants",
+                "TROUSER",
+                "palazzo"
+            ],
+            [
+                "şort",
+                "short"
+            ],
+            "tayt",
+            [
+                "etek",
+                "skirt"
+            ],
+            "bermuda",
+            "alt"
+        ],
+        "dış giyim": [
+            [
+                "сeket",
+                "Ceket",
+                "blazer",
+                "jacket"
+            ],
+            "mont",
+            "kaban",
+            "palto",
+            [
+                "yelek",
+                "vest"
+            ],
+            [
+                "trençkot",
+                "TRENCH",
+                "TRENCKOT",
+                "TRENC COAT"
+            ],
+            "bomber"
+        ],
+        "çanta": [
+            "çanta",
+            "Çanta",
+            "bavul",
+            [
+                "сüzdan",
+                "Cüzdan"
+            ],
+            "kartlık",
+            "torba"
+        ],
+        "ayakkabı": [
+            "babet",
+            "sandalet",
+            "çizme",
+            "terlik",
+            [
+                "stiletto",
+                "sitiletto"
+            ],
+            "platform ayakkabı",
+            "ayakkabı",
+            "sneaker"
+        ],
+        "aksesuar": [
+            "kemer",
+            "fular",
+            "eşarp",
+            "bandana",
+            "şal",
+            "çorap",
+            "yelpaze"
+        ],
+        "plaj, havuz": [
+            [
+                "bikini",
+                "bkini"
+            ],
+            [
+                "mayo",
+                "swimsuit"
+            ],
+            "havuz bonesi",
+            "yüzücü bonesi",
+            "kulak tıkacı",
+            "burun tıkacı",
+            [
+                "plaj havlusu",
+                "beach towel"
+            ]
+        ],
+        "ev": [
+            [
+                "pijama",
+                "pjama"
+            ],
+            "gecelik",
+            "sabahlık",
+            "babydoll"
+        ],
+        "gelinlik": [
+            "GELİNLİK"
+        ],
+        "anne": [
+            "emzirme sütyeni",
+            "hamile"
+        ],
+        "iç giyim": [
+            "sütyen",
+            "külot",
+            "bralet",
+            "jartiyer çorabı",
+            "push-Up takım",
+            "bel korse",
+            "boxer"
+        ]
+    }
+]

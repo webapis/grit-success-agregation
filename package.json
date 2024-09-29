@@ -1,0 +1,30 @@
+{
+  "name": "moda",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codergihub/moda.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codergihub/moda/issues"
+  },
+  "homepage": "https://github.com/codergihub/moda#readme",
+  "dependencies": {
+
+
+    "dotenv": "^16.0.0",
+    "mongodb": "^4.3.1"
+  },
+  "devDependencies": {
+    "puppeteer": "^13.3.2"
+  }
+}
