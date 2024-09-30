@@ -3,10 +3,15 @@ import fs from 'fs';
 import firstpipe from './pipelines/h1/firstpipe.js';
 import secondpipe from './pipelines/h1/secondpipe.js'
 import thirdpipe from './pipelines/h1/third.js'
-import forthpipe from './pipelines/h2/forth.js'
-import fifthpipe from './pipelines/h2/fifth.js'
-import sixes from './pipelines/h2/sixes.js'
-import seventh from './pipelines/h2/seventh.js'
+import forthpipe from './pipelines/h2/gender/forth.js'
+import fifthpipe from './pipelines/h2/gender/fifth.js'
+import sixes from './pipelines/h2/gender/sixes.js'
+import seventh from './pipelines/h2/gender/seventh.js'
+import eighth from './pipelines/h2/gender/eighth.js'
+import nine from './pipelines/h2/gender/nine.js'
+import ten from './pipelines/h2/gender/ten.js'
+import eleven from './pipelines/h2/gender/eleven.js'
+import twelve from './pipelines/h2/gender/twelve.js'
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
@@ -28,6 +33,11 @@ async function runAggregation() {
             ...fifthpipe,
             ...sixes,
             ...seventh,
+            eighth,
+            nine,
+            ...ten,
+            ...eleven,
+            twelve,
             {
                 // Optionally project only relevant fields
                 $project: {

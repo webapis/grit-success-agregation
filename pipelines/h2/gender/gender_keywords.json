@@ -1,0 +1,38 @@
+{
+    "Kız Çocuk": [
+        "Kız Çocuk"
+    ],
+    "Kız Bebek": [
+        "Kız Bebek"
+    ],
+    "Erkek Bebek": [
+        "Erkek Bebek"
+    ],
+    "kadın": [
+        "kadın",
+        "women",
+        "female",
+        "kadin",
+        "bluz",
+        "yuksek-bel",
+        "sarong",
+        "sabahlık"
+    ],
+    "erkek": [
+        "erkek",
+        "men",
+        "male"
+    ],
+    "Çocuk": [
+        "çocuk"
+    ],
+    "Genç": [
+        "genç"
+    ],
+    "bebek": [
+        "bebek"
+    ],
+    "unisex": [
+        "unisex"
+    ]
+}
