@@ -1,17 +1,17 @@
 import { MongoClient } from 'mongodb';
 import fs from 'fs';
-import firstpipe from './pipelines/h1/firstpipe.js';
-import secondpipe from './pipelines/h1/secondpipe.js'
-import thirdpipe from './pipelines/h1/third.js'
-import forthpipe from './pipelines/h2/gender/forth.js'
-import fifthpipe from './pipelines/h2/gender/fifth.js'
-import sixes from './pipelines/h2/gender/sixes.js'
-import seventh from './pipelines/h2/gender/seventh.js'
-import eighth from './pipelines/h2/gender/eighth.js'
-import nine from './pipelines/h2/gender/nine.js'
-import ten from './pipelines/h2/gender/ten.js'
-import eleven from './pipelines/h2/gender/eleven.js'
-import twelve from './pipelines/h2/gender/twelve.js'
+import categorizeByTitleAndMetaData from './pipelines/h1/categorizeByTitleAndMetaData.js';
+import categorizeByLinkAndMetaData from './pipelines/h1/categorizeByLinkAndMetaData.js'
+import setGenderByHostNameMatch from './pipelines/h2/gender/setGenderByHostNameMatch.js'
+import setGenderByKeywordsMatchInTitleAndLinkContent from './pipelines/h2/gender/setGenderByKeywordsMatchInTitleAndLinkContent.js'
+import setGenderByLinkAndTitleContentMatch from './pipelines/h2/gender/setGenderByLinkAndTitleContentMatch.js'
+import setGenderByPageUrlContentMatch from './pipelines/h2/gender/setGenderByPageUrlContentMatch.js'
+import setGenderByPageUrl from './pipelines/h2/gender/setGenderByPageUrl.js'
+import setGenderByPageUrlAndTitleContentMatch from './pipelines/h2/gender/setGenderByPageUrlAndTitleContentMatch.js'
+import setGenderByPageTitleContentMatch from './pipelines/h2/gender/setGenderByPageTitleContentMatch.js'
+import setGenderByPageUrlNegativeCombinationMatch from './pipelines/h2/gender/setGenderByPageUrlNegativeCombinationMatch.js'
+import setGenderByHostNameAndTitleContentMatch from './pipelines/h2/gender/setGenderByHostNameAndTitleContentMatch.js'
+import setDefaulth2 from './pipelines/h2/ev-yasam/setDefaulth2.js'
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
@@ -23,26 +23,28 @@ async function runAggregation() {
         await client.connect();
         const db = client.db(dbName);
         const collection = db.collection(collectionName);
-
-
+        const totalDocsBefore = await collection.countDocuments();
+        console.log(`Total documents before aggregation: ${totalDocsBefore}`);
+        debugger
         const pipeline = [
-            firstpipe,
-            secondpipe,
-            thirdpipe,
-            forthpipe,
-            ...fifthpipe,
-            ...sixes,
-            ...seventh,
-            eighth,
-            nine,
-            ...ten,
-            ...eleven,
-            twelve,
+            categorizeByTitleAndMetaData,//h1
+            categorizeByLinkAndMetaData,//h1
+            setGenderByHostNameMatch,//h2
+            ...setGenderByKeywordsMatchInTitleAndLinkContent,
+            ...setGenderByLinkAndTitleContentMatch,//h2
+            setGenderByPageUrlContentMatch,//h2
+            setGenderByPageUrl,//h2
+            ...setGenderByPageUrlAndTitleContentMatch,//h2
+            ...setGenderByPageTitleContentMatch,//h2
+            setGenderByPageUrlNegativeCombinationMatch,//h2
+            ...setGenderByHostNameAndTitleContentMatch,//h2
+            setDefaulth2,
             {
                 // Optionally project only relevant fields
                 $project: {
                     title: 1,
                     h1: 1,
+                    stageh1: 1,
                     h2: 2,
                     price: 1,
                     currency: 1,
@@ -57,6 +59,9 @@ async function runAggregation() {
 
         // Fetch all documents and convert them to an array
         const results = await cursor.toArray();
+        // Count the documents after performing aggregation
+        const totalDocsAfter = results.length;
+        console.log(`Total documents after aggregation: ${totalDocsAfter}`);
 
         // Separate results into two categories: h1 matched and "diğer" fallback
         const digerh1 = results.filter(f => f.h1 === 'diğer');
