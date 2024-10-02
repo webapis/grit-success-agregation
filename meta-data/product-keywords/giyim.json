@@ -237,6 +237,7 @@
         "başlık": [
             [
                 "şapka",
+                "Şapka",
                 "hat$"
             ],
             "bere",
@@ -312,7 +313,8 @@
                 "gözlük kılıfı",
                 "gözlık kılıfı"
             ],
-            "güneş gözlüğü",
+            ["güneş gözlüğü","Güneş Gözlüğü"],
+
             "göz Bandı"
         ],
         "plaj, havuz": [

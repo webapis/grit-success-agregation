@@ -16,19 +16,19 @@ const keywordConditions = Object.keys(h1).map(group => ({
     then: group
 }));
 
-// Define the pipeline to update 'h1' only if its current value is "diğer"
+// Define the pipeline to update 'h1' only if its current value is "unknown"
 const pipeline = {
     $addFields: {
         h1: {
             $cond: {
-                if: { $eq: ["$h1", "diğer"] },  // Check if the current value of 'h1' is "diğer"
+                if: { $eq: ["$h1", "unknown"] },  // Check if the current value of 'h1' is "unknown"
                 then: {
                     $switch: {
                         branches: keywordConditions,  // Apply the dynamic switch for new keyword-based value
-                        default: "diğer"  // Default value if no match is found
+                        default: "unknown"  // Default value if no match is found
                     }
                 },
-                else: "$h1"  // Keep the existing value of 'h1' if it's not "diğer"
+                else: "$h1"  // Keep the existing value of 'h1' if it's not "unknown"
             }
         },
         

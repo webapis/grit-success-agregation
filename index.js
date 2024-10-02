@@ -12,6 +12,7 @@ import setGenderByPageTitleContentMatch from './pipelines/h2/gender/setGenderByP
 import setGenderByPageUrlNegativeCombinationMatch from './pipelines/h2/gender/setGenderByPageUrlNegativeCombinationMatch.js'
 import setGenderByHostNameAndTitleContentMatch from './pipelines/h2/gender/setGenderByHostNameAndTitleContentMatch.js'
 import setDefaulth2 from './pipelines/h2/ev-yasam/setDefaulth2.js'
+import categorizeH1ByH2 from './pipelines/h1/categorizeH1ByH2.js'
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
@@ -27,8 +28,8 @@ async function runAggregation() {
         console.log(`Total documents before aggregation: ${totalDocsBefore}`);
         debugger
         const pipeline = [
-            categorizeByTitleAndMetaData({ giyim: 'giyim', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim' }),//h1
-            categorizeByTitleAndMetaData({ giyim: 'giyim2', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim' }),//h1
+            categorizeByTitleAndMetaData({ giyim: 'giyim', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim',h:'h1' }),//h1
+            categorizeByTitleAndMetaData({ giyim: 'giyim2', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim',h:'h1' }),//h1
             categorizeByLinkAndMetaData,//h1
             setGenderByHostNameMatch,//h2
             ...setGenderByKeywordsMatchInTitleAndLinkContent,
@@ -40,6 +41,8 @@ async function runAggregation() {
             setGenderByPageUrlNegativeCombinationMatch,//h2
             ...setGenderByHostNameAndTitleContentMatch,//h2
             setDefaulth2,
+            categorizeH1ByH2,
+
             {
                 // Optionally project only relevant fields
                 $project: {
@@ -65,11 +68,11 @@ async function runAggregation() {
         console.log(`Total documents after aggregation: ${totalDocsAfter}`);
 
         // Separate results into two categories: h1 matched and "diğer" fallback
-        const digerh1 = results.filter(f => f.h1 === 'diğer');
+
         const h1data = results.filter(f => f.h1 !== 'diğer');
 
-        // Write the filtered results to respective JSON files
-        fs.writeFileSync('h1Diger.json', JSON.stringify(digerh1, null, 2));
+      
+  
         fs.writeFileSync('h1.json', JSON.stringify(h1data, null, 2));
 
         console.log("Data written to h1.json and h1Diger.json");

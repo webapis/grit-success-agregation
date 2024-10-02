@@ -2,7 +2,7 @@ import metaData from '../../meta-data/h1.js'; // Assuming h1 is still needed for
 
 
 
-function pipeline({ giyim, yasam, taki, kozmetik }) {
+function pipeline({ giyim, yasam, taki, kozmetik,h }) {
     // Create the pipeline and export it
     const h1 = metaData({ giyim, yasam, taki, kozmetik })
     // Build $switch conditions dynamically using h1 keywords from external file
@@ -24,10 +24,10 @@ function pipeline({ giyim, yasam, taki, kozmetik }) {
     {
         $addFields: {
             // Stage 1: Add a new field 'h1' using $switch
-            h1: {
+            [h]: {
                 $switch: {
                     branches: keywordConditions,
-                    default: "diğer"
+                    default: "unknown"
                 }
             },
         }
