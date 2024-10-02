@@ -1,36 +1,40 @@
-import h1 from '../../meta-data/h1.js'; // Assuming h1 is still needed for the pipeline logic
+import metaData from '../../meta-data/h1.js'; // Assuming h1 is still needed for the pipeline logic
 
-// Create the pipeline and export it
 
-// Build $switch conditions dynamically using h1 keywords from external file
-const keywordConditions = Object.keys(h1).map(group => ({
-    case: {
-        $or: h1[group].map(keyword => {
-            console.log('group', group)
-            // Use $regexMatch with 'i' option to handle case-insensitive matches
-            return {
-                $regexMatch: { input: "$title", regex: keyword.trim(), options: "i" }
-            };
-        })
-    },
-    then: group
-}));
 
-// Define the pipeline array
-const pipeline =
-{
-    $addFields: {
-        // Stage 1: Add a new field 'h1' using $switch
-        h1: {
-            $switch: {
-                branches: keywordConditions,
-                default: "diğer"
-            }
+function pipeline({ giyim, yasam, taki, kozmetik }) {
+    // Create the pipeline and export it
+    const h1 = metaData({ giyim, yasam, taki, kozmetik })
+    // Build $switch conditions dynamically using h1 keywords from external file
+    const keywordConditions = Object.keys(h1).map(group => ({
+        case: {
+            $or: h1[group].map(keyword => {
+                console.log('group', group)
+                // Use $regexMatch with 'i' option to handle case-insensitive matches
+                return {
+                    $regexMatch: { input: "$title", regex: keyword.trim(), options: "i" }
+                };
+            })
         },
+        then: group
+    }));
+
+    // Define the pipeline array
+    const stage =
+    {
+        $addFields: {
+            // Stage 1: Add a new field 'h1' using $switch
+            h1: {
+                $switch: {
+                    branches: keywordConditions,
+                    default: "diğer"
+                }
+            },
+        }
     }
+
+    return stage
 }
-
-
 
 export default pipeline
 

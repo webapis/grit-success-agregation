@@ -1,4 +1,7 @@
-import h1 from '../../meta-data/h1.js'; // Assuming h1 is still needed for the pipeline logic
+import metaData from '../../meta-data/h1.js'; // Assuming h1 is still needed for the pipeline logic
+
+// Create the pipeline and export it
+const h1 = metaData({ giyim: 'giyim', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim' })
 import deaccent from '../../utils/deaccent.js';
 // Build $switch conditions dynamically using h1 keywords from external file
 const keywordConditions = Object.keys(h1).map(group => ({

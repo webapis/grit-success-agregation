@@ -27,7 +27,8 @@ async function runAggregation() {
         console.log(`Total documents before aggregation: ${totalDocsBefore}`);
         debugger
         const pipeline = [
-            categorizeByTitleAndMetaData,//h1
+            categorizeByTitleAndMetaData({ giyim: 'giyim', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim' }),//h1
+            categorizeByTitleAndMetaData({ giyim: 'giyim2', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim' }),//h1
             categorizeByLinkAndMetaData,//h1
             setGenderByHostNameMatch,//h2
             ...setGenderByKeywordsMatchInTitleAndLinkContent,
