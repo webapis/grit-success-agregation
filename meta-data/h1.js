@@ -1,11 +1,11 @@
 import fs from 'fs'
-debugger
+
 
 
 function metaData({ giyim, yasam, taki, kozmetik }) {
 
     const giyimObj = JSON.parse(fs.readFileSync(`${process.cwd()}/meta-data/product-keywords/${giyim}.json`, { encoding: 'utf-8' }))
-    debugger
+
     const giyimArray = Object.values(giyimObj[0]).flat(2);
     const evVeYasamObj = JSON.parse(fs.readFileSync(`${process.cwd()}/meta-data/product-keywords/${yasam}.json`, { encoding: 'utf-8' }))
     const evVeYasamArray = Object.values(evVeYasamObj[0]).flat(2);
@@ -15,7 +15,7 @@ function metaData({ giyim, yasam, taki, kozmetik }) {
 
     const kozmetikObj = JSON.parse(fs.readFileSync(`${process.cwd()}/meta-data/product-keywords/${kozmetik}.json`, { encoding: 'utf-8' }))
     const kozmetikArray = Object.values(kozmetikObj[0]).flat(2);
-    debugger
+ 
 
     return {
         "giyim": giyimArray,
