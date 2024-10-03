@@ -97,7 +97,7 @@ const keywordsJSON = [
                 "pant",
                 "yüksek bel",
                 "high-waist jeans",
-               
+
             ],
             [
                 "şort",
@@ -391,147 +391,74 @@ const keywordsObject = keywordsJSON[0]; // Since the keywords are in an array wi
 
 
 const stage = [
-  {
-    $addFields: {
-      h3: {
-        $let: {
-          vars: {
-            matchedCategory: {
-              $reduce: {
-                input: { $objectToArray: keywordsObject },
-                initialValue: null,
-                in: {
-                  $cond: [
-                    {
-                      $or: [
-                        { $ne: ["$$value", null] },
-                        {
-                          $anyElementTrue: {
-                            $map: {
-                              input: "$$this.v",
-                              as: "keyword",
-                              in: {
-                                $cond: [
-                                  { $isArray: "$$keyword" },
-                                  {
-                                    $anyElementTrue: {
-                                      $map: {
-                                        input: "$$keyword",
-                                        as: "subKeyword",
-                                        in: {
-                                          $or: [
-                                            { $regexMatch: { input: "$title", regex: "$$subKeyword", options: "i" } },
-                                            { $regexMatch: { input: "$link", regex: "$$subKeyword", options: "i" } },
-                                            { $regexMatch: { input: "$pageUrl", regex: "$$subKeyword", options: "i" } }
-                                          ]
-                                        }
-                                      }
-                                    }
-                                  },
-                                  {
-                                    $or: [
-                                      { $regexMatch: { input: "$title", regex: "$$keyword", options: "i" } },
-                                      { $regexMatch: { input: "$link", regex: "$$keyword", options: "i" } },
-                                      { $regexMatch: { input: "$pageUrl", regex: "$$keyword", options: "i" } }
-                                    ]
-                                  }
-                                ]
-                              }
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    "$$value",
-                    "$$this.k"
-                  ]
-                }
-              }
-            }
-          },
-          in: { $ifNull: ["$$matchedCategory", "unknown"] }
+    {
+      $addFields: {
+        combinedText: {
+          $concat: [
+            { $ifNull: ["$title", ""] },
+            { $ifNull: ["$link", ""] },
+            { $ifNull: ["$pageUrl", ""] }
+          ]
         }
-      },
-      h4: {
-        $let: {
-          vars: {
-            matchedKeyword: {
-              $reduce: {
-                input: { $objectToArray: keywordsObject },
-                initialValue: null,
-                in: {
-                  $cond: [
-                    { $ne: ["$$value", null] },
-                    "$$value",
+      }
+    },
+    {
+      $addFields: {
+        categoryMatch: {
+          $reduce: {
+            input: {
+              $objectToArray: {
+                "üst giyim": ["elbise", "gömlek", "tulum", "kazak", "hırka", "süveter", "takım elbise", "SMOKİN", "bluz", "atlet", "tunik", "pareo", "tankini", "üst", "kimono", "büstiyer", "сrop", "body", "pelerin", "bolero", "kaftan", "top", "triko", "panço", "polo", "tişört", "SWEAT", "HOODIE", "kap$", "kurdele", "abiye$"],
+                "alt giyim": ["pantolon", "şort", "tayt", "etek", "bermuda", "alt$", "Jogger$", "eşofman", "kapri"],
+                "dış giyim": ["сeket", "mont", "kaban", "palto", "yelek", "trençkot", "bomber", "pardösü", "yağmurluk", "kürk$", "manto"],
+                "çanta": ["çanta", "bavul", "сüzdan", "kartlık", "torba", "portföy", "сlucth", "valiz", "anahtarlık"],
+                "ayakkabı": ["topuklu", "babet", "sandalet", "çizme", "terlik", "stiletto", "sneaker", "bot$", "espadril", "espardenya", "loafer", "makosen", "ayakkabı", "ballerin"],
+                "başlık": ["şapka", "bere", "kasket"],
+                "atkı": ["fular", "eşarp", "bandana", "boyunluk", "atkı", "kaşkol"],
+                "aksesuar": ["kemer$", "kravat", "papyon", "çorap", "eldiven", "mendil", "maske$"],
+                "saat": ["saat"],
+                "gözlük": ["gözlük", "güneş gözlüğü"],
+                "plaj, havuz": ["bikini", "mayo"],
+                "ev": ["pijama", "gecelik", "sabahlık"],
+                "gelinlik": ["GELİNLİK"],
+                "iç giyim": ["sütyen", "külot", "bralet", "jartiyer", "korse$", "tanga", "slip$"]
+              }
+            },
+            initialValue: { category: "diğer", matched: false },
+            in: {
+              $cond: {
+                if: {
+                  $and: [
+                    { $eq: ["$$value.matched", false] },
                     {
-                      $reduce: {
-                        input: "$$this.v",
-                        initialValue: null,
-                        in: {
-                          $cond: [
-                            { $ne: ["$$value", null] },
-                            "$$value",
-                            {
-                              $cond: [
-                                { $isArray: "$$this" },
-                                {
-                                  $let: {
-                                    vars: {
-                                      matchFound: {
-                                        $anyElementTrue: {
-                                          $map: {
-                                            input: "$$this",
-                                            as: "subKeyword",
-                                            in: {
-                                              $or: [
-                                                { $regexMatch: { input: "$title", regex: "$$subKeyword", options: "i" } },
-                                                { $regexMatch: { input: "$link", regex: "$$subKeyword", options: "i" } },
-                                                { $regexMatch: { input: "$pageUrl", regex: "$$subKeyword", options: "i" } }
-                                              ]
-                                            }
-                                          }
-                                        }
-                                      }
-                                    },
-                                    in: {
-                                      $cond: [
-                                        "$$matchFound",
-                                        { $arrayElemAt: ["$$this", 0] },
-                                        null
-                                      ]
-                                    }
-                                  }
-                                },
-                                {
-                                  $cond: [
-                                    {
-                                      $or: [
-                                        { $regexMatch: { input: "$title", regex: "$$this", options: "i" } },
-                                        { $regexMatch: { input: "$link", regex: "$$this", options: "i" } },
-                                        { $regexMatch: { input: "$pageUrl", regex: "$$this", options: "i" } }
-                                      ]
-                                    },
-                                    "$$this",
-                                    null
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
+                      $anyElementTrue: {
+                        $map: {
+                          input: "$$this.v",
+                          as: "keyword",
+                          in: { $regexMatch: { input: "$combinedText", regex: { $concat: ["(?i)", "$$keyword"] } } }
                         }
                       }
                     }
                   ]
-                }
+                },
+                then: { category: "$$this.k", matched: true },
+                else: "$$value"
               }
             }
-          },
-          in: { $ifNull: ["$$matchedKeyword", "unknown"] }
+          }
         }
       }
+    },
+    {
+      $addFields: {
+        h3: "$categoryMatch.category"
+      }
+    },
+    {
+      $project: {
+        combinedText: 0,
+        categoryMatch: 0
+      }
     }
-  }
-];
-
-
+  ]
 export default stage
