@@ -13,6 +13,7 @@ import setGenderByPageUrlNegativeCombinationMatch from './pipelines/h2/gender/se
 import setGenderByHostNameAndTitleContentMatch from './pipelines/h2/gender/setGenderByHostNameAndTitleContentMatch.js'
 import setDefaulth2 from './pipelines/h2/ev-yasam/setDefaulth2.js'
 import categorizeH1ByH2 from './pipelines/h1/categorizeH1ByH2.js'
+import categorizeByTitleLinkPageUrl from './pipelines/h3-h4/categorizeByTitleLinkPageUrl.js'
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
@@ -28,8 +29,8 @@ async function runAggregation() {
         console.log(`Total documents before aggregation: ${totalDocsBefore}`);
         debugger
         const pipeline = [
-            categorizeByTitleAndMetaData({ giyim: 'giyim', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim',h:'h1' }),//h1
-            categorizeByTitleAndMetaData({ giyim: 'giyim2', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim',h:'h1' }),//h1
+            categorizeByTitleAndMetaData({ giyim: 'giyim', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim', h: 'h1' }),//h1
+            categorizeByTitleAndMetaData({ giyim: 'giyim2', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim', h: 'h1' }),//h1
             categorizeByLinkAndMetaData,//h1
             setGenderByHostNameMatch,//h2
             ...setGenderByKeywordsMatchInTitleAndLinkContent,
@@ -42,6 +43,7 @@ async function runAggregation() {
             ...setGenderByHostNameAndTitleContentMatch,//h2
             setDefaulth2,
             categorizeH1ByH2,
+            ...categorizeByTitleLinkPageUrl,
 
             {
                 // Optionally project only relevant fields
@@ -54,7 +56,9 @@ async function runAggregation() {
                     currency: 1,
                     link: 1,
                     pageUrl: 1,
-                    pageTitle: 1
+                    pageTitle: 1,
+                    h3: 1,
+                    h4: 1
                 }
             }
         ];
@@ -71,8 +75,8 @@ async function runAggregation() {
 
         const h1data = results.filter(f => f.h1 !== 'diğer');
 
-      
-  
+
+
         fs.writeFileSync('h1.json', JSON.stringify(h1data, null, 2));
 
         console.log("Data written to h1.json and h1Diger.json");
