@@ -64,7 +64,13 @@ return [
     },
     {
       $addFields: {
-        h3: "$categoryMatch.category"
+        h3: {
+          $cond: {
+            if: { $or: [{ $eq: ["$h3", "diğer"] }, { $not: ["$h3"] }] },
+            then: "$categoryMatch.category",
+            else: "$h3"
+          }
+        }
       }
     },
     {

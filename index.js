@@ -14,6 +14,7 @@ import setGenderByHostNameAndTitleContentMatch from './pipelines/h2/gender/setGe
 import setDefaulth2 from './pipelines/h2/ev-yasam/setDefaulth2.js'
 import categorizeH1ByH2 from './pipelines/h1/categorizeH1ByH2.js'
 import categorizeByTitleLinkPageUrl from './pipelines/h3-h4/categorizeByTitleLinkPageUrl.js'
+import setH4ByTitleLink from './pipelines/h4/setH4ByTitleLink.js';
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
@@ -43,11 +44,16 @@ async function runAggregation() {
             ...setGenderByHostNameAndTitleContentMatch,//h2
             setDefaulth2,
             categorizeH1ByH2,
-            // ...categorizeByTitleLinkPageUrl({ catid: 0 }),//h3
+            ...categorizeByTitleLinkPageUrl({ catid: 0 }),//h3
             ...categorizeByTitleLinkPageUrl({ catid: 1 }),//h3
-            // ...categorizeByTitleLinkPageUrl({ catid: 2 }),//h3
-            // ...categorizeByTitleLinkPageUrl({ catid: 3 }),//h3
-            // ...categorizeByTitleLinkPageUrl({ catid: 4 }),//h3
+            ...categorizeByTitleLinkPageUrl({ catid: 2 }),//h3
+            ...categorizeByTitleLinkPageUrl({ catid: 3 }),//h3
+            ...categorizeByTitleLinkPageUrl({ catid: 4 }),//h3
+            ...setH4ByTitleLink({ catid: 0 }),//h4
+            ...setH4ByTitleLink({ catid: 1 }),//h4
+            ...setH4ByTitleLink({ catid: 2 }),//h4
+            ...setH4ByTitleLink({ catid: 3 }),//h4
+            ...setH4ByTitleLink({ catid: 4 }),//h4
             {
                 // Optionally project only relevant fields
                 $project: {
