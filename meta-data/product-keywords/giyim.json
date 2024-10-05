@@ -274,7 +274,8 @@
             [
                 "çorap",
                 "socks",
-                "çorabı"
+                "çorabı",
+                "Çorabı"
             ],
             "yelpaze",
             [
@@ -358,7 +359,7 @@
             "hamile"
         ],
         "iç giyim": [
-            "sütyen",
+            ["sütyen","sütyeni"],
             "külot",
             "bralet",
             "jartiyer çorabı",

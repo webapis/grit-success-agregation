@@ -32,7 +32,7 @@ async function runAggregation() {
         const pipeline = [
             categorizeByTitleAndMetaData({ giyim: 'giyim', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim', h: 'h1' }),//h1
             categorizeByTitleAndMetaData({ giyim: 'giyim2', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim', h: 'h1' }),//h1
-            categorizeByLinkAndMetaData,//h1
+          //  categorizeByLinkAndMetaData,//h1
             setGenderByHostNameMatch,//h2
             ...setGenderByKeywordsMatchInTitleAndLinkContent,
             ...setGenderByLinkAndTitleContentMatch,//h2
