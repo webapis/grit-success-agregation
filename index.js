@@ -15,6 +15,7 @@ import setDefaulth2 from './pipelines/h2/ev-yasam/setDefaulth2.js'
 import categorizeH1ByH2 from './pipelines/h1/categorizeH1ByH2.js'
 import categorizeByTitleLinkPageUrl from './pipelines/h3-h4/categorizeByTitleLinkPageUrl.js'
 import setH4ByTitleLink from './pipelines/h4/setH4ByTitleLink.js';
+import setH4ByTitle from './pipelines/h4/setH4ByTitle.js'
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
@@ -30,27 +31,30 @@ async function runAggregation() {
         console.log(`Total documents before aggregation: ${totalDocsBefore}`);
         debugger
         const pipeline = [
-            categorizeByTitleAndMetaData({ giyim: 'giyim', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim', h: 'h1' }),//h1
-            categorizeByTitleAndMetaData({ giyim: 'giyim2', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim', h: 'h1' }),//h1
-          //  categorizeByLinkAndMetaData,//h1
-            setGenderByHostNameMatch,//h2
-            ...setGenderByKeywordsMatchInTitleAndLinkContent,
-            ...setGenderByLinkAndTitleContentMatch,//h2
-            setGenderByPageUrlContentMatch,//h2
-            setGenderByPageUrl,//h2
-            ...setGenderByPageUrlAndTitleContentMatch,//h2
-            ...setGenderByPageTitleContentMatch,//h2
-            setGenderByPageUrlNegativeCombinationMatch,//h2
-            ...setGenderByHostNameAndTitleContentMatch,//h2
-            setDefaulth2,
-            categorizeH1ByH2,
+        //     categorizeByTitleAndMetaData({ giyim: 'giyim', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim', h: 'h1' }),//h1
+        //     categorizeByTitleAndMetaData({ giyim: 'giyim2', yasam: 'ev-ve-yasam', taki: 'taki-ve-mucevher', kozmetik: 'kozmetik-kisisel-bakim', h: 'h1' }),//h1
+        //   //  categorizeByLinkAndMetaData,//h1
+        //     setGenderByHostNameMatch,//h2
+        //     ...setGenderByKeywordsMatchInTitleAndLinkContent,
+        //     ...setGenderByLinkAndTitleContentMatch,//h2
+        //     setGenderByPageUrlContentMatch,//h2
+        //     setGenderByPageUrl,//h2
+        //     ...setGenderByPageUrlAndTitleContentMatch,//h2
+        //     ...setGenderByPageTitleContentMatch,//h2
+        //     setGenderByPageUrlNegativeCombinationMatch,//h2
+        //     ...setGenderByHostNameAndTitleContentMatch,//h2
+        //     setDefaulth2,
+        //     categorizeH1ByH2,
 
-            ...setH4ByTitleLink({ catid: 1 }),//h4
-            ...setH4ByTitleLink({ catid: 2 }),//h4
-            ...setH4ByTitleLink({ catid: 3 }),//h4
-            ...setH4ByTitleLink({ catid: 4 }),//h4
-            ...setH4ByTitleLink({ catid: 0 }),//h4
-            categorizeByTitleLinkPageUrl,//h3
+            // ...setH4ByTitleLink({ catid: 1 }),//h4
+            // ...setH4ByTitleLink({ catid: 2 }),//h4
+            // ...setH4ByTitleLink({ catid: 3 }),//h4
+            // ...setH4ByTitleLink({ catid: 4 }),//h4
+            // ...setH4ByTitleLink({ catid: 0 }),//h4
+         ///   categorizeByTitleLinkPageUrl,//h3
+         setH4ByTitle({id:1}),
+         setH4ByTitle({id:2}),
+         setH4ByTitle({id:3}),
             {
                 // Optionally project only relevant fields
                 $project: {

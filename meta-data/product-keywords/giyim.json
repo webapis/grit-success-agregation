@@ -10,7 +10,6 @@
             ],
             [
                 "gömlek",
-                "shirt",
                 "henry"
             ],
             [
@@ -44,7 +43,6 @@
             ],
             "pareo",
             "tankini",
-            "üst",
             [
                 "kimono",
                 "KİMONO"
@@ -55,26 +53,16 @@
                 "BUSTİYER",
                 "bustier"
             ],
-            [
-                "сrop",
-                "Crop"
-            ],
+           
             "body",
             "pelerin",
             "bolero",
             "kaftan",
-            "top",
-            "triko",
             "panço",
             "polo",
+            
             [
-                "tişört",
-                "tshirt",
-                "tişört",
-                "tsihrt",
-                "t-Shirt"
-            ],
-            [
+                "sweatshirt",
                 "SWEAT"
             ],
             "HOODIE",
@@ -89,12 +77,10 @@
                 "pants",
                 "TROUSER",
                 "palazzo",
-                "paça",
                 "Wide-Leg Jean",
                 "pantalon",
                 "Straight Fit Jean",
                 "pant",
-                "yüksek bel",
                 "high-waist jeans"
             ],
             [
@@ -193,10 +179,7 @@
             ]
         ],
         "ayakkabı": [
-            [
-                "topuklu",
-                "pump"
-            ],
+           
             "babet",
             "sandalet",
             "çizme",
@@ -249,15 +232,6 @@
             "eşarp",
             "bandana",
             "boyunluk",
-            [
-            
-                "shawl"
-            ],
-            [
-                "atkı",
-                "scarf",
-                "foulard"
-            ],
             "kaşkol"
         ],
         "aksesuar": [

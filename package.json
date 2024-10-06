@@ -5,6 +5,10 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "snap": "node snap.js",
+    "wraptoarray": "node utils/wraptoarray.js",
+    "wraptoarray-2": "node utils/wraptoarray-2.js",
+    "wraptoarray-3": "node utils/wraptoarray-3.js",
     "dev": "node index.js"
   },
   "repository": {

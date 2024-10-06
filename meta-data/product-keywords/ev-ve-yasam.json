@@ -1,16 +1,16 @@
 [
     {
         "depolama": [
-            "katlanabilir kasa",
-            "kutu"
+            ["katlanabilir kasa"],
+            ["kutu"]
         ],
         "mobilya": [
-            "koltuk",
-            "dolap",
-            "sandalye",
-            "sehpa",
-            "bank",
-            "kitaplık",
+            ["koltuk"],
+            ["dolap"],
+            ["sandalye"],
+            ["sehpa"],
+            ["bank"],
+            ["kitaplık"],
             "gazetelik",
             "tabure",
             "tabure",
@@ -32,7 +32,7 @@
         ],
         "dekorasyon": [
             "küp",
-            "süs",
+
             "duvar dekor",
             [
                 "obje"
@@ -45,8 +45,7 @@
             "Dekoratif Bitki",
             "çerçeve",
             "saksı",
-            "yılbaşı ağacı",
-            "askı"
+            "yılbaşı ağacı"
         ],
         "aydınlatma": [
             "aydınlatma",

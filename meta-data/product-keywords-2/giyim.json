@@ -1,0 +1,26 @@
+[
+    {
+        "üst giyim": [
+            [
+                "tişört",
+                "tshirt",
+                "tişört",
+                "tsihrt",
+                "t-Shirt"
+            ],
+            
+            "triko"
+        ],
+        "alt giyim": [
+            [
+                "pantolon",
+                "yüksek bel"
+            ]
+        ],
+        "ayakkabı": [
+            [
+                "topuklu",
+                "pump"
+            ]]
+    }
+]
