@@ -3,6 +3,7 @@ import fs from 'fs'
 import getJsonDataFromFolder from './file/getJsonDataFromFolder.mjs'
 debugger
 const data = await getJsonDataFromFolder('meta-data/product-keywords-2')
+debugger
 const mappedData = data.map(m => m[0])
 
 const mappedDataWrap = mappedData.map(m => {
@@ -10,6 +11,7 @@ const mappedDataWrap = mappedData.map(m => {
     for (let objname in m) {
         const wrapp = wrapInArray({ [objname]: m[objname] })
         const transformed= transformObject(wrapp)
+ 
         m[objname] = { ...transformed }
        value={...value,...transformed}
 
@@ -37,7 +39,7 @@ fs.writeFileSync(`${process.cwd()}/meta-data/product-keywords-wrapped/productnam
 
 function transformObject(input) {
     const result = {};
-  
+  debugger
     for (const key in input) {
       const transformedCategory = {};
       
