@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb';
 import fs from 'fs';
-
+import {makeDirectory} from 'make-dir';
 import setGenderByHostNameMatch from './pipelines/h2/gender/setGenderByHostNameMatch.js'
 import setGenderByKeywordsMatchInTitleAndLinkContent from './pipelines/h2/gender/setGenderByKeywordsMatchInTitleAndLinkContent.js'
 import setGenderByLinkAndTitleContentMatch from './pipelines/h2/gender/setGenderByLinkAndTitleContentMatch.js'
@@ -15,8 +15,7 @@ import setDefaulth2 from './pipelines/h2/ev-yasam/setDefaulth2.js'
 import setH4ByTitle from './pipelines/h4/setH4ByTitle.js'
 import setH3ByTitle from './pipelines/h3-h4/setH3ByTitle.js'
 import setH1ByTitle from './pipelines/h1/setH1ByTitle.js'
-import priceConversion from './pipelines/priceConversion.js'
-import replaceDotComma from './pipelines/price/replaceDotComma.js'
+import setH5ByHostName from './pipelines/h5/setHostName.js'
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
@@ -32,7 +31,7 @@ async function runAggregation() {
         console.log(`Total documents before aggregation: ${totalDocsBefore}`);
         debugger
         const pipeline = [
-           /*  setH1ByTitle({ id: 1 }),
+            setH1ByTitle({ id: 1 }),
             setH1ByTitle({ id: 2 }),
             setH1ByTitle({ id: 3 }),
             setH1ByTitle({ id: 4 }),
@@ -46,7 +45,7 @@ async function runAggregation() {
             setGenderByPageUrlNegativeCombinationMatch,//h2
             ...setGenderByHostNameAndTitleContentMatch,//h2
             setDefaulth2,
-      
+
 
             setH3ByTitle({ id: 1 }),
             setH3ByTitle({ id: 2 }),
@@ -56,9 +55,8 @@ async function runAggregation() {
             setH4ByTitle({ id: 1 }),
             setH4ByTitle({ id: 2 }),
             setH4ByTitle({ id: 3 }),
-            setH4ByTitle({ id: 4 }), */
-            //...priceConversion,
-            //replaceDotComma,
+            setH4ByTitle({ id: 4 }),
+            setH5ByHostName,
             {
                 // Optionally project only relevant fields
                 $project: {
@@ -73,7 +71,8 @@ async function runAggregation() {
                     pageTitle: 1,
                     h3: 1,
                     h4: 1,
-                    convertedPrice: 1
+                    h5:1
+                   
                 }
             }
         ];
@@ -90,9 +89,9 @@ async function runAggregation() {
 
         const h1data = results.filter(f => f.h1 !== 'diğer');
 
+        await makeDirectory('data')
 
-
-        fs.writeFileSync('h1.json', JSON.stringify(h1data, null, 2));
+        fs.writeFileSync('data/aggregated.json', JSON.stringify(h1data, null, 2));
 
         console.log("Data written to h1.json and h1Diger.json");
 

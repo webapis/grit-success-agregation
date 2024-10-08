@@ -6,9 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "snap": "node snap.js",
-    "wraptoarray": "node utils/wraptoarray.js",
-
-    "dev": "node index.js"
+    "prepForAggregation": "node utils/prepForAggregation.js",
+    "aggregateData": "node index.js",
+    "groupData": "node groupData.js",
+    "mapPrice": "node utils/mapPriceOfAggregatedData.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/codergihub/moda#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
+    "make-dir": "^5.0.0",
     "mongodb": "^4.3.1"
   },
   "devDependencies": {
