@@ -11,6 +11,8 @@ fs.writeFileSync('data/grouped.json',JSON.stringify(groupedData))
 
 
 function groupByHierarchy(arr) {
+    let totalH5Count = 0; // Counter for the total number of h5 items
+  
     const groupBy = (items, level) => {
       const levels = ['h1', 'h2', 'h3', 'h4', 'h5'];
       if (level >= levels.length) return items;
@@ -32,12 +34,17 @@ function groupByHierarchy(arr) {
     const buildHierarchy = (items, level = 0) => {
       const grouped = groupBy(items, level);
   
-      // Check if 'grouped' is empty or undefined
       if (!grouped || Object.keys(grouped).length === 0) return items;
   
       Object.values(grouped).forEach(group => {
-        if (level === 4) { // Assuming 'h5' is the deepest level
-          // Limit to 2 items at the 'h5' level
+        if (level === 4) { // At 'h5' level
+          const totalChildren = group.children.length;
+          totalH5Count += totalChildren; // Update the total count for h5
+  
+          // Add a new field to store the total number of children before limiting
+          group.total = totalChildren; // Total children count
+  
+          // Limit the children to 2 items at the 'h5' level
           group.children = group.children.slice(0, 2);
         } else {
           group.children = buildHierarchy(group.children, level + 1);
@@ -47,7 +54,8 @@ function groupByHierarchy(arr) {
       return Object.values(grouped);
     };
   
-    return buildHierarchy(arr);
+    const hierarchy = buildHierarchy(arr);
+    return { hierarchy, totalH5Count }; // Return both the hierarchy and the total h5 count
   }
   
 
