@@ -1,13 +1,21 @@
 import fs from 'fs'
-
+import { makeDirectory } from 'make-dir';
 const data = JSON.parse(fs.readFileSync('data/aggregated.json', { encoding: 'utf-8' }))
 debugger
 
 
 
-const groupedData = groupByHierarchy(data)
+const {hierarchy} = groupByHierarchy(data)
 debugger
-fs.writeFileSync('data/grouped.json',JSON.stringify(groupedData))
+await makeDirectory('data/nav')
+for(let d of hierarchy){
+    const {children,title}=d
+
+    fs.writeFileSync(`data/nav/${title}.json`,JSON.stringify(children))
+    
+}
+debugger
+
 
 
 function groupByHierarchy(arr) {
@@ -27,6 +35,7 @@ function groupByHierarchy(arr) {
         }
   
         result[key].children.push(item);
+        
         return result;
       }, {});
     };
@@ -46,6 +55,7 @@ function groupByHierarchy(arr) {
   
           // Limit the children to 2 items at the 'h5' level
           group.children = group.children.slice(0, 2);
+          debugger
         } else {
           group.children = buildHierarchy(group.children, level + 1);
         }

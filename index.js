@@ -61,8 +61,8 @@ async function runAggregation() {
                 // Optionally project only relevant fields
                 $project: {
                     title: 1,
-                    h1: 1,
-                    stageh1: 1,
+                    image:1,
+                    h1: 1,                    
                     h2: 2,
                     price: 1,
                     currency: 1,
