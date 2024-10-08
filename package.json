@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "snap": "node snap.js",
+    "snap2": "node snap2.js",
     "prepForAggregation": "node utils/prepForAggregation.js",
     "aggregateData": "node index.js",
     "groupData": "node groupData.js",
