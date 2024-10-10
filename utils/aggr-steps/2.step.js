@@ -1,7 +1,7 @@
 //preprare for aggregation
 
 import fs from 'fs'
-
+import { makeDirectory } from 'make-dir';
 import getJsonDataFromFolder from '../file/getJsonDataFromFolder.mjs'
 import getJsonDataFileNameFromFolder from '../file/getJsonDataFileNameFromFolder.mjs'
 debugger
@@ -31,10 +31,10 @@ function transformObject(input) {
 
         input[key].forEach(subArray => {
             const propertyName = subArray[0].toLowerCase(); // Use the first value as the property name and convert it to lowercase
-         
-            transformedCategory[propertyName] = subArray;  
-           
-           // Assign the whole array as the value
+
+            transformedCategory[propertyName] = subArray;
+
+            // Assign the whole array as the value
         });
 
         result[key] = transformedCategory;
@@ -60,7 +60,7 @@ async function prepareKeywords({ id }) {
         }
         return value
     })
-
+    await makeDirectory(`${process.cwd()}/data/2.step-data`)
     fs.writeFileSync(`${process.cwd()}/data/2.step-data/productnames-${id}.json`, JSON.stringify(mappedDataWrap))
 
 }
@@ -72,9 +72,9 @@ async function prepareKeywords2({ id }) {
     const mappedDataWrap = mappedData.map((mData) => {
         let value = {}
         const m = mData.data[0]
-        const filename =mData.filename
+        const filename = mData.filename
         debugger
-        const fl ={[filename]:{}}
+        const fl = { [filename]: {} }
         for (let objname in m) {
             const wrapp = wrapInArray({ [objname]: m[objname] })
             const transformed = transformObject(wrapp, filename)
@@ -82,19 +82,19 @@ async function prepareKeywords2({ id }) {
             debugger
             value = { ...value, ...transformed }
             debugger
-            fl[filename]={ ...fl[filename], ...transformed[objname] }
+            fl[filename] = { ...fl[filename], ...transformed[objname] }
         }
         return fl
     })
-
+    await makeDirectory(`${process.cwd()}/data/2.step-data`)
     fs.writeFileSync(`${process.cwd()}/data/2.step-data/productnames--${id}.json`, JSON.stringify(mappedDataWrap))
 
 }
 
-await prepareKeywords2({id:1})
-await prepareKeywords2({id:2})
-await prepareKeywords2({id:3})
-await prepareKeywords2({id:4})
+await prepareKeywords2({ id: 1 })
+await prepareKeywords2({ id: 2 })
+await prepareKeywords2({ id: 3 })
+await prepareKeywords2({ id: 4 })
 
 
 await prepareKeywords({ id: 1 })

@@ -1,8 +1,9 @@
 //parse price to float
 
 import fs from 'fs'
+import { makeDirectory } from 'make-dir';
 import mapPrice from '../mapPrice.mjs'
-const data = JSON.parse(fs.readFileSync(`${process.cwd()}/data/aggregated.json`, { encoding: 'utf-8' }))
+const data = JSON.parse(fs.readFileSync(`${process.cwd()}/data/3.0.step-data/aggregated.json`, { encoding: 'utf-8' }))
 
 const priceMapped = data.map((m) => {
 
@@ -10,7 +11,7 @@ const priceMapped = data.map((m) => {
 })
 
 debugger
-
-fs.writeFileSync('data/priceMappedData.json', JSON.stringify(priceMapped))
+await makeDirectory('data/3.1.step-data')
+fs.writeFileSync('data/3.1.step-data/priceMappedData.json', JSON.stringify(priceMapped))
 
 debugger
