@@ -4,7 +4,6 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "1.step":"node utils/aggr-steps/1.step.js && echo 'downloading data' ",
     "2.step":"node utils/aggr-steps/2.step.js && echo 'preparing keywords' ",
     "3.0.step":"node utils/aggr-steps/3.0.step.js && echo 'aggregating data' ",

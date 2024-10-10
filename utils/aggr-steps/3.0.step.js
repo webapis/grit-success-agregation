@@ -90,9 +90,9 @@ async function runAggregation() {
 
         const h1data = results.filter(f => f.h1 !== 'diğer');
 
-        await makeDirectory('data')
+        await makeDirectory('data/3.step-data')
 
-        fs.writeFileSync('data/aggregated.json', JSON.stringify(h1data, null, 2));
+        fs.writeFileSync('data/3.step-data/aggregated.json', JSON.stringify(h1data, null, 2));
 
         console.log("Data written to h1.json and h1Diger.json");
 

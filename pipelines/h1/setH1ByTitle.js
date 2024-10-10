@@ -1,6 +1,6 @@
 import fs from 'fs';
 function setH1ByTitle({ id }) {
-    const keywordsObject = JSON.parse(fs.readFileSync(`${process.cwd()}/meta-data/product-keywords-wrapped/productnames--${id}.json`));
+    const keywordsObject = JSON.parse(fs.readFileSync(`${process.cwd()}/data/2.step-data/productnames--${id}.json`));
 
     return {
         $addFields: {

@@ -1,18 +1,18 @@
 //group data for navigation
 import fs from 'fs'
 import { makeDirectory } from 'make-dir';
-const data = JSON.parse(fs.readFileSync(`${process.cwd()}/data/aggregated.json`, { encoding: 'utf-8' }))
+const data = JSON.parse(fs.readFileSync(`${process.cwd()}/data/3.step-data/aggregated.json`, { encoding: 'utf-8' }))
 debugger
 
 
 
 const {hierarchy} = groupByHierarchy(data)
 debugger
-await makeDirectory('data/nav')
+await makeDirectory('data/4.step-data')
 for(let d of hierarchy){
     const {children,title}=d
 
-    fs.writeFileSync(`data/nav/${title}.json`,JSON.stringify(children))
+    fs.writeFileSync(`data/4.step-data/${title}.json`,JSON.stringify(children))
     
 }
 debugger

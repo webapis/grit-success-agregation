@@ -1,10 +1,8 @@
-//download data
-
 
 import 'dotenv/config'
 
-import { downloadCollection } from '../uploadCollection.mjs'
-const localRootFolder = 'data/1.step-data'
+import { downloadCollection } from '../../utils/uploadCollection.mjs'
+const localRootFolder = 'data-alternatif'
 const gitRepo = 'crawler-state-2'
 const folders = ['gelinlik','buyuk_beden_elbise']
 debugger

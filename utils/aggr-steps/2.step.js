@@ -61,7 +61,7 @@ async function prepareKeywords({ id }) {
         return value
     })
 
-    fs.writeFileSync(`${process.cwd()}/meta-data/product-keywords-wrapped/productnames-${id}.json`, JSON.stringify(mappedDataWrap))
+    fs.writeFileSync(`${process.cwd()}/data/2.step-data/productnames-${id}.json`, JSON.stringify(mappedDataWrap))
 
 }
 async function prepareKeywords2({ id }) {
@@ -87,7 +87,7 @@ async function prepareKeywords2({ id }) {
         return fl
     })
 
-    fs.writeFileSync(`${process.cwd()}/meta-data/product-keywords-wrapped/productnames--${id}.json`, JSON.stringify(mappedDataWrap))
+    fs.writeFileSync(`${process.cwd()}/data/2.step-data/productnames--${id}.json`, JSON.stringify(mappedDataWrap))
 
 }
 
