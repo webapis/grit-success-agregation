@@ -3,7 +3,7 @@
 
 import 'dotenv/config'
 
-import { downloadCollection } from '../uploadCollection.mjs'
+import { downloadCollection } from '../downloadFromGit.js'
 const localRootFolder = 'data/1.step-data'
 const gitRepo = 'crawler-state-2'
 const folders = ['gelinlik','buyuk_beden_elbise']

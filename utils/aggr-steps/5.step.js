@@ -1,8 +1,29 @@
 //split to navigation and references
 
 import fs from 'fs';
+import getJsonDataFileNameFromFolder from '../file/getJsonDataFileNameFromFolder.mjs'
+import { makeDirectory } from 'make-dir';
+const datas = await getJsonDataFileNameFromFolder('data/4.step-data')
 
-const data = JSON.parse(fs.readFileSync(`${process.cwd()}/data/nav/giyim.json`));
+for (let d of datas){
+    const {data,filename} =d
+
+debugger
+// Step 1: Add UIDs to nodes at level 2
+data.forEach(node => addUIDToNodes(node));
+
+// Step 2: Split the data into navigation and reference
+const { navigation, references } = splitJSONData(data);
+debugger
+await makeDirectory(`${process.cwd()}/data/5.step-data/${filename}`)
+fs.writeFileSync(`${process.cwd()}/data/5.step-data/${filename}/navigation.json`, JSON.stringify(navigation, null, 2));
+fs.writeFileSync(`${process.cwd()}/data/5.step-data/${filename}/references.json`, JSON.stringify(references, null, 2));
+
+console.log(`Navigation and references files for ${filename} have been created.`);
+}
+
+debugger
+
 
 // Function to generate a unique ID
 function generateUID() {
@@ -27,15 +48,15 @@ function splitJSONData(tree, navigation = [], references = []) {
             title: node.title,
             uid: node.uid || null
         };
-        
+
         if (node.children && !node.uid) {
             navItem.children = [];
             splitJSONData(node.children, navItem.children, references);  // Recursively process children
         }
-        
+
         // Add to navigation
         navigation.push(navItem);
-        
+
         // Add to reference if the node has a UID
         if (node.uid) {
             references.push({
@@ -47,13 +68,3 @@ function splitJSONData(tree, navigation = [], references = []) {
     return { navigation, references };
 }
 
-// Step 1: Add UIDs to nodes at level 2
-data.forEach(node => addUIDToNodes(node));
-
-// Step 2: Split the data into navigation and reference
-const { navigation, references } = splitJSONData(data);
-debugger
-fs.writeFileSync(`${process.cwd()}/data/nav/split/navigation.json`, JSON.stringify(navigation, null, 2));
-fs.writeFileSync(`${process.cwd()}/data/nav/split/references.json`, JSON.stringify(references, null, 2));
-
-console.log('Navigation and references files have been created.');
