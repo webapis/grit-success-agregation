@@ -1,6 +1,8 @@
+//split to navigation and references
+
 import fs from 'fs';
 
-const data = JSON.parse(fs.readFileSync('data/nav/giyim.json'));
+const data = JSON.parse(fs.readFileSync(`${process.cwd()}/data/nav/giyim.json`));
 
 // Function to generate a unique ID
 function generateUID() {

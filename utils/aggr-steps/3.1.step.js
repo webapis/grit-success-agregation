@@ -1,6 +1,8 @@
+//parse price to float
+
 import fs from 'fs'
-import mapPrice from './mapPrice.js'
-const data = JSON.parse(fs.readFileSync('data/aggregated.json', { encoding: 'utf-8' }))
+import mapPrice from '../mapPrice.mjs'
+const data = JSON.parse(fs.readFileSync(`${process.cwd()}/data/aggregated.json`, { encoding: 'utf-8' }))
 
 const priceMapped = data.map((m) => {
 

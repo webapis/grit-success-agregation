@@ -1,7 +1,9 @@
+//preprare for aggregation
+
 import fs from 'fs'
 
-import getJsonDataFromFolder from './file/getJsonDataFromFolder.mjs'
-import getJsonDataFileNameFromFolder from './file/getJsonDataFileNameFromFolder.mjs'
+import getJsonDataFromFolder from '../file/getJsonDataFromFolder.mjs'
+import getJsonDataFileNameFromFolder from '../file/getJsonDataFileNameFromFolder.mjs'
 debugger
 
 
