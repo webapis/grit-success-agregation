@@ -5,8 +5,8 @@ const stage = {
                 if: {
                     $and: [
                         { $eq: ["$h2", "unknown"] },
-                        { $not: { $in: ["$pageUrl", ["https://farawayclothing.com/collections/kids-all", "https://farawayclothing.com/collections/men-collection"]] } },
-                        { $regexMatch: { input: "$pageUrl", regex: "^https://farawayclothing\\.com/" } }
+                        { $not: { $in: ["$pageURL", ["https://farawayclothing.com/collections/kids-all", "https://farawayclothing.com/collections/men-collection"]] } },
+                        { $regexMatch: { input: "$pageURL", regex: "^https://farawayclothing\\.com/" } }
                     ]
                 },
                 then: "Kadın",

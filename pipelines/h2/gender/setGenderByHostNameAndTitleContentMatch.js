@@ -1,9 +1,9 @@
 let dynamicConditions = {
     kadın: [
-        { pageUrl:"https://www.yargici.com",title:["Bikini","Mayo"] }
+        { pageURL:"https://www.yargici.com",title:["Bikini","Mayo"] }
     ],
     erkek: [
-        { pageUrl:"https://www.avva.com",title:["Boxer","Bere"] }
+        { pageURL:"https://www.avva.com",title:["Boxer","Bere"] }
     ]
 };
 
@@ -37,7 +37,7 @@ const stages = [
                                     $cond: [
                                       {
                                         $and: [
-                                          { $regexMatch: { input: "$pageUrl", regex: "$$this.pageUrl" } },
+                                          { $regexMatch: { input: "$pageURL", regex: "$$this.pageUrl" } },
                                           {
                                             $reduce: {
                                               input: "$$this.title",

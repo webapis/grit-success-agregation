@@ -1,16 +1,32 @@
 [
     {
         "depolama": [
-            ["katlanabilir kasa"],
-            ["kutu"]
+            [
+                "katlanabilir kasa"
+            ],
+            [
+                "kutu"
+            ]
         ],
         "mobilya": [
-            ["koltuk"],
-            ["dolap"],
-            ["sandalye"],
-            ["sehpa"],
-            ["bank"],
-            ["kitaplık"],
+            [
+                "koltuk"
+            ],
+            [
+                "dolap"
+            ],
+            [
+                "sandalye"
+            ],
+            [
+                "sehpa"
+            ],
+            [
+                "bank"
+            ],
+            [
+                "kitaplık"
+            ],
             "gazetelik",
             "tabure",
             "tabure",
@@ -32,7 +48,6 @@
         ],
         "dekorasyon": [
             "küp",
-
             "duvar dekor",
             [
                 "obje"
@@ -96,11 +111,12 @@
                 "nevresim takımı",
                 "nevresim seti"
             ]
-         
         ],
         "ofis, kırtasiye": [
             "dosyalık",
-            "hediye kartı"
+            "hediye kartı",
+            "not defteri",
+            "defter"
         ]
     }
 ]

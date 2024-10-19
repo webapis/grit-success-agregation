@@ -57,7 +57,7 @@ const stage = {
         {
           $and: [
             { $eq: ["$h2", "unknown"] },
-            { $in: ["$pageUrl", genderValues.erkek] }
+            { $in: ["$pageURL", genderValues.erkek] }
           ]
         },
         "erkek",
@@ -66,7 +66,7 @@ const stage = {
             {
               $and: [
                 { $eq: ["$h2", "unknown"] },
-                { $in: ["$pageUrl", genderValues.kadın] }
+                { $in: ["$pageURL", genderValues.kadın] }
               ]
             },
             "kadın",
@@ -75,7 +75,7 @@ const stage = {
                 {
                   $and: [
                     { $eq: ["$h2", "unknown"] },
-                    { $in: ["$pageUrl", genderValues.unisex] }
+                    { $in: ["$pageURL", genderValues.unisex] }
                   ]
                 },
                 "unisex",

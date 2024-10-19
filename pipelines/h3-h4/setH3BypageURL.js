@@ -1,21 +1,20 @@
 import fs from 'fs';
-
-function setH4ByTitle({ id }) {
-    const keywordsObject = JSON.parse(fs.readFileSync(`${process.cwd()}/meta-data/product-keywords-wrapped/productnames-${id}.json`));
+function setH3BypageURL({ id }) {
+    const keywordsObject = JSON.parse(fs.readFileSync(`${process.cwd()}/data/2.step-data/productnames-${id}.json`));
 
     return {
         $addFields: {
-            h4: {
+            h3: {
                 $function: {
                     body: `
                         function(targetObject, keywordsObject) {
-                            if (!targetObject.title || targetObject.title.trim() === "") {
+                            if (!targetObject.pageURL || targetObject.pageURL.trim() === "") {
                                 return null;
                             }
 
-                            // Check if h4 property exists and is not null
-                            if (targetObject.hasOwnProperty('h4') && targetObject.h4 !== null) {
-                                return targetObject.h4;
+                            // Check if h3 property exists and is not null
+                            if (targetObject.hasOwnProperty('h3') && targetObject.h3 !== null) {
+                                return targetObject.h3;
                             }
 
                             const matchKeyword = (title, keywords) => {
@@ -31,10 +30,10 @@ function setH4ByTitle({ id }) {
                                 for (const subCategory in category) {
                                     for (const item in category[subCategory]) {
                                         const keywords = category[subCategory][item];
-                                        const matchedKeyword = matchKeyword(targetObject.title, keywords);
+                                        const matchedKeyword = matchKeyword(targetObject.pageURL, keywords);
 
                                         if (matchedKeyword) {
-                                            return item; // Return the item as a string
+                                            return subCategory; // Return the top-level category
                                         }
                                     }
                                 }
@@ -51,4 +50,4 @@ function setH4ByTitle({ id }) {
     }
 }
 
-export default setH4ByTitle;
+export default setH3BypageURL;

@@ -41,14 +41,12 @@ function addUIDToNodes(node, depth = 0) {
 }
 
 // Function to split JSON data into navigation and references
-// Function to split JSON data into navigation and references
 function splitJSONData(tree, navigation = [], references = []) {
     tree.forEach(node => {
         // Create a shallow copy for the navigation item
         let navItem = {
             title: node.title,
-            uid: node.uid || null,
-            childrenLength: node.children ? node.children.length : 0  // Add childrenLength
+            uid: node.uid || null
         };
 
         if (node.children && !node.uid) {
@@ -70,4 +68,3 @@ function splitJSONData(tree, navigation = [], references = []) {
     return { navigation, references };
 }
 
-//https://www.perplexity.ai/search/this-json-data-is-consumed-by-NntxpWJuSACZuJg3K4P0HQ

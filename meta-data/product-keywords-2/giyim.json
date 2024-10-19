@@ -6,7 +6,9 @@
                 "tshirt",
                 "tişört",
                 "tsihrt",
-                "t-Shirt"
+                "t-Shirt",
+                "TSHİRT",
+                "TİŞÖRT"
             ],
             
             "triko"
@@ -21,6 +23,7 @@
             [
                 "topuklu",
                 "pump"
-            ]]
+            ],
+            ["bot","botu","boots"]]
     }
 ]

@@ -1,7 +1,10 @@
 [
     {
         "kozmetik": [
-            ["parfüm","parfum"],
+            [
+                "parfüm",
+                "parfum"
+            ],
             [
                 "dudak parlatıcısı",
                 "dudak parlatıcı"
@@ -11,6 +14,13 @@
             "spray$",
             "oda kokusu",
             "dudak Dolgunlaştırıcı"
+        ],
+        "dudak bakımı": [
+            "ruj",
+            "dudak bakımı seti",
+            "dudak yağı",
+            "DUDAK NEMLENDİRİCİ",
+            "dudak kremi"
         ],
         "cilt bakımı": [
             [
@@ -22,10 +32,6 @@
             "vücut yağı",
             "nemlendirici",
             "vücut losyonu",
-            "dudak bakımı seti",
-            "dudak yağı",
-            "DUDAK NEMLENDİRİCİ",
-            "dudak kremi",
             "el kremi",
             "vücut bakım ritüeli",
             "dudak peelingi",

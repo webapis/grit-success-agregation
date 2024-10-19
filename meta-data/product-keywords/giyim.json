@@ -5,6 +5,7 @@
                 "elbise",
                 "elibise",
                 "ebise",
+                "Elbise",
                 "ELBİSE",
                 "DRESS"
             ],
@@ -27,9 +28,13 @@
             [
                 "hırka",
                 "сardigan",
-                "Cardigan"
+                "Cardigan",
+                "HIRKA"
             ],
-            "süveter",
+            [
+                "süveter",
+                "süeter"
+            ],
             "takım elbise",
             "SMOKİN",
             [
@@ -53,14 +58,12 @@
                 "BUSTİYER",
                 "bustier"
             ],
-           
             "body",
             "pelerin",
             "bolero",
             "kaftan",
             "panço",
             "polo",
-            
             [
                 "sweatshirt",
                 "SWEAT"
@@ -81,7 +84,16 @@
                 "pantalon",
                 "Straight Fit Jean",
                 "pant",
-                "high-waist jeans"
+                "high-waist jeans",
+                "Lacivert Beli Lastikli Renk Bloklu Kadife",
+                "Slim Fit Jean",
+                "Low Waist Jean",
+                "Straight Jean",
+                "Full Lenght Jean",
+                "Full Length Jean",
+                "Slouchy Fit Jean",
+                "High Waist Jean",
+                "Long Length Jean"
             ],
             [
                 "şort",
@@ -98,7 +110,7 @@
             ],
             "bermuda",
             "alt$",
-            "Jogger$",
+            "Jogger",
             [
                 "loungwear altı",
                 "loungewear altı"
@@ -119,6 +131,7 @@
                 "jacket"
             ],
             "mont",
+            "parka",
             [
                 "kaban",
                 "coat"
@@ -145,8 +158,7 @@
         ],
         "çanta": [
             [
-                "çanta",
-                "bag"
+                "çanta","canta"
             ],
             "Çanta",
             [
@@ -160,7 +172,9 @@
             ],
             [
                 "kartlık",
-                "card holder"
+                "card holder",
+                "KARTLIK",
+                "Kartlığı"
             ],
             "torba",
             "portföy",
@@ -176,10 +190,11 @@
             [
                 "telefon Kılıfı",
                 "phone case"
-            ]
+            ],
+            "hobo",
+            "kartvizitlik"
         ],
         "ayakkabı": [
-           
             "babet",
             "sandalet",
             "çizme",
@@ -187,7 +202,12 @@
                 "terlik",
                 "slippers",
                 "slide",
-                "slipper"
+                "slipper",
+                "Terliği"
+            ],
+            [
+                "patik",
+                "Patiği"
             ],
             [
                 "stiletto",
@@ -195,10 +215,6 @@
             ],
             "platform ayakkabı",
             "sneaker",
-            [
-                "bot$",
-                "boot"
-            ],
             "espadril",
             "espardenya",
             "loafer",
@@ -215,6 +231,13 @@
             [
                 "ballerin",
                 "ballerina"
+            ],
+            "kalın taban anna",
+            "Çapraz bağlamalı anna",
+            [
+                "gece ayakkabısı",
+                "GECE AYAKKABISI",
+                "gece-ayakkabisi"
             ]
         ],
         "başlık": [
@@ -262,7 +285,7 @@
             "KOL DÜĞMESİ",
             "keychain"
         ],
-        "aksesuar-saç": [
+        "saç-aksesuar": [
             "toka seti",
             [
                 "saç bandı",
@@ -274,7 +297,7 @@
                 "hair tie"
             ],
             [
-                "toka$",
+                "toka",
                 "hair buckle"
             ],
             "saç aksesuarı"
@@ -288,8 +311,10 @@
                 "gözlük kılıfı",
                 "gözlık kılıfı"
             ],
-            ["güneş gözlüğü","Güneş Gözlüğü"],
-
+            [
+                "güneş gözlüğü",
+                "Güneş Gözlüğü"
+            ],
             "göz Bandı"
         ],
         "plaj, havuz": [
@@ -313,7 +338,8 @@
                 "peştemal",
                 "peştemâli",
                 "sarong"
-            ]
+            ],
+            "plaj gömleği"
         ],
         "ev": [
             [
@@ -333,7 +359,10 @@
             "hamile"
         ],
         "iç giyim": [
-            ["sütyen","sütyeni"],
+            [
+                "sütyen",
+                "sütyeni"
+            ],
             "külot",
             "bralet",
             "jartiyer çorabı",
@@ -348,7 +377,8 @@
             "brazillian",
             "jartiyer",
             "İç Giyim",
-            "hipster"
+            "hipster",
+            "Termal İçlik"
         ]
     }
 ]

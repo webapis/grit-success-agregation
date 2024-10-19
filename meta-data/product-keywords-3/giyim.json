@@ -1,34 +1,58 @@
 [
     {
         "üst giyim": [
-            ["üst","top"],
             [
-               
+                "üst",
+                "top"
+            ],
+            [
                 "сrop",
                 "Crop"
-            ]
-            
+            ],
+            "bra"
         ],
         "atkı": [
-           
             [
-            "şal",
-            "shawl"
+                "şal",
+                "shawl"
             ],
             [
                 "atkı",
                 "scarf",
                 "foulard"
             ]
-        
         ],
+    
         "aksesuar": [
             [
                 "kemer",
                 "belt",
                 "kemeri"
-            ]]
-
-    
+            ]
+        ],
+        "iç giyim": [
+            [
+                "sütyen",
+                "sütyeni"
+            ],
+            "külot",
+            "bralet",
+            "jartiyer çorabı",
+            "push-Up takım",
+            "bel korse",
+            "boxer",
+            "korse$",
+            "tanga",
+            "teddy",
+            "thong",
+            "slip$",
+            "brazillian",
+            "jartiyer",
+            "İç Giyim",
+            "hipster",
+            ["Termal İçlik"],
+            "İçlik"
+        ]
     }
 ]
+

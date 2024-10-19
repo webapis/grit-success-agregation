@@ -17,6 +17,11 @@ import setH4ByTitle from '../../pipelines/h4/setH4ByTitle.js'
 import setH3ByTitle from '../../pipelines/h3-h4/setH3ByTitle.js'
 import setH1ByTitle from '../../pipelines/h1/setH1ByTitle.js'
 import setH5ByHostName from '../../pipelines/h5/setHostName.js'
+
+import setH1ByPageURL from '../../pipelines/h1/setH1ByPageURL.js'
+import setH3BypageURL from '../../pipelines/h3-h4/setH3BypageURL.js'
+import setH4ByPageURL from '../../pipelines/h4/setH4ByPageURL.js'
+
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
@@ -36,6 +41,12 @@ async function runAggregation() {
             setH1ByTitle({ id: 2 }),
             setH1ByTitle({ id: 3 }),
             setH1ByTitle({ id: 4 }),
+            
+            setH1ByPageURL({id:1}),
+            setH1ByPageURL({id:2}),
+            setH1ByPageURL({id:3}),
+            setH1ByPageURL({id:4}),
+
             setGenderByHostNameMatch,//h2
             ...setGenderByKeywordsMatchInTitleAndLinkContent,
             ...setGenderByLinkAndTitleContentMatch,//h2
@@ -52,11 +63,21 @@ async function runAggregation() {
             setH3ByTitle({ id: 2 }),
             setH3ByTitle({ id: 3 }),
             setH3ByTitle({ id: 4 }),
+            
+            setH3BypageURL({id:1}),
+            setH3BypageURL({id:2}),
+            setH3BypageURL({id:3}),
+            setH3BypageURL({id:4}),
 
             setH4ByTitle({ id: 1 }),
             setH4ByTitle({ id: 2 }),
             setH4ByTitle({ id: 3 }),
             setH4ByTitle({ id: 4 }),
+
+            setH4ByPageURL({id:1}),
+            setH4ByPageURL({id:2}),
+            setH4ByPageURL({id:3}),
+            setH4ByPageURL({id:4}),
             setH5ByHostName,
             {
                 // Optionally project only relevant fields
@@ -68,7 +89,7 @@ async function runAggregation() {
                     price: 1,
                     currency: 1,
                     link: 1,
-                    pageUrl: 1,
+                    pageURL: 1,
                     pageTitle: 1,
                     h3: 1,
                     h4: 1,

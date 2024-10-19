@@ -7,7 +7,7 @@ const stages = [
               if: {
                 $and: [
                   { $eq: ["$h2", "unknown"] },
-                  { $regexMatch: { input: "$pageUrl", regex: "cocuk", options: "i" } },
+                  { $regexMatch: { input: "$pageURL", regex: "cocuk", options: "i" } },
                   {
                     $or: [
                       { $regexMatch: { input: "$title", regex: "bikini", options: "i" } },

@@ -1,45 +1,41 @@
-function mapPrice(price,obj) {
+function mapPrice(raw, obj) {
 
-    if(price===undefined){
-        debugger
-            throw `${price} price not parsable: ${JSON.stringify(obj)}`
-    }
-//
-    let trimPrice = price ? price.toString().replace('TL', '').replace('tl', '')
-        .replace('₺', '')
-        .replace('$', '')
-        .replace('€', '')
-        .replace('\n', '')
-        .replace('USD', '')
-        .trim() : 0
-    if (price?.includes('$')|| price?.includes('USD')) {
-       const result= parseFloat((parsePrice(trimPrice) * 33.50).toFixed(2))
-        if(result===0){
-            debugger
-            throw `${price} price not parsable: ${JSON.stringify(obj)}`
-        }else{
-            return result
-        }
 
-    } else
-    if (price?.includes('€')) {
-        const result= parseFloat((parsePrice(trimPrice) * 37.01).toFixed(2))
-         if(result===0){
-             debugger
-             throw `${price} price not parsable: ${JSON.stringify(obj)}`
-         }else{
-             return result
-         }
- 
-     }
-    else {
-        const result= parsePrice(trimPrice)
-        if(result===0){
-            debugger
-             throw `${price} price not parsable: ${JSON.stringify(obj)}`
-        }else{
-            return result
+    try {
+        if (raw === undefined) {
+            return 0
         }
+        const price = raw.replace('İtibaren', '')
+        switch (true) {
+            case price === undefined:
+            case price === '':
+            case price === '0,00':
+            case price === '€0,00':
+
+                return 0
+            case price.replace('TL', '').replaceAll(' ', '') === '0':
+
+                return 0;
+            case price.includes('TL'):
+            case price.includes('₺'):
+                return parsePrice(price.replace('TL', '').replace('₺', ''))
+            case price.includes('$'):
+            case price.includes('USD'):
+                return parseFloat((parsePrice(price.replace('$', '').replace('USD', '')) * 33.50).toFixed(2))
+            case price.includes('EUR'):
+            case price.includes('€'):
+                return parseFloat((parsePrice(price.replace('EUR', '').replace('€', '')) * 37.01).toFixed(2))
+
+
+
+            default:
+
+                const result = parsePrice(price)
+
+                return result
+        }
+    } catch (error) {
+        throw 'unhandled price parse error'
     }
 
 
@@ -49,9 +45,10 @@ function mapPrice(price,obj) {
 export default mapPrice
 
 
-function parsePrice(trimPrice) {
+function parsePrice(price) {
+    const trimPrice = price.replaceAll(' ', '')
     switch (true) {
-       //1799.95
+        //1799.95
         case /^\d\d\d[,]\d\d$/.test(trimPrice)://299,99
 
             return parseFloat(trimPrice.replace(',', '.'))
@@ -68,11 +65,11 @@ function parsePrice(trimPrice) {
             return parseFloat(trimPrice)
         case /^\d\d\d\d\d[.]\d\d$/.test(trimPrice)://12999.95
             return parseFloat(trimPrice)
-       // case /^\d\d\d[.]\d\d\d$/.test(trimPrice)://106.950
-        //    return parseFloat(trimPrice.replace('.', ''))
-       // case /^\d\d[.]\d\d\d$/.test(trimPrice)://10.950
-         //   return parseFloat(trimPrice.replace('.', ''))
-       // case /^\d[.]\d\d\d$/.test(trimPrice)://1.950
+        case /^\d\d\d[.]\d\d\d$/.test(trimPrice)://106.950
+            return parseFloat(trimPrice.replace('.', ''))
+        // case /^\d\d[.]\d\d\d$/.test(trimPrice)://10.950
+        //   return parseFloat(trimPrice.replace('.', ''))
+        // case /^\d[.]\d\d\d$/.test(trimPrice)://1.950
         //    return parseFloat(trimPrice.replace('.', ''))
         case /^\d[.]\d\d$/.test(trimPrice)://5.96
             return parseFloat(trimPrice)
@@ -88,8 +85,8 @@ function parsePrice(trimPrice) {
 
         case /^\d[.]\d\d\d$/.test(trimPrice)://1.449
             return parseFloat(trimPrice.replace('.', ''))
-         //   case /^\d[,]\d\d\d$/.test(trimPrice)://9,500
-          //  return parseFloat(trimPrice.replace(',', ''))
+        //   case /^\d[,]\d\d\d$/.test(trimPrice)://9,500
+        //  return parseFloat(trimPrice.replace(',', ''))
 
         case /^\d\d\d\d$/.test(trimPrice)://4299
 
@@ -136,7 +133,8 @@ function parsePrice(trimPrice) {
 
             return parseFloat(trimPrice.replace(',', ''))
         default:
-            return 0
+            debugger
+            throw 'unhandled error'
 
     }
 
