@@ -5,7 +5,25 @@
                 "çanta",
                 "bag"
             ]
+        ],
+        "saç-aksesuar": [
+            "taç"
+        ],
+        "dış giyim": [
+            "kap",
+            [
+                "kaftan",
+                "caftan"
+            ],
+            "kürk"
+        ],
+        "aksesuar": [
+            [
+                "kemer",
+                "belt",
+                "kemeri"
+            ],
+            "kuşak"
         ]
-
     }
 ]

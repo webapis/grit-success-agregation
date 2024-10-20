@@ -29,9 +29,9 @@ async function importCollection() {
         let counter = 0
         for (let data of datas) {
             debugger
-            counter = counter + data.length
-
-            await db.collection(collectionName).insertMany(data);
+            counter = counter + data.filter((f => !f.error)).length
+debugger
+            await db.collection(collectionName).insertMany(data.filter((f => !f.error)));
             console.log('total imported data: ', counter)
         }
 

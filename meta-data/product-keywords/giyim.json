@@ -11,8 +11,11 @@
             ],
             [
                 "gömlek",
-                "henry"
+                "henry",
+                "shirt",
+                "GOMLEK"
             ],
+            "okul gömleği",
             [
                 "tulum",
                 "tuluım",
@@ -69,9 +72,12 @@
                 "SWEAT"
             ],
             "HOODIE",
-            "kap$",
             "kurdele",
-            "abiye$"
+            [
+                "denim korse",
+                "DENİM KORSE"
+            ],
+            "abiye"
         ],
         "alt giyim": [
             [
@@ -93,11 +99,8 @@
                 "Full Length Jean",
                 "Slouchy Fit Jean",
                 "High Waist Jean",
-                "Long Length Jean"
-            ],
-            [
-                "şort",
-                "short"
+                "Long Length Jean",
+                "Denim Shopping with Sun Embroidered - Jean"
             ],
             [
                 "tayt",
@@ -158,9 +161,11 @@
         ],
         "çanta": [
             [
-                "çanta","canta"
+                "çanta",
+                "canta",
+                "CANTA",
+                "Çanta"
             ],
-            "Çanta",
             [
                 "bavul",
                 "suitcase"
@@ -206,6 +211,10 @@
                 "Terliği"
             ],
             [
+                "panduf",
+                "Paduf"
+            ],
+            [
                 "patik",
                 "Patiği"
             ],
@@ -238,6 +247,10 @@
                 "gece ayakkabısı",
                 "GECE AYAKKABISI",
                 "gece-ayakkabisi"
+            ],
+            [
+                "günlük ayakkabı",
+                "gunluk-ayakkabi"
             ]
         ],
         "başlık": [
@@ -252,17 +265,16 @@
         ],
         "atkı": [
             "fular",
-            "eşarp",
+            [
+                "eşarp",
+                "ESARP"
+            ],
             "bandana",
             "boyunluk",
-            "kaşkol"
+            "kaşkol",
+            "kafa bandı"
         ],
         "aksesuar": [
-            [
-                "kemer$",
-                "belt",
-                "kemeri$"
-            ],
             "kravat",
             "papyon",
             "boyun aksesuarı",
@@ -283,13 +295,25 @@
             "küçük şemsiye",
             "maske$",
             "KOL DÜĞMESİ",
-            "keychain"
+            "keychain",
+            "uyku bandı",
+            "pelüş kulaklık",
+            "balaklava"
+        ],
+        "elbise aksesuarı": [
+            "narciso сherry",
+            "ribbon pearl",
+            "perla navy",
+            "ribbon black",
+            "ribbon cherry"
         ],
         "saç-aksesuar": [
             "toka seti",
             [
                 "saç bandı",
-                "headband"
+                "Saçbandı",
+                "headband",
+                "Saçbandi"
             ],
             "saç tacı",
             [
@@ -306,7 +330,10 @@
             "saat"
         ],
         "gözlük": [
-            "gözlük",
+            [
+                "gözlük",
+                "sunglasses"
+            ],
             [
                 "gözlük kılıfı",
                 "gözlık kılıfı"
@@ -339,7 +366,8 @@
                 "peştemâli",
                 "sarong"
             ],
-            "plaj gömleği"
+            "plaj gömleği",
+            "plaj eteği"
         ],
         "ev": [
             [
@@ -363,7 +391,10 @@
                 "sütyen",
                 "sütyeni"
             ],
-            "külot",
+            [
+                "külot",
+                "klüot"
+            ],
             "bralet",
             "jartiyer çorabı",
             "push-Up takım",
@@ -378,7 +409,18 @@
             "jartiyer",
             "İç Giyim",
             "hipster",
-            "Termal İçlik"
+            "Termal İçlik",
+            "silikon yapışkanlı kap"
+        ],
+        "hediye": [
+            "yılbaşı gecesi"
+        ],
+        "spor ve outdoor": [
+            [
+                "sporсu bra",
+                "sporcu-bra",
+                "matara"
+            ]
         ]
     }
 ]

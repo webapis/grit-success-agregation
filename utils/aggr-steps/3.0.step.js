@@ -1,7 +1,7 @@
 //aggregate data
 import { MongoClient } from 'mongodb';
 import fs from 'fs';
-import {makeDirectory} from 'make-dir';
+import { makeDirectory } from 'make-dir';
 import setGenderByHostNameMatch from '../../pipelines/h2/gender/setGenderByHostNameMatch.js'
 import setGenderByKeywordsMatchInTitleAndLinkContent from '../../pipelines/h2/gender/setGenderByKeywordsMatchInTitleAndLinkContent.js'
 import setGenderByLinkAndTitleContentMatch from '../../pipelines/h2/gender/setGenderByLinkAndTitleContentMatch.js'
@@ -19,9 +19,11 @@ import setH1ByTitle from '../../pipelines/h1/setH1ByTitle.js'
 import setH5ByHostName from '../../pipelines/h5/setHostName.js'
 
 import setH1ByPageURL from '../../pipelines/h1/setH1ByPageURL.js'
+import setH1ByLink from '../../pipelines/h1/setH1ByLink.js'
 import setH3BypageURL from '../../pipelines/h3-h4/setH3BypageURL.js'
 import setH4ByPageURL from '../../pipelines/h4/setH4ByPageURL.js'
-
+import setH3ByLink from '../../pipelines/h3-h4/setH3ByLink.js'
+import setH4ByLink from '../../pipelines/h4/setH4ByLink.js'
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
@@ -41,15 +43,20 @@ async function runAggregation() {
             setH1ByTitle({ id: 2 }),
             setH1ByTitle({ id: 3 }),
             setH1ByTitle({ id: 4 }),
-            
-            setH1ByPageURL({id:1}),
-            setH1ByPageURL({id:2}),
-            setH1ByPageURL({id:3}),
-            setH1ByPageURL({id:4}),
 
+            setH1ByPageURL({ id: 1 }),
+            setH1ByPageURL({ id: 2 }),
+            setH1ByPageURL({ id: 3 }),
+            setH1ByPageURL({ id: 4 }),
+            setH1ByLink({ id: 1 }),
+            setH1ByLink({ id: 2 }),
+            setH1ByLink({ id: 3 }),
+            setH1ByLink({ id: 4 }),
             setGenderByHostNameMatch,//h2
-            ...setGenderByKeywordsMatchInTitleAndLinkContent,
+            ...setGenderByKeywordsMatchInTitleAndLinkContent({ id: 0 }),
+            //...setGenderByKeywordsMatchInTitleAndLinkContent({id:1}),
             ...setGenderByLinkAndTitleContentMatch,//h2
+
             setGenderByPageUrlContentMatch,//h2
             setGenderByPageUrl,//h2
             ...setGenderByPageUrlAndTitleContentMatch,//h2
@@ -63,28 +70,38 @@ async function runAggregation() {
             setH3ByTitle({ id: 2 }),
             setH3ByTitle({ id: 3 }),
             setH3ByTitle({ id: 4 }),
-            
-            setH3BypageURL({id:1}),
-            setH3BypageURL({id:2}),
-            setH3BypageURL({id:3}),
-            setH3BypageURL({id:4}),
+
+            setH3BypageURL({ id: 1 }),
+            setH3BypageURL({ id: 2 }),
+            setH3BypageURL({ id: 3 }),
+            setH3BypageURL({ id: 4 }),
+
+            setH3ByLink({ id: 1 }),
+            setH3ByLink({ id: 2 }),
+            setH3ByLink({ id: 3 }),
+            setH3ByLink({ id: 4 }),
 
             setH4ByTitle({ id: 1 }),
             setH4ByTitle({ id: 2 }),
             setH4ByTitle({ id: 3 }),
             setH4ByTitle({ id: 4 }),
 
-            setH4ByPageURL({id:1}),
-            setH4ByPageURL({id:2}),
-            setH4ByPageURL({id:3}),
-            setH4ByPageURL({id:4}),
+            setH4ByPageURL({ id: 1 }),
+            setH4ByPageURL({ id: 2 }),
+            setH4ByPageURL({ id: 3 }),
+            setH4ByPageURL({ id: 4 }),
+
+            setH4ByLink({ id: 1 }),
+            setH4ByLink({ id: 2 }),
+            setH4ByLink({ id: 3 }),
+            setH4ByLink({ id: 4 }),
             setH5ByHostName,
             {
                 // Optionally project only relevant fields
                 $project: {
                     title: 1,
-                    img:1,
-                    h1: 1,                    
+                    img: 1,
+                    h1: 1,
                     h2: 2,
                     price: 1,
                     currency: 1,
@@ -93,8 +110,8 @@ async function runAggregation() {
                     pageTitle: 1,
                     h3: 1,
                     h4: 1,
-                    h5:1
-                   
+                    h5: 1
+
                 }
             }
         ];

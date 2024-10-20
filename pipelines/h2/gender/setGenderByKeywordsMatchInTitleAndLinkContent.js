@@ -1,7 +1,6 @@
 import fs from 'fs';
 
 // Load gender keywords from JSON file
-const genderKeywords = JSON.parse(fs.readFileSync(`${process.cwd()}/pipelines/h2/gender/_gender_keywords.json`, 'utf8'));
 
 const buildPipeline = (genderKeywords) => {
     let conditions = [];
@@ -45,6 +44,14 @@ const buildPipeline = (genderKeywords) => {
 };
 
 // Build the pipeline using gender keywords
-const pipeline = buildPipeline(genderKeywords);
 
-export default pipeline;
+
+function setGenderByKeywordsMatchInTitleAndLinkContent({ id }) {
+
+    const genderKeywords = JSON.parse(fs.readFileSync(`${process.cwd()}/pipelines/h2/gender/_gender_keywords-${id}.json`, 'utf8'));
+
+    const pipeline = buildPipeline(genderKeywords);
+
+    return pipeline
+}
+export default setGenderByKeywordsMatchInTitleAndLinkContent;

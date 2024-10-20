@@ -1,15 +1,31 @@
 [
     {
         "kozmetik": [
-            ["parfüm","parfum"],
             [
-                "dudak parlatıcısı",
-                "dudak parlatıcı"
+                "parfüm",
+                "parfum",
+                "Atomic Rose 90ml",
+                "Soft Radiance Foundation Sabl",
+                "kozmetik"
             ],
             "vücut spreyi",
             "koku seti",
-            "spray$",
+            [
+                "deodorant"
+            ],
             "oda kokusu",
+            "kolonya"
+        ],
+        "dudak bakımı": [
+            [
+                "dudak parlatıcı",
+                "dudak parlatıcısı"
+            ],
+            "dudak bakımı seti",
+            "dudak yağı",
+            "DUDAK NEMLENDİRİCİ",
+            "dudak kremi",
+            "dudak peelingi",
             "dudak Dolgunlaştırıcı"
         ],
         "cilt bakımı": [
@@ -22,13 +38,8 @@
             "vücut yağı",
             "nemlendirici",
             "vücut losyonu",
-            "dudak bakımı seti",
-            "dudak yağı",
-            "DUDAK NEMLENDİRİCİ",
-            "dudak kremi",
             "el kremi",
             "vücut bakım ritüeli",
-            "dudak peelingi",
             "göz serumu",
             "peptit serum",
             "yüz kremi",

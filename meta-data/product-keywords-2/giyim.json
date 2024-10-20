@@ -8,15 +8,24 @@
                 "tsihrt",
                 "t-Shirt",
                 "TSHİRT",
-                "TİŞÖRT"
+                "TİŞÖRT",
+                "Kısa Kol Basic"
             ],
-            
+            [
+                "ikili takım",
+                "İkili Takım"
+            ],
             "triko"
         ],
         "alt giyim": [
             [
                 "pantolon",
                 "yüksek bel"
+            ],
+            [
+                "şort",
+                "short",
+                "SORT"
             ]
         ],
         "ayakkabı": [
@@ -24,6 +33,11 @@
                 "topuklu",
                 "pump"
             ],
-            ["bot","botu","boots"]]
+            [
+                "bot",
+                "botu",
+                "boots"
+            ]
+        ]
     }
 ]
