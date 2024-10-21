@@ -31,14 +31,14 @@ const collectionName = "products";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 async function runAggregation() {
+    const startTime = Date.now(); // Start timer for the entire aggregation process
+
     try {
         await client.connect();
         const db = client.db(dbName);
         const collection = db.collection(collectionName);
         const totalDocsBefore = await collection.countDocuments();
         console.log(`Total documents before aggregation: ${totalDocsBefore}`);
-
-        const startTime = Date.now(); // Start timer
 
         const pipeline = [
             // Your existing pipeline stages...
@@ -143,6 +143,11 @@ async function runAggregation() {
         console.error("Error running aggregation:", error);
     } finally {
         await client.close();
+        
+        // Calculate and log the total time taken for the aggregation
+        const totalTimeTaken = Date.now() - startTime; // Total time in milliseconds
+        console.log(`Total time taken for aggregation: ${(totalTimeTaken / 1000).toFixed(2)} seconds`);
+        
         console.log("MongoDB connection closed.");
     }
 }
