@@ -7,7 +7,11 @@
                 "ebise",
                 "Elbise",
                 "ELBİSE",
-                "DRESS"
+                "DRESS",
+                "Valencia Black"
+            ],
+            [
+                "pardesü"
             ],
             [
                 "gömlek",
@@ -38,7 +42,10 @@
                 "süveter",
                 "süeter"
             ],
-            "takım elbise",
+            [
+                "takım elbise",
+                "Navy Blue Wool Classic Suit"
+            ],
             "SMOKİN",
             [
                 "bluz",
@@ -77,7 +84,12 @@
                 "denim korse",
                 "DENİM KORSE"
             ],
-            "abiye"
+            "abiye",
+            [
+                "muun kolleksyon",
+                "Valencia",
+                "Le Monique Cream"
+            ]
         ],
         "alt giyim": [
             [
@@ -100,7 +112,8 @@
                 "Slouchy Fit Jean",
                 "High Waist Jean",
                 "Long Length Jean",
-                "Denim Shopping with Sun Embroidered - Jean"
+                "Denim Shopping with Sun Embroidered - Jean",
+                "Palmer Jeans"
             ],
             [
                 "tayt",
@@ -109,7 +122,8 @@
             ],
             [
                 "etek",
-                "skirt"
+                "skirt",
+                "Sassy Black"
             ],
             "bermuda",
             "alt$",
@@ -119,7 +133,8 @@
                 "loungewear altı"
             ],
             [
-                "eşofman"
+                "eşofman",
+                "tracksuit"
             ],
             [
                 "kapri",
@@ -161,10 +176,15 @@
         ],
         "çanta": [
             [
+                "sırt çantası",
+                "backpack"
+            ],
+            [
                 "çanta",
                 "canta",
                 "CANTA",
-                "Çanta"
+                "Çanta",
+                "sırt çantası"
             ],
             [
                 "bavul",
@@ -201,14 +221,22 @@
         ],
         "ayakkabı": [
             "babet",
-            "sandalet",
-            "çizme",
+            [
+                "sandalet",
+                "Sandals"
+            ],
+            [
+                "çizme",
+                "ÇİZME"
+            ],
             [
                 "terlik",
                 "slippers",
                 "slide",
                 "slipper",
-                "Terliği"
+                "Terliği",
+                "EV TERLİĞİ",
+                "AYAK ISITICISI"
             ],
             [
                 "panduf",
@@ -256,12 +284,12 @@
         "başlık": [
             [
                 "şapka",
-                "Şapka",
-                "hat$"
+                "Şapka"
             ],
             "bere",
             "kasket",
-            "Kulak Isıtıcı"
+            "Kulak Isıtıcı",
+            "Beanie"
         ],
         "atkı": [
             "fular",
@@ -272,7 +300,11 @@
             "bandana",
             "boyunluk",
             "kaşkol",
-            "kafa bandı"
+            "kafa bandı",
+            [
+                "atkı",
+                "ATKI"
+            ]
         ],
         "aksesuar": [
             "kravat",
@@ -291,24 +323,49 @@
                 "eldiven",
                 "gloves"
             ],
-            "mendil",
+            [
+                "mendil",
+                "handkerchief"
+            ],
             "küçük şemsiye",
             "maske$",
             "KOL DÜĞMESİ",
             "keychain",
             "uyku bandı",
             "pelüş kulaklık",
-            "balaklava"
+            "balaklava",
+            [
+                "el bandı",
+                "handband"
+            ]
         ],
         "elbise aksesuarı": [
-            "narciso сherry",
-            "ribbon pearl",
-            "perla navy",
-            "ribbon black",
-            "ribbon cherry"
+            [
+                "omuz aksesuarı",
+                "narciso сherry",
+                "ribbon pearl",
+                "perla navy",
+                "ribbon black",
+                "ribbon cherry",
+                "Narciso Cherry",
+                "Coco Stole",
+                "Narciso Silver",
+                "Perla Diamond",
+                "Perla Ruby",
+                "Perla Nero",
+                "Narciso Manolia",
+                "Narciso Red",
+                "Narciso Nero",
+                "Narciso Blanca",
+                "Narciso Lavanda",
+                "Blossom Nero",
+                "Blossom Sorbe",
+                "Blossom Love",
+                "Coco Etol",
+                "Narciso Kırmızı"
+            ]
         ],
         "saç-aksesuar": [
-            "toka seti",
             [
                 "saç bandı",
                 "Saçbandı",
@@ -322,14 +379,16 @@
             ],
             [
                 "toka",
-                "hair buckle"
+                "toka seti",
+                "hair buckle",
+                "Hair Clip"
             ],
             "saç aksesuarı"
         ],
         "saat": [
             "saat"
         ],
-        "gözlük": [
+        "gözlük ve optik ürünler": [
             [
                 "gözlük",
                 "sunglasses"
@@ -342,7 +401,11 @@
                 "güneş gözlüğü",
                 "Güneş Gözlüğü"
             ],
-            "göz Bandı"
+            "göz Bandı",
+            [
+                "büyüteç",
+                "BÜYÜTEÇ"
+            ]
         ],
         "plaj, havuz": [
             [
@@ -419,7 +482,8 @@
             [
                 "sporсu bra",
                 "sporcu-bra",
-                "matara"
+                "matara",
+                "termos"
             ]
         ]
     }

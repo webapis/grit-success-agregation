@@ -13,7 +13,9 @@
                 "koltuk"
             ],
             [
-                "dolap"
+                "dolap",
+                "DOLABI",
+                "BAR DOLARI"
             ],
             [
                 "sandalye"
@@ -25,7 +27,8 @@
                 "bank"
             ],
             [
-                "kitaplık"
+                "kitaplık",
+                "KİTAPLIK"
             ],
             "gazetelik",
             "tabure",
@@ -41,14 +44,63 @@
             ],
             "paravan",
             "dresuar",
-            "salıncak"
+            "salıncak",
+            [
+                "tv ünitesi",
+                "TV ÜNİTESİ"
+            ],
+            [
+                "taba"
+            ],
+            [
+                "berjer"
+            ],
+            [
+                "büfe",
+                "NADOR BÜFE"
+            ],
+            [
+                "yatak",
+                "YATAK"
+            ],
+            [
+                "karyola",
+                "KARYOLA"
+            ],
+            [
+                "şifonyer",
+                "ŞİFONYER"
+            ],
+            [
+                "komodin",
+                "KOMODİN"
+            ],
+            [
+                "gardirop",
+                "GARDIROP"
+            ],
+            [
+                "oturma seti",
+                "OTURMA SETİ"
+            ],
+            [
+                "bistro seti",
+                "BISTRO SET"
+            ]
         ],
         "mobilya-bahçe": [
             "şezlong"
         ],
         "dekorasyon": [
-            "küp",
+            [
+                "nazarlık",
+                "NAZARLIK"
+            ],
             "duvar dekor",
+            [
+                "duvar saati",
+                "WALL CLOCK"
+            ],
             [
                 "obje"
             ],
@@ -59,8 +111,60 @@
             "sepet",
             "Dekoratif Bitki",
             "çerçeve",
-            "saksı",
-            "yılbaşı ağacı"
+            [
+                "saksı",
+                "SAKSI"
+            ],
+            "yılbaşı ağacı",
+            [
+                "çiçek",
+                "ÇİÇEK",
+                "buket",
+                "ZAMBAK ÇİÇEĞİ",
+                "MANOLYA ÇİÇEĞİ"
+            ],
+            [
+                "pamuk demeti",
+                "PAMUK DEMETİ"
+            ],
+            "gramofon",
+            [
+                "dekor agaçı",
+                "FICUS AĞACI",
+                "LYRATA AĞACI",
+                "ZEYTİN AĞACI",
+                "REFLEXA AĞACI",
+                "KAMELYA AĞACI",
+                "GÜL AĞACI",
+                "DEFNE AĞACI",
+                "ADANSONII AĞACI",
+                "VINE AĞACI"
+            ],
+            [
+                "stand",
+                "STAND YUVARLAK 3 GÖZLÜ",
+                "2'Lİ  STAND KARE"
+            ],
+            "CANDY CANE PELUŞ",
+            [
+                "örtü",
+                "LIMA KIRMIZI PATCH"
+            ],
+            [
+                "kırlent",
+                "KIRLENT"
+            ],
+            [
+                "altlık",
+                "ALTLIK"
+            ],
+            "KİTAP DESTEĞİ"
+        ],
+        " yatak odası dekorasyon": [
+            [
+                "cibinlik",
+                "CİBİNLİK"
+            ]
         ],
         "aydınlatma": [
             "aydınlatma",
@@ -73,7 +177,14 @@
                 "mum"
             ],
             "lambader",
-            "masa lambası"
+            "masa lambası",
+            [
+                "avize",
+                "AVİZE",
+                "sarkıt",
+                "SARKIT"
+            ],
+            "led ampul"
         ],
         "sofra": [
             "supla",
@@ -83,13 +194,23 @@
             "yemek kaşığı",
             "yemek çatalı",
             "tatlı kaşığı",
-            "tatlı bıçağı",
+            [
+                "tatlı bıçağı",
+                "TATLI BIÇAĞI"
+            ],
             "tatlı çatalı",
             "kase",
             "peçete halkası",
+            [
+                "peçetelik",
+                "PEÇETELİK"
+            ],
             "kumaş peçete",
             "bardak altlığı",
-            "bardak",
+            [
+                "bardak",
+                "BARDAĞI"
+            ],
             "servis – sunum gereçleri",
             "fincan",
             "servis tahtası",
@@ -98,7 +219,40 @@
             "tepsi",
             "açacak",
             "şarap kadehi",
-            "demlik"
+            "demlik",
+            [
+                "ÇATAL KAŞIK BIÇAK SETİ",
+                "ÇATAL KAŞIK BIÇAK SET",
+                "ÇATAL KAŞIK BIÇAK TAKIMI"
+            ],
+            [
+                "AMERİKAN SERVİS"
+            ],
+            [
+                "çay kaşiğı",
+                "ÇAY KAŞIĞI"
+            ],
+            [
+                "nihale",
+                "NİHALE"
+            ],
+            [
+                "kupa",
+                "2'LI MUG",
+                "WILD MUG"
+            ],
+            [
+                "kahvaltı takımı",
+                "KAHVALTI TAKIMI"
+            ],
+            [
+                "yemek takımı",
+                "YEMEK TAKIMI"
+            ],
+            [
+                "fincan",
+                "CUP 3'LÜ SET"
+            ]
         ],
         "ev tekstil": [
             "battaniye",
@@ -110,13 +264,216 @@
             [
                 "nevresim takımı",
                 "nevresim seti"
+            ],
+            [
+                "ayak havlusu"
+            ],
+            "KURULAMA BEZİ SETİ",
+            "YÜZ HAVLUSU",
+            "EL HAVLUSU"
+        ],
+        "bebek odası": [
+            [
+                "bebek yatağı",
+                "BEBEK YATAĞI"
+            ],
+            [
+                "bebek odası tekstil",
+                "bebek-odasi-tekstil",
+                "STARS MALZEMELİK"
+            ],
+            [
+                "bebek odası aksesuar",
+                "bebek-odasi-aksesuar"
             ]
+        ],
+        "oyuncak": [
+            "oyuncak",
+            "PELUŞ OYUNCAK"
+        ],
+        "ev kozmetiği": [
+            "oda spreyi",
+            "ODA SPREYİ"
         ],
         "ofis, kırtasiye": [
             "dosyalık",
             "hediye kartı",
             "not defteri",
             "defter"
+        ],
+        "banyo aksesuarları": [
+            [
+                "banyo seti",
+                "BANYO SETİ"
+            ],
+            [
+                "çöp kovası",
+                "ÇÖP KOVASI"
+            ],
+            [
+                "banyo paspası",
+                "BANYO PASPASI",
+                "BANYO PASPAS"
+            ],
+            [
+                "havluluk"
+            ],
+            [
+                "tuvalet kağıtlık",
+                "TUVALET KAĞITLIK"
+            ],
+            [
+                "tuvalet fırçası",
+                "WC FIRÇASI",
+                "TUVALET FIRÇASI"
+            ],
+            [
+                "diş fırçalık",
+                "DİŞ FIRÇALIK"
+            ],
+            [
+                "deterjanlık",
+                "DETERJANLIK"
+            ],
+            [
+                "banyo düzenleyici",
+                "ROMA OVAL DÜZENLEYİCİ MAT",
+                "JÜT DÜZENLEYİCİ",
+                "DODIE KEÇE DÜZENLEYİCİ",
+                "ROMA BÖLMELİ DÜZENLEYİCİ"
+            ],
+            [
+                "banyo askılık",
+                "matteo askılık",
+                "MATTEO ASKILIK",
+                "ALLY ASKILIK"
+            ]
+        ],
+        "mutfak gereçleri": [
+            [
+                "servis gereçleri",
+                "BAMBU SERVİS GEREÇLERİ 4 PARÇA"
+            ],
+            [
+                "kaşıklık",
+                "COLMAR KAŞIKLIK",
+                "KAŞIKLIK/",
+                "KAŞIKLIK"
+            ],
+            [
+                "çay kavanoz",
+                "COLMAR TEA KAVANOZ"
+            ],
+            [
+                "kahve kavanov",
+                "COLMAR COFFEE KAVANOZ"
+            ],
+            [
+                "sahan",
+                "SAHAN"
+            ],
+            [
+                "şeker kavanoz",
+                "COLMAR SUGAR KAVANOZ"
+            ],
+            [
+                "bulaşık kurutma matı",
+                "BULAŞIK MATI",
+                "BULAŞIK KURUTMA MATI"
+            ],
+            [
+                "dik kaşıklık",
+                "COLMAR DİK KAŞIKLIK"
+            ],
+            [
+                "baharatlık seti",
+                "BAHARATLIK SETİ"
+            ],
+            [
+                "tuzluk biberlik seti",
+                "TUZLUK BİBERLİK SETİ",
+                "TUZLUK-BİBERLİK SETİ"
+            ],
+            "COLMAR KAVANOZ",
+            [
+                "saklama kabı",
+                "SAKLAMA KABI"
+            ],
+            "tava",
+            "cam karaf",
+            [
+                "servis arabası",
+                "SERVIS ARABASI",
+                "SERVİS ARABASI"
+            ],
+            [
+                "sunum ürünleri",
+                "CEVİZ SUNUM TAHTASI",
+                "KESME/SUNUM TAHTASI",
+                "CAM SUNUM"
+            ],
+            [
+                "mutfak bıçağı",
+                "BERLINGER HAUS 3 PARÇA BIÇAK SETİ",
+                "ET OYMA BIÇAĞI",
+                "SOYMA BIÇAĞI"
+            ],
+            [
+                "havan seti",
+                "HAVAN SETİ"
+            ],
+            [
+                "servis kaşığı",
+                "SERVİS KAŞIĞI"
+            ],
+            [
+                "dondurma kaşığı",
+                "DONDURMA KAŞIĞI"
+            ],
+            [
+                "tenсere",
+                "TENCERE"
+            ],
+            "AHŞAP DEĞİRMEN",
+            [
+                "kek kalıbı",
+                "KEK KALIBI"
+            ],
+            [
+                "hamur dilimleyсi",
+                "HAMUR DİLİMLEYİCİ"
+            ],
+            [
+                "fırın kabı",
+                "FIRIN KABI"
+            ],
+            [
+                "sebzelik",
+                "SEBZELİK"
+            ],
+            "ALMERA 3 KATLI ETAJER"
+        ],
+        "halı": [
+            [
+                "halı",
+                "HALI"
+            ],
+            "yolluk",
+            [
+                "paspas",
+                "PASPAS SETİ"
+            ]
+        ],
+        "inşaat ve yapı malzemeleri": [
+            "merdiven"
+        ],
+        "oyun ve hobi ürünleri": [
+            [
+                "satranç takımı",
+                "SATRANÇ TAKIMI"
+            ],
+            "tavla",
+            "DIAMONDS İSKAMBİL OYUN SETİ"
         ]
     }
 ]
