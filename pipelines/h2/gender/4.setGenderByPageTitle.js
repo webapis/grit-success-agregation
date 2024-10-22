@@ -11,8 +11,8 @@ const buildPipeline = (genderKeywords) => {
 
         // Build $regexMatch conditions for each keyword (applies to both 'title' and 'link')
         keywords.forEach(keyword => {
-            regexConditions.push({ "$regexMatch": { "input": "$title", "regex": keyword, "options": "i" } });
-            regexConditions.push({ "$regexMatch": { "input": "$link", "regex": keyword, "options": "i" } });
+
+            regexConditions.push({ "$regexMatch": { "input": "$pageTitle", "regex": keyword, "options": "i" } });
         });
 
         // Add condition for the gender based on the keywords
@@ -28,11 +28,11 @@ const buildPipeline = (genderKeywords) => {
             "$addFields": {
                 "h2": {
                     "$cond": {
-                        "if": { "$eq": ["$h2", "unknown"] },
+                        "if": { "$eq": ["$h2", null] },
                         "then": {
                             "$switch": {
                                 "branches": conditions,
-                                "default": "unknown"
+                                "default": null
                             }
                         },
                         "else": "$h2"
@@ -46,7 +46,7 @@ const buildPipeline = (genderKeywords) => {
 // Build the pipeline using gender keywords
 
 
-function setGenderByKeywordsMatchInTitleAndLinkContent({ id }) {
+function setGenderByPageTitle({ id }) {
 
     const genderKeywords = JSON.parse(fs.readFileSync(`${process.cwd()}/pipelines/h2/gender/_gender_keywords-${id}.json`, 'utf8'));
 
@@ -54,4 +54,4 @@ function setGenderByKeywordsMatchInTitleAndLinkContent({ id }) {
 
     return pipeline
 }
-export default setGenderByKeywordsMatchInTitleAndLinkContent;
+export default setGenderByPageTitle;

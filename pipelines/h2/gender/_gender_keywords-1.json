@@ -1,10 +1,20 @@
 {
-    
-    
     "erkek": [
         "erkek",
         "men",
         "male"
+    ],
+    "unrelated": [
+        "unrelated",
+        "Aydınlatması",
+        "Vazo",
+        "outlet-ev-dekorasyonu",
+        "mobilya",
+        "bahce",
+        "mutfak",
+        "ev-tekstili",
+        "aydinlatma",
+        "Ev Dekorasyon",
+        "Küp Obje"
     ]
-   
 }

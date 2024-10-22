@@ -1,28 +1,25 @@
 import { MongoClient } from 'mongodb';
 import fs from 'fs';
 import { makeDirectory } from 'make-dir';
-import setGenderByHostNameMatch from '../../pipelines/h2/gender/setGenderByHostNameMatch.js';
-import setGenderByKeywordsMatchInTitleAndLinkContent from '../../pipelines/h2/gender/setGenderByKeywordsMatchInTitleAndLinkContent.js';
-import setGenderByLinkAndTitleContentMatch from '../../pipelines/h2/gender/setGenderByLinkAndTitleContentMatch.js';
+import setGenderByHostNameMatch_1 from '../../pipelines/h2/gender/1.setGenderByHostNameMatch.js';
+import setGenderByTitle_2 from '../../pipelines/h2/gender/2.setGenderByTitle.js';
+import setGenderByPageURLContent_3 from '../../pipelines/h2/gender/3.setGenderByPageURLContent.js'
+import setGenderByPageTitle_4 from '../../pipelines/h2/gender/4.setGenderByPageTitle.js'
+import setGenderByPageUrl_5 from '../../pipelines/h2/gender/5.setGenderByPageUrl.js'
+
+/* import setGenderByLinkAndTitleContentMatch from '../../pipelines/h2/gender/setGenderByLinkAndTitleContentMatch.js';
 import setGenderByPageUrlContentMatch from '../../pipelines/h2/gender/setGenderByPageUrlContentMatch.js';
 import setGenderByPageUrl from '../../pipelines/h2/gender/setGenderByPageUrl.js';
 import setGenderByPageUrlAndTitleContentMatch from '../../pipelines/h2/gender/setGenderByPageUrlAndTitleContentMatch.js';
 import setGenderByPageTitleContentMatch from '../../pipelines/h2/gender/setGenderByPageTitleContentMatch.js';
 import setGenderByPageUrlNegativeCombinationMatch from '../../pipelines/h2/gender/setGenderByPageUrlNegativeCombinationMatch.js';
 import setGenderByHostNameAndTitleContentMatch from '../../pipelines/h2/gender/setGenderByHostNameAndTitleContentMatch.js';
-import setDefaulth2 from '../../pipelines/h2/ev-yasam/setDefaulth2.js';
+import setDefaulth2 from '../../pipelines/h2/ev-yasam/setDefaulth2.js'; */
 
-import setH4ByTitle from '../../pipelines/h4/setH4ByTitle.js';
-import setH3ByTitle from '../../pipelines/h3-h4/setH3ByTitle.js';
-import setH1ByTitle from '../../pipelines/h1/setH1ByTitle.js';
+
 import setH5ByHostName from '../../pipelines/h5/setHostName.js';
 
-import setH1ByPageURL from '../../pipelines/h1/setH1ByPageURL.js';
-import setH1ByLink from '../../pipelines/h1/setH1ByLink.js';
-import setH3BypageURL from '../../pipelines/h3-h4/setH3BypageURL.js';
-import setH4ByPageURL from '../../pipelines/h4/setH4ByPageURL.js';
-import setH3ByLink from '../../pipelines/h3-h4/setH3ByLink.js';
-import setH4ByLink from '../../pipelines/h4/setH4ByLink.js';
+
 
 import setH1ByField from '../../pipelines/h1/setH1ByField.js'
 import setH3ByField from '../../pipelines/h3-h4/setH3ByField.js'
@@ -59,16 +56,26 @@ async function runAggregation() {
             setH1ByField({ id: 2, field: 'pageURL' }),
             setH1ByField({ id: 3, field: 'pageURL' }),
             setH1ByField({ id: 4, field: 'pageURL' }),
-            setGenderByHostNameMatch, // h2
-            ...setGenderByKeywordsMatchInTitleAndLinkContent({ id: 0 }),
-            ...setGenderByLinkAndTitleContentMatch, // h2
-            setGenderByPageUrlContentMatch, // h2
-            setGenderByPageUrl, // h2
-            ...setGenderByPageUrlAndTitleContentMatch, // h2
-            ...setGenderByPageTitleContentMatch, // h2
-            setGenderByPageUrlNegativeCombinationMatch, // h2
-            ...setGenderByHostNameAndTitleContentMatch, // h2
-            setDefaulth2,
+            setGenderByHostNameMatch_1, // h2
+            ...setGenderByTitle_2({ id: 0 }),
+
+
+            ...setGenderByPageTitle_4({ id: 0 }),
+
+            ...setGenderByTitle_2({ id: 1 }),
+            ...setGenderByPageURLContent_3({ id: 0 }),
+            ...setGenderByPageURLContent_3({ id: 1 }),
+            ...setGenderByPageTitle_4({ id: 1 }),
+            setGenderByPageUrl_5,
+            // ...setGenderByKeywordsMatchInTitleAndLinkContent({ id: 0 }),
+            // ...setGenderByLinkAndTitleContentMatch, // h2
+            // setGenderByPageUrlContentMatch, // h2
+            //setGenderByPageUrl, // h2
+            // ...setGenderByPageUrlAndTitleContentMatch, // h2
+            // ...setGenderByPageTitleContentMatch, // h2
+            // setGenderByPageUrlNegativeCombinationMatch, // h2
+            // ...setGenderByHostNameAndTitleContentMatch, // h2
+            // setDefaulth2,
             setH3ByField({ id: 1, field: 'title' }),
             setH3ByField({ id: 2, field: 'title' }),
             setH3ByField({ id: 3, field: 'title' }),
@@ -85,9 +92,9 @@ async function runAggregation() {
             setH3ByField({ id: 4, field: 'pageURL' }),
 
             setH4ByField({ id: 1, field: 'title' }),
-            setH4ByField({ id: 2, field: 'title'  }),
-            setH4ByField({ id: 3, field: 'title'  }),
-            setH4ByField({ id: 4, field: 'title'  }),
+            setH4ByField({ id: 2, field: 'title' }),
+            setH4ByField({ id: 3, field: 'title' }),
+            setH4ByField({ id: 4, field: 'title' }),
 
             setH4ByField({ id: 1, field: 'link' }),
             setH4ByField({ id: 2, field: 'link' }),

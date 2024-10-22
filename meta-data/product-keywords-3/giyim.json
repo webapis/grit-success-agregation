@@ -11,8 +11,6 @@
             ],
             "bra"
         ],
-       
-    
         "aksesuar": [
             [
                 "kemer",
@@ -40,9 +38,37 @@
             "jartiyer",
             "İç Giyim",
             "hipster",
-            ["Termal İçlik"],
+            [
+                "Termal İçlik"
+            ],
             "İçlik"
+        ],
+        "kombinler": [
+            "kombinler"
+        ],
+        "koleksiyon": [
+            [
+                "ethereal waters",
+                "ethereal-waters"
+            ],
+            [
+                "FALL/WINTER",
+                "fall-winter",
+                "fw-22-23"
+            ],
+            [
+                "glamyou bridal",
+                "glamyou-bridal",
+                "glam-you-bridal"
+            ]
+        ],
+        "ayakkabı": [
+            "postal",
+            [
+                "ayakkabı",
+                "Shoe",
+                "AYAKKABI"
+            ]
         ]
     }
 ]
-

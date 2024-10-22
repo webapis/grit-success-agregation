@@ -6,10 +6,7 @@ const stage = {
                 then: {
                     $switch: {
                         branches: [
-                            {
-                                case: { $regexMatch: { input: "$pageURL", regex: "erkek", options: "i" } },
-                                then: "erkek"
-                            },
+                           
                             {
                                 case: { $regexMatch: { input: "$pageURL", regex: "kadin|kadin|woman|women|women's|Kad%C4%B1n", options: "i" } },
                                 then: "kadın"
@@ -17,6 +14,10 @@ const stage = {
                             {
                                 case: { $regexMatch: { input: "$pageURL", regex: "cocuk", options: "i" } },
                                 then: "çocuk"
+                            },
+                            {
+                                case: { $regexMatch: { input: "$pageURL", regex: "erkek|men", options: "i" } },
+                                then: "erkek"
                             },
                             // Add more branches if needed
                         ],

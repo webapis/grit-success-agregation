@@ -1,5 +1,6 @@
 const genderValues = {
-  erkek: ["https://www.baysapkaci.com.tr/sal-sapka-takim"],
+  erkek: ["https://www.baysapkaci.com.tr/sal-sapka-takim",
+    "https://www.mudo.com.tr/refined-koleksiyonu/?category_ids=2", "https://www.mudo.com.tr/gunluk-spor/"],
   kadın: [
     "https://www.baysapkaci.com.tr/plaj-cantasi",
     "https://silkandcashmere.com/collections/sac-aksesuarlari",
@@ -41,22 +42,28 @@ const genderValues = {
     "https://www.yargici.com/yuzuk",
     "https://www.yargici.com/bileklik",
     "https://www.yargici.com/bros",
-    "https://www.yargici.com/sac-aksesuari"
+    "https://www.yargici.com/sac-aksesuari",
+    "https://www.network.com.tr/en/newly-added-1757"
   ],
   unisex: ["https://www.ilvi.com/en/accessories-shoe-care-products",
     "https://www.yargici.com/eldiven-2-2",
     "https://www.yargici.com/corap",
-    "https://www.yargici.com/outlet-homeworks"]
+    "https://www.network.com.tr/network-outlet-930"
+
+  //   "https://www.network.com.tr/outlet-canta-1807",
+  //   "https://www.network.com.tr/en/outlet-bag-1807",
+  //   "https://www.network.com.tr/en/outlet-belt-1823"
+   ]
 };
 
 // MongoDB aggregation pipeline stage
-const stage = {
+const setGenderByPageUrl = {
   $set: {
     h2: {
       $cond: [
         {
           $and: [
-            { $eq: ["$h2", "unknown"] },
+            { $eq: ["$h2", null] },
             { $in: ["$pageURL", genderValues.erkek] }
           ]
         },
@@ -65,7 +72,7 @@ const stage = {
           $cond: [
             {
               $and: [
-                { $eq: ["$h2", "unknown"] },
+                { $eq: ["$h2", null] },
                 { $in: ["$pageURL", genderValues.kadın] }
               ]
             },
@@ -74,7 +81,7 @@ const stage = {
               $cond: [
                 {
                   $and: [
-                    { $eq: ["$h2", "unknown"] },
+                    { $eq: ["$h2", null] },
                     { $in: ["$pageURL", genderValues.unisex] }
                   ]
                 },
@@ -88,6 +95,6 @@ const stage = {
     }
   }
 };
-export default stage
+export default setGenderByPageUrl
 
 

@@ -5,7 +5,7 @@ import getJsonDataFileNameFromFolder from '../file/getJsonDataFromFolder.mjs'
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
-const datas = await getJsonDataFileNameFromFolder('data/0.0.step-data/unzipped-data/sponsor-product')
+const datas = await getJsonDataFileNameFromFolder('data/1.0.step-data/unzipped-data/sponsor-product')
 debugger
 async function importCollection() {
     const client = new MongoClient(uri, { useUnifiedTopology: true });

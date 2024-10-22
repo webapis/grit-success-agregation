@@ -14,9 +14,19 @@
                 "pardesü"
             ],
             [
+                "tişört",
+                "tshirt",
+                "tişört",
+                "tsihrt",
+                "t-Shirt",
+                "TSHİRT",
+                "TİŞÖRT",
+                "Kısa Kol Basic",
+                "T-Shirt"
+            ],
+            [
                 "gömlek",
                 "henry",
-                "shirt",
                 "GOMLEK"
             ],
             "okul gömleği",
@@ -30,7 +40,8 @@
             [
                 "kazak",
                 "knit",
-                "Vanilla 139429950001d3"
+                "Vanilla 139429950001d3",
+                "Roll Neck"
             ],
             [
                 "hırka",
@@ -92,6 +103,10 @@
                 "muun kolleksyon",
                 "Valencia",
                 "Le Monique Cream"
+            ],
+            [
+                "korseler",
+                "Straplez Korse"
             ]
         ],
         "alt giyim": [
@@ -176,6 +191,9 @@
             ],
             "kürk$",
             "manto"
+        ],
+        "jean": [
+            "jean"
         ],
         "çanta": [
             [
@@ -265,10 +283,6 @@
                 "moccasin"
             ],
             [
-                "ayakkabı",
-                "Shoe"
-            ],
-            [
                 "ballerin",
                 "ballerina"
             ],
@@ -287,7 +301,8 @@
         "başlık": [
             [
                 "şapka",
-                "Şapka"
+                "Şapka",
+                "SAPKA"
             ],
             "bere",
             "kasket",
@@ -316,6 +331,11 @@
             "omuz aksesuarı",
             "omuzluk",
             [
+                "boyunluk",
+                "collar",
+                "Neck Wrap"
+            ],
+            [
                 "çorap",
                 "socks",
                 "çorabı",
@@ -331,7 +351,7 @@
                 "handkerchief"
             ],
             "küçük şemsiye",
-            "maske$",
+            "maske",
             "KOL DÜĞMESİ",
             "keychain",
             "uyku bandı",
@@ -340,6 +360,14 @@
             [
                 "el bandı",
                 "handband"
+            ],
+            [
+                "gift card",
+                "GIFT CARD"
+            ],
+            [
+                "telefon kılıfı",
+                "TELEFON KILIFI"
             ]
         ],
         "elbise aksesuarı": [
@@ -386,7 +414,10 @@
                 "hair buckle",
                 "Hair Clip"
             ],
-            "saç aksesuarı"
+            [
+                "saç aksesuarı",
+                "SAÇ AKSESUARI"
+            ]
         ],
         "saat": [
             "saat"
