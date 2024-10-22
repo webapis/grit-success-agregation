@@ -19,8 +19,11 @@
         "sabahlık"
     ],
     "erkek": [
-        "erkek"
-    ],
+        "erkek",
+        "Men's",
+        "male"
+    ]
+   ,
     "Çocuk": [
         "çocuk"
     ],

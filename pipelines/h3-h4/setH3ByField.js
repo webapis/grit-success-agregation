@@ -1,9 +1,7 @@
 import fs from 'fs';
 
-function setH3BypageURL({ id }) {
-    const keywordsObject = JSON.parse(fs.readFileSync(`${process.cwd()}/data/2.step-data/productnames-${id}.json`));
-
-    // Preprocess keywordsObject into a plain object for faster lookup
+// Preprocess the keywords object into a flat object for fast lookup
+function preprocessKeywords(keywordsObject) {
     const keywordsObjectFlat = {};
 
     keywordsObject.forEach(category => {
@@ -18,26 +16,35 @@ function setH3BypageURL({ id }) {
         }
     });
 
+    return keywordsObjectFlat;
+}
+
+// Generic function to set H3 based on the field (link, pageURL, or title)
+function setH3ByField({ id, field }) {
+    const keywordsObject = JSON.parse(fs.readFileSync(`${process.cwd()}/data/2.step-data/productnames-${id}.json`));
+    const keywordsObjectFlat = preprocessKeywords(keywordsObject); // Preprocess once
+
     return {
         $addFields: {
             h3: {
                 $function: {
                     body: `
-                        function(targetObject, keywordsObjectFlat) {
-                            if (!targetObject.pageURL || targetObject.pageURL.trim() === "") {
+                        function(targetObject, keywordsObjectFlat, field) {
+                            // Check if the field exists and is not empty
+                            if (!targetObject[field] || targetObject[field].trim() === "") {
                                 return null;
                             }
 
-                            // Check if h3 property exists and is not null
+                            // Check if h3 exists and is not null
                             if (targetObject.hasOwnProperty('h3') && targetObject.h3 !== null) {
                                 return targetObject.h3;
                             }
 
-                            const pageURLLower = targetObject.pageURL.toLowerCase();
-
+                            const valueLower = targetObject[field].toLowerCase();
+                            
                             // Look for matching keyword in the flat object
                             for (const keyword in keywordsObjectFlat) {
-                                if (pageURLLower.includes(keyword)) {
+                                if (valueLower.includes(keyword)) {
                                     return keywordsObjectFlat[keyword]; // Return the matched subCategory
                                 }
                             }
@@ -45,7 +52,7 @@ function setH3BypageURL({ id }) {
                             return null;
                         }
                     `,
-                    args: ["$$ROOT", keywordsObjectFlat],
+                    args: ["$$ROOT", keywordsObjectFlat, field], // Pass field as an argument
                     lang: "js"
                 }
             }
@@ -53,5 +60,5 @@ function setH3BypageURL({ id }) {
     };
 }
 
-export default setH3BypageURL;
-
+export default setH3ByField;
+//https://chatgpt.com/c/67168ecb-8a70-8000-9b40-6b4e8e0feb20

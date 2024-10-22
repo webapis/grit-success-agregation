@@ -24,6 +24,9 @@ import setH4ByPageURL from '../../pipelines/h4/setH4ByPageURL.js';
 import setH3ByLink from '../../pipelines/h3-h4/setH3ByLink.js';
 import setH4ByLink from '../../pipelines/h4/setH4ByLink.js';
 
+import setH1ByField from '../../pipelines/h1/setH1ByField.js'
+import setH3ByField from '../../pipelines/h3-h4/setH3ByField.js'
+import setH4ByField from '../../pipelines/h4/setH4ByField.js'
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
@@ -42,18 +45,20 @@ async function runAggregation() {
 
         const pipeline = [
             // Your existing pipeline stages...
-            setH1ByTitle({ id: 1 }),
-            setH1ByTitle({ id: 2 }),
-            setH1ByTitle({ id: 3 }),
-            setH1ByTitle({ id: 4 }),
-            setH1ByPageURL({ id: 1 }),
-            setH1ByPageURL({ id: 2 }),
-            setH1ByPageURL({ id: 3 }),
-            setH1ByPageURL({ id: 4 }),
-            setH1ByLink({ id: 1 }),
-            setH1ByLink({ id: 2 }),
-            setH1ByLink({ id: 3 }),
-            setH1ByLink({ id: 4 }),
+            setH1ByField({ id: 1, field: 'title' }),
+            setH1ByField({ id: 2, field: 'title' }),
+            setH1ByField({ id: 3, field: 'title' }),
+            setH1ByField({ id: 4, field: 'title' }),
+
+            setH1ByField({ id: 1, field: 'link' }),
+            setH1ByField({ id: 2, field: 'link' }),
+            setH1ByField({ id: 3, field: 'link' }),
+            setH1ByField({ id: 4, field: 'link' }),
+
+            setH1ByField({ id: 1, field: 'pageURL' }),
+            setH1ByField({ id: 2, field: 'pageURL' }),
+            setH1ByField({ id: 3, field: 'pageURL' }),
+            setH1ByField({ id: 4, field: 'pageURL' }),
             setGenderByHostNameMatch, // h2
             ...setGenderByKeywordsMatchInTitleAndLinkContent({ id: 0 }),
             ...setGenderByLinkAndTitleContentMatch, // h2
@@ -64,30 +69,35 @@ async function runAggregation() {
             setGenderByPageUrlNegativeCombinationMatch, // h2
             ...setGenderByHostNameAndTitleContentMatch, // h2
             setDefaulth2,
-            setH3ByTitle({ id: 1 }),
-            setH3ByTitle({ id: 2 }),
-            setH3ByTitle({ id: 3 }),
-            setH3ByTitle({ id: 4 }),
-            setH3BypageURL({ id: 1 }),
-            setH3BypageURL({ id: 2 }),
-            setH3BypageURL({ id: 3 }),
-            setH3BypageURL({ id: 4 }),
-            setH3ByLink({ id: 1 }),
-            setH3ByLink({ id: 2 }),
-            setH3ByLink({ id: 3 }),
-            setH3ByLink({ id: 4 }),
-            setH4ByTitle({ id: 1 }),
-            setH4ByTitle({ id: 2 }),
-            setH4ByTitle({ id: 3 }),
-            setH4ByTitle({ id: 4 }),
-            setH4ByPageURL({ id: 1 }),
-            setH4ByPageURL({ id: 2 }),
-            setH4ByPageURL({ id: 3 }),
-            setH4ByPageURL({ id: 4 }),
-            setH4ByLink({ id: 1 }),
-            setH4ByLink({ id: 2 }),
-            setH4ByLink({ id: 3 }),
-            setH4ByLink({ id: 4 }),
+            setH3ByField({ id: 1, field: 'title' }),
+            setH3ByField({ id: 2, field: 'title' }),
+            setH3ByField({ id: 3, field: 'title' }),
+            setH3ByField({ id: 4, field: 'title' }),
+
+            setH3ByField({ id: 1, field: 'link' }),
+            setH3ByField({ id: 2, field: 'link' }),
+            setH3ByField({ id: 3, field: 'link' }),
+            setH3ByField({ id: 4, field: 'link' }),
+
+            setH3ByField({ id: 1, field: 'pageURL' }),
+            setH3ByField({ id: 2, field: 'pageURL' }),
+            setH3ByField({ id: 3, field: 'pageURL' }),
+            setH3ByField({ id: 4, field: 'pageURL' }),
+
+            setH4ByField({ id: 1, field: 'title' }),
+            setH4ByField({ id: 2, field: 'title'  }),
+            setH4ByField({ id: 3, field: 'title'  }),
+            setH4ByField({ id: 4, field: 'title'  }),
+
+            setH4ByField({ id: 1, field: 'link' }),
+            setH4ByField({ id: 2, field: 'link' }),
+            setH4ByField({ id: 3, field: 'link' }),
+            setH4ByField({ id: 4, field: 'link' }),
+
+            setH4ByField({ id: 1, field: 'pageURL' }),
+            setH4ByField({ id: 2, field: 'pageURL' }),
+            setH4ByField({ id: 3, field: 'pageURL' }),
+            setH4ByField({ id: 4, field: 'pageURL' }),
             setH5ByHostName,
             {
                 // Optionally project only relevant fields
@@ -109,7 +119,7 @@ async function runAggregation() {
         ];
 
         const cursor = collection.aggregate(pipeline);
-        
+
         let processedCount = 0; // Counter for processed documents
 
         // Fetch all documents and convert them to an array
@@ -143,11 +153,11 @@ async function runAggregation() {
         console.error("Error running aggregation:", error);
     } finally {
         await client.close();
-        
+
         // Calculate and log the total time taken for the aggregation
         const totalTimeTaken = Date.now() - startTime; // Total time in milliseconds
         console.log(`Total time taken for aggregation: ${(totalTimeTaken / 1000).toFixed(2)} seconds`);
-        
+
         console.log("MongoDB connection closed.");
     }
 }
