@@ -214,7 +214,8 @@
             [
                 "сüzdan",
                 "Cüzdan",
-                "wallet"
+                "wallet",
+                "card"
             ],
             [
                 "kartlık",
@@ -244,7 +245,12 @@
             "babet",
             [
                 "sandalet",
-                "Sandals"
+                "Sandals",
+                "Heeled Sandal"
+            ],
+            [
+                "sandal:",
+                "Men's Sandal"
             ],
             [
                 "çizme",

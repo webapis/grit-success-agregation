@@ -1,6 +1,11 @@
 const genderValues = {
   erkek: ["https://www.baysapkaci.com.tr/sal-sapka-takim",
-    "https://www.mudo.com.tr/refined-koleksiyonu/?category_ids=2", "https://www.mudo.com.tr/gunluk-spor/"],
+    "https://www.mudo.com.tr/refined-koleksiyonu/?category_ids=2",
+    "https://www.mudo.com.tr/gunluk-spor/",
+    "https://www.lufian.com/en/tops",
+    "https://www.lufian.com/en/bottoms",
+    "https://www.lufian.com/en/shoes",
+    "https://www.lufian.com/en/accessories"],
   kadın: [
     "https://www.baysapkaci.com.tr/plaj-cantasi",
     "https://silkandcashmere.com/collections/sac-aksesuarlari",
@@ -62,7 +67,8 @@ const genderValues = {
     "https://www.penti.com/tr/c/bikini-ustu",
     "https://www.penti.com/tr/#",
     "https://www.penti.com/tr/c/anime-koleksiyon",
-    "https://www.penti.com/tr/c/ilk-sutyenim"
+    "https://www.penti.com/tr/c/ilk-sutyenim",
+    "https://www.dahliabianca.com/tisort"
   ],
   unisex: [
     "https://www.ilvi.com/en/accessories-shoe-care-products",
@@ -70,8 +76,16 @@ const genderValues = {
     "https://www.yargici.com/corap",
     "https://www.network.com.tr/network-outlet-930",
     "https://www.network.com.tr/en/network-outlet-930",
-    "https://dericompany.com.tr/kampanyali-deri-mont-deri-ceket-modelleri?o=1&page=1"
-// 
+    "https://dericompany.com.tr/kampanyali-deri-mont-deri-ceket-modelleri?o=1&page=1",
+    "https://dericompany.com.tr/deri-kemer-deri-cuzdan",
+    "https://dericompany.com.tr/kampanyali-deri-mont-deri-ceket-modelleri",
+    "https://dericompany.com.tr/hakiki-deri-cuzdan",
+    "https://dericompany.com.tr/hakiki-deri-kemer",
+    "https://dericompany.com.tr/deri-canta-aksesuar",
+    "https://dericompany.com.tr/magaza",
+    "https://dericompany.com.tr/outlet",
+    "https://www.wcollection.com.tr/outlet-c-103"
+    // 
     //   "https://www.network.com.tr/outlet-canta-1807",
     //   "https://www.network.com.tr/en/outlet-bag-1807",
     //   "https://www.network.com.tr/en/outlet-belt-1823"

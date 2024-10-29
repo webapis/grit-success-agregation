@@ -58,6 +58,8 @@ async function runAggregation() {
             setH1ByField({ id: 2, field: 'pageURLString' }),
             setH1ByField({ id: 3, field: 'pageURLString' }),
             setH1ByField({ id: 4, field: 'pageURLString' }),
+
+
             setGenderByHostNameMatch_1, // h2
             ...setGenderByField({ id: 0, field: 'title' }),
             ...setGenderByField({ id: 0, field: 'pageURLString' }),
@@ -103,6 +105,7 @@ async function runAggregation() {
             setH3ByField({ id: 4, field: 'pageURLString' }),
 
 
+
             setH4ByField({ id: 1, field: 'title' }),
             setH4ByField({ id: 2, field: 'title' }),
             setH4ByField({ id: 3, field: 'title' }),
@@ -117,6 +120,22 @@ async function runAggregation() {
             setH4ByField({ id: 2, field: 'pageURLString' }),
             setH4ByField({ id: 3, field: 'pageURLString' }),
             setH4ByField({ id: 4, field: 'pageURLString' }),
+
+            // setH1ByField({ id: 1, field: 'img' }),
+            // setH1ByField({ id: 2, field: 'img' }),
+            // setH1ByField({ id: 3, field: 'img' }),
+            // setH1ByField({ id: 4, field: 'img' }),
+
+            // setH3ByField({ id: 1, field: 'img' }),
+            // setH3ByField({ id: 2, field: 'img' }),
+            // setH3ByField({ id: 3, field: 'img' }),
+            // setH3ByField({ id: 4, field: 'img' }),
+
+            // setH4ByField({ id: 1, field: 'img' }),
+            // setH4ByField({ id: 2, field: 'img' }),
+            // setH4ByField({ id: 3, field: 'img' }),
+            // setH4ByField({ id: 4, field: 'img' }),
+
             setH5ByHostName,
             {
                 // Optionally project only relevant fields
