@@ -306,7 +306,11 @@
             ],
             "bere",
             "kasket",
-            "Kulak Isıtıcı",
+            [
+                "kulaklık",
+                "Kulak Isıtıcı",
+                "Kulaklık"
+            ],
             "Beanie"
         ],
         "atkı": [
@@ -339,12 +343,18 @@
                 "çorap",
                 "socks",
                 "çorabı",
-                "Çorabı"
+                "Çorabı",
+                "corap"
             ],
             "yelpaze",
             [
+                "çetik",
+                "Çetik"
+            ],
+            [
                 "eldiven",
-                "gloves"
+                "gloves",
+                "El Isıtıcısı"
             ],
             [
                 "mendil",
@@ -459,7 +469,8 @@
                 "havuz bonesi",
                 "yüzücü bonesi",
                 "kulak tıkacı",
-                "burun tıkacı"
+                "burun tıkacı",
+                "Deniz Gözlüğü"
             ],
             [
                 "plaj havlusu",
@@ -510,7 +521,7 @@
             "tanga",
             "teddy",
             "thong",
-            "slip$",
+            "slip",
             "brazillian",
             "jartiyer",
             [
