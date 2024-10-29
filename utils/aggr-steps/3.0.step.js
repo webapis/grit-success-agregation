@@ -87,20 +87,20 @@ async function runAggregation() {
             setH3ByFieldUrl({ id: 3, field: 'pageURL' }),
             setH3ByFieldUrl({ id: 4, field: 'pageURL' }),
 
-            // setH3ByField({ id: 1, field: 'title' }),
-            // setH3ByField({ id: 2, field: 'title' }),
-            // setH3ByField({ id: 3, field: 'title' }),
-            // setH3ByField({ id: 4, field: 'title' }),
+            setH3ByField({ id: 1, field: 'title' }),
+            setH3ByField({ id: 2, field: 'title' }),
+            setH3ByField({ id: 3, field: 'title' }),
+            setH3ByField({ id: 4, field: 'title' }),
 
-            // setH3ByField({ id: 1, field: 'link' }),
-            // setH3ByField({ id: 2, field: 'link' }),
-            // setH3ByField({ id: 3, field: 'link' }),
-            // setH3ByField({ id: 4, field: 'link' }),
+            setH3ByField({ id: 1, field: 'link' }),
+            setH3ByField({ id: 2, field: 'link' }),
+            setH3ByField({ id: 3, field: 'link' }),
+            setH3ByField({ id: 4, field: 'link' }),
 
-            // setH3ByField({ id: 1, field: 'pageURL' }),
-            // setH3ByField({ id: 2, field: 'pageURL' }),
-            // setH3ByField({ id: 3, field: 'pageURL' }),
-            // setH3ByField({ id: 4, field: 'pageURL' }),
+            setH3ByField({ id: 1, field: 'pageURL' }),
+            setH3ByField({ id: 2, field: 'pageURL' }),
+            setH3ByField({ id: 3, field: 'pageURL' }),
+            setH3ByField({ id: 4, field: 'pageURL' }),
 
 
             setH4ByField({ id: 1, field: 'title' }),

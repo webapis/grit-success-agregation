@@ -11,7 +11,7 @@ function preprocessKeywords(keywordsObject) {
                 keywords.forEach(keyword => {
                     const normalizedKeyword = keyword.toLowerCase();
 
-                    const sanitizedKeyword = normalizedKeyword.replace(/\./g, '_');
+                    const sanitizedKeyword = normalizedKeyword//.replace(/\./g, '_');
                     keywordsObjectFlat[sanitizedKeyword] = subCategory;
                 });
             }
@@ -42,7 +42,7 @@ function setH3ByField({ id, field }) {
                                 return targetObject.h3;
                             }
 
-                            const valueLower = targetObject[field].toLowerCase().replace(/\./g, '_');
+                            const valueLower = targetObject[field].toLowerCase()//.replace(/\./g, '_');
                             
                             // Look for matching keyword in the flat object
                             for (const keyword in keywordsObjectFlat) {

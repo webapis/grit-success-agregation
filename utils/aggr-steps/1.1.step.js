@@ -30,8 +30,8 @@ async function importCollection() {
         for (let data of datas) {
             debugger
             counter = counter + data.filter((f => !f.error)).length
-debugger
-            await db.collection(collectionName).insertMany(data.filter((f => !f.error)));
+            debugger
+            await db.collection(collectionName).insertMany(data.filter((f => !f.error)).map(m => { return { ...m, pageURLString: m.pageURL.replace(/\./g, '_') } }));
             console.log('total imported data: ', counter)
         }
 
