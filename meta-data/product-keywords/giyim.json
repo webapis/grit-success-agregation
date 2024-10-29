@@ -354,7 +354,10 @@
             "maske",
             "KOL DÜĞMESİ",
             "keychain",
-            ["uyku bandı","Uyku Gözlüğü"],
+            [
+                "uyku bandı",
+                "Uyku Gözlüğü"
+            ],
             "pelüş kulaklık",
             "balaklava",
             [
@@ -450,10 +453,14 @@
                 "mayo",
                 "swimsuit"
             ],
-            "havuz bonesi",
-            "yüzücü bonesi",
-            "kulak tıkacı",
-            "burun tıkacı",
+            [
+                "plaj aksesuarı",
+                "https://www_penti_com/tr/c/plaj-aksesuarlari",
+                "havuz bonesi",
+                "yüzücü bonesi",
+                "kulak tıkacı",
+                "burun tıkacı"
+            ],
             [
                 "plaj havlusu",
                 "beach towel"
@@ -492,21 +499,25 @@
             [
                 "külot",
                 "klüot",
-                "Külot"
+                "Külot",
+                "Külodu"
             ],
             "bralet",
             "jartiyer çorabı",
             "push-Up takım",
             "bel korse",
             "boxer",
- 
             "tanga",
             "teddy",
             "thong",
             "slip$",
             "brazillian",
             "jartiyer",
-            "İç Giyim",
+            [
+                "iç giyim",
+                "İç Giyim",
+                "https://www_penti_com/tr/c/kombinezon-jupon"
+            ],
             "hipster",
             "Termal İçlik",
             [
@@ -514,7 +525,12 @@
                 "Göğüs Ucu Gizleyici",
                 "Göğüs Bandı",
                 "silikon yapışkanlı kap",
-                "Dekoltemiz"
+                "Dekoltemiz",
+                "Emzirme Pedi"
+            ],
+            [
+                "korse:",
+                "https://www_penti_com/tr/c/korse"
             ]
         ],
         "hediye": [

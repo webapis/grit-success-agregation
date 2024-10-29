@@ -56,7 +56,8 @@ const genderValues = {
     "https://www.penti.com/tr/c/saude-koleksiyon",
     "https://www.penti.com/tr/c/gamze-ercel",
     "https://www.penti.com/tr/c/mid-season",
-    "https://www.penti.com/tr/c/kulotlu-corap"
+    "https://www.penti.com/tr/c/kulotlu-corap",
+    "https://www.penti.com/tr/c/babet-coraplar"
   ],
   unisex: [
     "https://www.ilvi.com/en/accessories-shoe-care-products",
