@@ -24,6 +24,7 @@ import setH5ByHostName from '../../pipelines/h5/setHostName.js';
 
 import setH1ByField from '../../pipelines/h1/setH1ByField.js'
 import setH3ByField from '../../pipelines/h3-h4/setH3ByField.js'
+import setH3ByFieldUrl from '../../pipelines/h3-h4/setH3ByFieldUrl.js'
 import setH4ByField from '../../pipelines/h4/setH4ByField.js'
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
@@ -42,7 +43,7 @@ async function runAggregation() {
         console.log(`Total documents before aggregation: ${totalDocsBefore}`);
 
         const pipeline = [
-            // Your existing pipeline stages...
+
             setH1ByField({ id: 1, field: 'title' }),
             setH1ByField({ id: 2, field: 'title' }),
             setH1ByField({ id: 3, field: 'title' }),
@@ -58,18 +59,18 @@ async function runAggregation() {
             setH1ByField({ id: 3, field: 'pageURL' }),
             setH1ByField({ id: 4, field: 'pageURL' }),
             setGenderByHostNameMatch_1, // h2
-            ...setGenderByField({ id: 0 ,field:'title'}),
-            ...setGenderByField({ id: 0,field:'pageURL' }),
-            ...setGenderByField({ id: 0,field:'link' }),
-            ...setGenderByField({ id: 0,field:'img' }),
+            ...setGenderByField({ id: 0, field: 'title' }),
+            ...setGenderByField({ id: 0, field: 'pageURL' }),
+            ...setGenderByField({ id: 0, field: 'link' }),
+            ...setGenderByField({ id: 0, field: 'img' }),
 
-            ...setGenderByField({ id: 1 ,field:'title'}),
-            ...setGenderByField({ id: 1,field:'pageURL' }),
-            ...setGenderByField({ id: 1,field:'link' }),
-            ...setGenderByField({ id: 1,field:'img' }),
+            ...setGenderByField({ id: 1, field: 'title' }),
+            ...setGenderByField({ id: 1, field: 'pageURL' }),
+            ...setGenderByField({ id: 1, field: 'link' }),
+            ...setGenderByField({ id: 1, field: 'img' }),
 
-            ...setGenderByField({ id: 0,field:'pageTitle' }),
-            ...setGenderByField({ id: 1,field:'pageTitle' }),
+            ...setGenderByField({ id: 0, field: 'pageTitle' }),
+            ...setGenderByField({ id: 1, field: 'pageTitle' }),
             setGenderByPageUrl_5,
             // ...setGenderByKeywordsMatchInTitleAndLinkContent({ id: 0 }),
             // ...setGenderByLinkAndTitleContentMatch, // h2
@@ -80,20 +81,27 @@ async function runAggregation() {
             // setGenderByPageUrlNegativeCombinationMatch, // h2
             // ...setGenderByHostNameAndTitleContentMatch, // h2
             // setDefaulth2,
-            setH3ByField({ id: 1, field: 'title' }),
-            setH3ByField({ id: 2, field: 'title' }),
-            setH3ByField({ id: 3, field: 'title' }),
-            setH3ByField({ id: 4, field: 'title' }),
 
-            setH3ByField({ id: 1, field: 'link' }),
-            setH3ByField({ id: 2, field: 'link' }),
-            setH3ByField({ id: 3, field: 'link' }),
-            setH3ByField({ id: 4, field: 'link' }),
+            setH3ByFieldUrl({ id: 1, field: 'pageURL' }),
+            setH3ByFieldUrl({ id: 2, field: 'pageURL' }),
+            setH3ByFieldUrl({ id: 3, field: 'pageURL' }),
+            setH3ByFieldUrl({ id: 4, field: 'pageURL' }),
 
-            setH3ByField({ id: 1, field: 'pageURL' }),
-            setH3ByField({ id: 2, field: 'pageURL' }),
-            setH3ByField({ id: 3, field: 'pageURL' }),
-            setH3ByField({ id: 4, field: 'pageURL' }),
+            // setH3ByField({ id: 1, field: 'title' }),
+            // setH3ByField({ id: 2, field: 'title' }),
+            // setH3ByField({ id: 3, field: 'title' }),
+            // setH3ByField({ id: 4, field: 'title' }),
+
+            // setH3ByField({ id: 1, field: 'link' }),
+            // setH3ByField({ id: 2, field: 'link' }),
+            // setH3ByField({ id: 3, field: 'link' }),
+            // setH3ByField({ id: 4, field: 'link' }),
+
+            // setH3ByField({ id: 1, field: 'pageURL' }),
+            // setH3ByField({ id: 2, field: 'pageURL' }),
+            // setH3ByField({ id: 3, field: 'pageURL' }),
+            // setH3ByField({ id: 4, field: 'pageURL' }),
+
 
             setH4ByField({ id: 1, field: 'title' }),
             setH4ByField({ id: 2, field: 'title' }),

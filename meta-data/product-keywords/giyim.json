@@ -354,7 +354,7 @@
             "maske",
             "KOL DÜĞMESİ",
             "keychain",
-            "uyku bandı",
+            ["uyku bandı","Uyku Gözlüğü"],
             "pelüş kulaklık",
             "balaklava",
             [
@@ -498,7 +498,7 @@
             "push-Up takım",
             "bel korse",
             "boxer",
-            ["korse:","www.penti.com/tr/c/korse","https://www.penti.com/tr/c/privee"],
+ 
             "tanga",
             "teddy",
             "thong",
