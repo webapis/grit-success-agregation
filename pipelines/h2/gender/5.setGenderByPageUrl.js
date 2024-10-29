@@ -48,14 +48,23 @@ const genderValues = {
     "https://www.yargici.com/pe-ceket",
     "https://www.yargici.com/eko-kasmir",
     "https://www.yargici.com/pe-bot-cizme",
-    "https://www.yargici.com/pe-aksesuar-kemer"
+    "https://www.yargici.com/pe-aksesuar-kemer",
+
+    "https://www.penti.com/tr/c/bikini",
+    "https://www.penti.com/tr/c/pentilicious",
+    "https://www.penti.com/tr/c/29-ekim",
+    "https://www.penti.com/tr/c/saude-koleksiyon",
+    "https://www.penti.com/tr/c/gamze-ercel",
+    "https://www.penti.com/tr/c/mid-season",
+    "https://www.penti.com/tr/c/kulotlu-corap"
   ],
   unisex: [
     "https://www.ilvi.com/en/accessories-shoe-care-products",
     "https://www.yargici.com/eldiven-2-2",
     "https://www.yargici.com/corap",
     "https://www.network.com.tr/network-outlet-930",
-    "https://www.network.com.tr/en/network-outlet-930"
+    "https://www.network.com.tr/en/network-outlet-930",
+    "https://dericompany.com.tr/kampanyali-deri-mont-deri-ceket-modelleri?o=1&page=1"
 // 
     //   "https://www.network.com.tr/outlet-canta-1807",
     //   "https://www.network.com.tr/en/outlet-bag-1807",

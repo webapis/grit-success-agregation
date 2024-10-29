@@ -1,6 +1,7 @@
 import fs from 'fs';
 
 // Preprocess the keywords object into a keyword-subCategory map
+
 function preprocessKeywords(keywordsObject) {
     const keywordMap = {};
 
@@ -9,7 +10,8 @@ function preprocessKeywords(keywordsObject) {
             for (const item in category[subCategory]) {
                 const keywords = category[subCategory][item];
                 keywords.forEach(keyword => {
-                    keywordMap[keyword.toLowerCase()] = subCategory;
+                    const sanitizedKeyword = keyword.toLowerCase().replace(/\./g, '_'); // Sanitize keyword
+                    keywordMap[sanitizedKeyword] = subCategory;
                 });
             }
         }
@@ -29,20 +31,16 @@ function setH1ByField({ id, field }) {
                 $function: {
                     body: `
                         function(targetObject, keywordMap, field) {
-                            // Check if the field exists and is not empty
                             if (!targetObject[field] || targetObject[field].trim() === "") {
                                 return null;
                             }
 
-                            // If h1 exists, return it
                             if (targetObject.hasOwnProperty('h1') && targetObject.h1 !== null) {
                                 return targetObject.h1;
                             }
 
-                            // Get the value from the specified field
-                            const value = targetObject[field].toLowerCase();
+                            const value = targetObject[field].toLowerCase().replace(/\\./g, '_'); // Sanitize input value
                             
-                            // Check each keyword in the preprocessed map
                             for (const keyword in keywordMap) {
                                 if (value.includes(keyword)) {
                                     return keywordMap[keyword]; // Return the corresponding subCategory
@@ -52,7 +50,7 @@ function setH1ByField({ id, field }) {
                             return null;
                         }
                     `,
-                    args: ["$$ROOT", keywordMap, field], // Pass the field as an argument
+                    args: ["$$ROOT", keywordMap, field],
                     lang: "js"
                 }
             }

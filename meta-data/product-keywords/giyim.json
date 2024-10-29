@@ -490,14 +490,15 @@
             ],
             [
                 "külot",
-                "klüot"
+                "klüot",
+                "Külot"
             ],
             "bralet",
             "jartiyer çorabı",
             "push-Up takım",
             "bel korse",
             "boxer",
-            "korse$",
+            ["korse:","www.penti.com/tr/c/korse","https://www.penti.com/tr/c/privee"],
             "tanga",
             "teddy",
             "thong",
@@ -507,7 +508,13 @@
             "İç Giyim",
             "hipster",
             "Termal İçlik",
-            "silikon yapışkanlı kap"
+            [
+                "iç giyim aksesuar",
+                "Göğüs Ucu Gizleyici",
+                "Göğüs Bandı",
+                "silikon yapışkanlı kap",
+                "Dekoltemiz"
+            ]
         ],
         "hediye": [
             "yılbaşı gecesi"

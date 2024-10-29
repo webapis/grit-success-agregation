@@ -3,6 +3,7 @@ import fs from 'fs';
 import { makeDirectory } from 'make-dir';
 import setGenderByHostNameMatch_1 from '../../pipelines/h2/gender/1.setGenderByHostNameMatch.js';
 import setGenderByTitle_2 from '../../pipelines/h2/gender/2.setGenderByTitle.js';
+import setGenderByField from '../../pipelines/h2/gender/2.setGenderByField.js';
 import setGenderByPageURLContent_3 from '../../pipelines/h2/gender/3.setGenderByPageURLContent.js'
 import setGenderByPageTitle_4 from '../../pipelines/h2/gender/4.setGenderByPageTitle.js'
 import setGenderByPageUrl_5 from '../../pipelines/h2/gender/5.setGenderByPageUrl.js'
@@ -57,15 +58,18 @@ async function runAggregation() {
             setH1ByField({ id: 3, field: 'pageURL' }),
             setH1ByField({ id: 4, field: 'pageURL' }),
             setGenderByHostNameMatch_1, // h2
-            ...setGenderByTitle_2({ id: 0 }),
+            ...setGenderByField({ id: 0 ,field:'title'}),
+            ...setGenderByField({ id: 0,field:'pageURL' }),
+            ...setGenderByField({ id: 0,field:'link' }),
+            ...setGenderByField({ id: 0,field:'img' }),
 
+            ...setGenderByField({ id: 1 ,field:'title'}),
+            ...setGenderByField({ id: 1,field:'pageURL' }),
+            ...setGenderByField({ id: 1,field:'link' }),
+            ...setGenderByField({ id: 1,field:'img' }),
 
-            ...setGenderByPageTitle_4({ id: 0 }),
-
-            ...setGenderByTitle_2({ id: 1 }),
-            ...setGenderByPageURLContent_3({ id: 0 }),
-            ...setGenderByPageURLContent_3({ id: 1 }),
-            ...setGenderByPageTitle_4({ id: 1 }),
+            ...setGenderByField({ id: 0,field:'pageTitle' }),
+            ...setGenderByField({ id: 1,field:'pageTitle' }),
             setGenderByPageUrl_5,
             // ...setGenderByKeywordsMatchInTitleAndLinkContent({ id: 0 }),
             // ...setGenderByLinkAndTitleContentMatch, // h2

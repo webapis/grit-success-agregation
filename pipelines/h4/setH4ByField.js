@@ -9,7 +9,8 @@ function preprocessKeywords(keywordsObject) {
             for (const item in category[subCategory]) {
                 const keywords = category[subCategory][item];
                 keywords.forEach(keyword => {
-                    keywordLookup[keyword.toLowerCase()] = item;
+                    const sanitizedKeyword = keyword.toLowerCase().replace(/\./g, '_');
+                    keywordLookup[sanitizedKeyword.toLowerCase()] = item;
                 });
             }
         }
@@ -40,7 +41,7 @@ function setH4ByField({ id, field }) {
                             }
 
                             // Convert the field value to lowercase for case-insensitive comparison
-                            const fieldValueLower = targetObject[field].toLowerCase();
+                            const fieldValueLower = targetObject[field].toLowerCase().replace(/\./g, '_');
 
                             // Search for a matching keyword in the precomputed keywordLookup
                             for (const keyword in keywordLookup) {

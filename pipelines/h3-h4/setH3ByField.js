@@ -10,7 +10,9 @@ function preprocessKeywords(keywordsObject) {
                 const keywords = category[subCategory][item];
                 keywords.forEach(keyword => {
                     const normalizedKeyword = keyword.toLowerCase();
-                    keywordsObjectFlat[normalizedKeyword] = subCategory; // Map keyword to subCategory
+
+                    const sanitizedKeyword = normalizedKeyword.replace(/\./g, '_');
+                    keywordsObjectFlat[sanitizedKeyword] = subCategory;
                 });
             }
         }
@@ -40,7 +42,7 @@ function setH3ByField({ id, field }) {
                                 return targetObject.h3;
                             }
 
-                            const valueLower = targetObject[field].toLowerCase();
+                            const valueLower = targetObject[field].toLowerCase().replace(/\./g, '_');
                             
                             // Look for matching keyword in the flat object
                             for (const keyword in keywordsObjectFlat) {
