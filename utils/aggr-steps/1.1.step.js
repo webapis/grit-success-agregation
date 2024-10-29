@@ -5,7 +5,7 @@ import getJsonDataFileNameFromFolder from '../file/getJsonDataFromFolder.mjs'
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
-const datas = await getJsonDataFileNameFromFolder('data/0.0.step-data/unzipped-data/sponsor-product')
+const datas = await getJsonDataFileNameFromFolder('data/1.0.step-data/unzipped-data/sponsor-product')
 debugger
 async function importCollection() {
     const client = new MongoClient(uri, { useUnifiedTopology: true });
@@ -31,7 +31,7 @@ async function importCollection() {
             debugger
             counter = counter + data.filter((f => !f.error)).length
             debugger
-            await db.collection(collectionName).insertMany(data.filter((f => !f.error)).map(m => { return { ...m, pageURLString: m.pageURL.replace(/\./g, '_') } }));
+            await db.collection(collectionName).insertMany(data.filter((f => !f.error)).map(m => { return { ...m, pageURLString: m.pageURL.replace(/\./g, '_'), imgString: m.img ? m.img.replace(/\./g, '_') : '' } }));
             console.log('total imported data: ', counter)
         }
 
