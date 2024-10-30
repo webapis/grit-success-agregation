@@ -25,7 +25,6 @@
                 "T-Shirt",
                 "Ecru"
             ],
-           
             "okul gömleği",
             [
                 "tulum",
@@ -110,7 +109,6 @@
         "alt giyim": [
             [
                 "pantolon",
-                
                 "mom jean",
                 "pants",
                 "TROUSER",
@@ -190,9 +188,6 @@
             ],
             "kürk$",
             "manto"
-        ],
-        "jean": [
-            "jean"
         ],
         "çanta": [
             [
@@ -325,7 +320,11 @@
                 "ESARP"
             ],
             "bandana",
-            "boyunluk",
+            [
+                "boyunluk",
+                "collar",
+                "Neck Wrap"
+            ],
             "kaşkol",
             "kafa bandı",
             [
@@ -339,11 +338,6 @@
             "boyun aksesuarı",
             "omuz aksesuarı",
             "omuzluk",
-            [
-                "boyunluk",
-                "collar",
-                "Neck Wrap"
-            ],
             [
                 "çorap",
                 "socks",

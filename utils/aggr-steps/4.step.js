@@ -2,7 +2,7 @@
 import fs from 'fs';
 import { makeDirectory } from 'make-dir';
 
-const data = JSON.parse(fs.readFileSync(`${process.cwd()}/data/3.1.step-data/priceMappedData.json`, { encoding: 'utf-8' }));
+const data = JSON.parse(fs.readFileSync(`${process.cwd()}/data/3.2.step-data/validation.json`, { encoding: 'utf-8' }));
 debugger;
 
 const { hierarchy } = groupByHierarchy(data);

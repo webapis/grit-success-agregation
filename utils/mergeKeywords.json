@@ -1,0 +1,1312 @@
+{
+    "depolama": [
+        [
+            "katlanabilir kasa"
+        ],
+        [
+            "kutu"
+        ]
+    ],
+    "mobilya": [
+        [
+            "koltuk"
+        ],
+        [
+            "dolap",
+            "DOLABI",
+            "BAR DOLARI"
+        ],
+        [
+            "sandalye"
+        ],
+        [
+            "sehpa"
+        ],
+        [
+            "bank"
+        ],
+        [
+            "kitaplık",
+            "KİTAPLIK"
+        ],
+        "gazetelik",
+        "tabure",
+        "tabure",
+        "minder",
+        "çekmece kulbu",
+        "konsol",
+        "puf",
+        "masa",
+        [
+            "yatak başlığı",
+            "yatak başı"
+        ],
+        "paravan",
+        "dresuar",
+        "salıncak",
+        [
+            "tv ünitesi",
+            "TV ÜNİTESİ"
+        ],
+        [
+            "taba"
+        ],
+        [
+            "berjer"
+        ],
+        [
+            "büfe",
+            "NADOR BÜFE"
+        ],
+        [
+            "yatak",
+            "YATAK"
+        ],
+        [
+            "karyola",
+            "KARYOLA"
+        ],
+        [
+            "şifonyer",
+            "ŞİFONYER"
+        ],
+        [
+            "komodin",
+            "KOMODİN"
+        ],
+        [
+            "gardirop",
+            "GARDIROP"
+        ],
+        [
+            "oturma seti",
+            "OTURMA SETİ"
+        ],
+        [
+            "bistro seti",
+            "BISTRO SET"
+        ]
+    ],
+    "mobilya-bahçe": [
+        "şezlong"
+    ],
+    "dekorasyon": [
+        [
+            "nazarlık",
+            "NAZARLIK"
+        ],
+        "duvar dekor",
+        [
+            "duvar saati",
+            "WALL CLOCK"
+        ],
+        [
+            "obje"
+        ],
+        "şömine",
+        "ayna",
+        "vazo",
+        "tablo",
+        "sepet",
+        "Dekoratif Bitki",
+        "çerçeve",
+        [
+            "saksı",
+            "SAKSI"
+        ],
+        "yılbaşı ağacı",
+        [
+            "çiçek",
+            "ÇİÇEK",
+            "buket",
+            "ZAMBAK ÇİÇEĞİ",
+            "MANOLYA ÇİÇEĞİ"
+        ],
+        [
+            "pamuk demeti",
+            "PAMUK DEMETİ"
+        ],
+        "gramofon",
+        [
+            "dekor agaçı",
+            "FICUS AĞACI",
+            "LYRATA AĞACI",
+            "ZEYTİN AĞACI",
+            "REFLEXA AĞACI",
+            "KAMELYA AĞACI",
+            "GÜL AĞACI",
+            "DEFNE AĞACI",
+            "ADANSONII AĞACI",
+            "VINE AĞACI"
+        ],
+        [
+            "stand",
+            "STAND YUVARLAK 3 GÖZLÜ",
+            "2'Lİ  STAND KARE"
+        ],
+        "CANDY CANE PELUŞ",
+        [
+            "örtü",
+            "LIMA KIRMIZI PATCH"
+        ],
+        [
+            "kırlent",
+            "KIRLENT"
+        ],
+        [
+            "altlık",
+            "ALTLIK"
+        ],
+        "KİTAP DESTEĞİ",
+        "askı",
+        "süs"
+    ],
+    " yatak odası dekorasyon": [
+        [
+            "cibinlik",
+            "CİBİNLİK"
+        ]
+    ],
+    "aydınlatma": [
+        "aydınlatma",
+        "fener",
+        "abajur",
+        "şamdan",
+        "mumluk",
+        [
+            "pilli mum",
+            "mum"
+        ],
+        "lambader",
+        "masa lambası",
+        [
+            "avize",
+            "AVİZE",
+            "sarkıt",
+            "SARKIT"
+        ],
+        "led ampul"
+    ],
+    "sofra": [
+        "supla",
+        "amerikan servis",
+        "tabak",
+        "yemek bıçağı",
+        "yemek kaşığı",
+        "yemek çatalı",
+        "tatlı kaşığı",
+        [
+            "tatlı bıçağı",
+            "TATLI BIÇAĞI"
+        ],
+        "tatlı çatalı",
+        "kase",
+        "peçete halkası",
+        [
+            "peçetelik",
+            "PEÇETELİK"
+        ],
+        "kumaş peçete",
+        "bardak altlığı",
+        [
+            "bardak",
+            "BARDAĞI"
+        ],
+        "servis – sunum gereçleri",
+        "fincan",
+        "servis tahtası",
+        "servis tabağı",
+        "sürahi",
+        "tepsi",
+        "açacak",
+        "şarap kadehi",
+        "demlik",
+        [
+            "ÇATAL KAŞIK BIÇAK SETİ",
+            "ÇATAL KAŞIK BIÇAK SET",
+            "ÇATAL KAŞIK BIÇAK TAKIMI"
+        ],
+        [
+            "AMERİKAN SERVİS"
+        ],
+        [
+            "çay kaşiğı",
+            "ÇAY KAŞIĞI"
+        ],
+        [
+            "nihale",
+            "NİHALE"
+        ],
+        [
+            "kupa",
+            "2'LI MUG",
+            "WILD MUG"
+        ],
+        [
+            "kahvaltı takımı",
+            "KAHVALTI TAKIMI"
+        ],
+        [
+            "yemek takımı",
+            "YEMEK TAKIMI"
+        ],
+        [
+            "fincan",
+            "CUP 3'LÜ SET"
+        ]
+    ],
+    "ev tekstil": [
+        "battaniye",
+        "yastık",
+        "mutfak önlüğü",
+        "halı",
+        "kilim",
+        "runner",
+        [
+            "nevresim takımı",
+            "nevresim seti"
+        ],
+        [
+            "ayak havlusu"
+        ],
+        "KURULAMA BEZİ SETİ",
+        "YÜZ HAVLUSU",
+        "EL HAVLUSU"
+    ],
+    "bebek odası": [
+        [
+            "bebek yatağı",
+            "BEBEK YATAĞI"
+        ],
+        [
+            "bebek odası tekstil",
+            "bebek-odasi-tekstil",
+            "STARS MALZEMELİK"
+        ],
+        [
+            "bebek odası aksesuar",
+            "bebek-odasi-aksesuar"
+        ]
+    ],
+    "oyuncak": [
+        "oyuncak",
+        "PELUŞ OYUNCAK"
+    ],
+    "ev kozmetiği": [
+        "oda spreyi",
+        "ODA SPREYİ"
+    ],
+    "ofis, kırtasiye": [
+        "dosyalık",
+        "hediye kartı",
+        "not defteri",
+        "defter"
+    ],
+    "banyo aksesuarları": [
+        [
+            "banyo seti",
+            "BANYO SETİ"
+        ],
+        [
+            "çöp kovası",
+            "ÇÖP KOVASI"
+        ],
+        [
+            "banyo paspası",
+            "BANYO PASPASI",
+            "BANYO PASPAS"
+        ],
+        [
+            "havluluk"
+        ],
+        [
+            "tuvalet kağıtlık",
+            "TUVALET KAĞITLIK"
+        ],
+        [
+            "tuvalet fırçası",
+            "WC FIRÇASI",
+            "TUVALET FIRÇASI"
+        ],
+        [
+            "diş fırçalık",
+            "DİŞ FIRÇALIK"
+        ],
+        [
+            "deterjanlık",
+            "DETERJANLIK"
+        ],
+        [
+            "banyo düzenleyici",
+            "ROMA OVAL DÜZENLEYİCİ MAT",
+            "JÜT DÜZENLEYİCİ",
+            "DODIE KEÇE DÜZENLEYİCİ",
+            "ROMA BÖLMELİ DÜZENLEYİCİ"
+        ],
+        [
+            "banyo askılık",
+            "matteo askılık",
+            "MATTEO ASKILIK",
+            "ALLY ASKILIK"
+        ]
+    ],
+    "mutfak gereçleri": [
+        [
+            "servis gereçleri",
+            "BAMBU SERVİS GEREÇLERİ 4 PARÇA"
+        ],
+        [
+            "kaşıklık",
+            "COLMAR KAŞIKLIK",
+            "KAŞIKLIK/",
+            "KAŞIKLIK"
+        ],
+        [
+            "çay kavanoz",
+            "COLMAR TEA KAVANOZ"
+        ],
+        [
+            "kahve kavanov",
+            "COLMAR COFFEE KAVANOZ"
+        ],
+        [
+            "sahan",
+            "SAHAN"
+        ],
+        [
+            "şeker kavanoz",
+            "COLMAR SUGAR KAVANOZ"
+        ],
+        [
+            "bulaşık kurutma matı",
+            "BULAŞIK MATI",
+            "BULAŞIK KURUTMA MATI"
+        ],
+        [
+            "dik kaşıklık",
+            "COLMAR DİK KAŞIKLIK"
+        ],
+        [
+            "baharatlık seti",
+            "BAHARATLIK SETİ"
+        ],
+        [
+            "tuzluk biberlik seti",
+            "TUZLUK BİBERLİK SETİ",
+            "TUZLUK-BİBERLİK SETİ"
+        ],
+        "COLMAR KAVANOZ",
+        [
+            "saklama kabı",
+            "SAKLAMA KABI"
+        ],
+        "tava",
+        "cam karaf",
+        [
+            "servis arabası",
+            "SERVIS ARABASI",
+            "SERVİS ARABASI"
+        ],
+        [
+            "sunum ürünleri",
+            "CEVİZ SUNUM TAHTASI",
+            "KESME/SUNUM TAHTASI",
+            "CAM SUNUM"
+        ],
+        [
+            "mutfak bıçağı",
+            "BERLINGER HAUS 3 PARÇA BIÇAK SETİ",
+            "ET OYMA BIÇAĞI",
+            "SOYMA BIÇAĞI"
+        ],
+        [
+            "havan seti",
+            "HAVAN SETİ"
+        ],
+        [
+            "servis kaşığı",
+            "SERVİS KAŞIĞI"
+        ],
+        [
+            "dondurma kaşığı",
+            "DONDURMA KAŞIĞI"
+        ],
+        [
+            "tenсere",
+            "TENCERE"
+        ],
+        "AHŞAP DEĞİRMEN",
+        [
+            "kek kalıbı",
+            "KEK KALIBI"
+        ],
+        [
+            "hamur dilimleyсi",
+            "HAMUR DİLİMLEYİCİ"
+        ],
+        [
+            "fırın kabı",
+            "FIRIN KABI"
+        ],
+        [
+            "sebzelik",
+            "SEBZELİK"
+        ],
+        "ALMERA 3 KATLI ETAJER"
+    ],
+    "halı": [
+        [
+            "halı",
+            "HALI"
+        ],
+        "yolluk",
+        [
+            "paspas",
+            "PASPAS SETİ"
+        ]
+    ],
+    "inşaat ve yapı malzemeleri": [
+        "merdiven"
+    ],
+    "oyun ve hobi ürünleri": [
+        [
+            "satranç takımı",
+            "SATRANÇ TAKIMI"
+        ],
+        "tavla",
+        "DIAMONDS İSKAMBİL OYUN SETİ"
+    ],
+    "üst giyim": [
+        [
+            "elbise",
+            "elibise",
+            "ebise",
+            "Elbise",
+            "ELBİSE",
+            "DRESS",
+            "Valencia Black"
+        ],
+        [
+            "pardesü"
+        ],
+        [
+            "tişört",
+            "tshirt",
+            "tişört",
+            "tsihrt",
+            "t-Shirt",
+            "TSHİRT",
+            "TİŞÖRT",
+            "Kısa Kol Basic",
+            "T-Shirt",
+            "Ecru"
+        ],
+        "okul gömleği",
+        [
+            "tulum",
+            "tuluım",
+            "jumpsuit",
+            "playsuit",
+            "overall"
+        ],
+        [
+            "kazak",
+            "knit",
+            "Vanilla 139429950001d3",
+            "Roll Neck",
+            "Anthracıte"
+        ],
+        [
+            "hırka",
+            "сardigan",
+            "Cardigan",
+            "HIRKA"
+        ],
+        [
+            "süveter",
+            "süeter"
+        ],
+        [
+            "takım elbise",
+            "Classic Suit",
+            "Mix Suit",
+            "Wool Suit",
+            "Suit"
+        ],
+        "SMOKİN",
+        [
+            "bluz",
+            "blouse"
+        ],
+        "atlet",
+        [
+            "tunik",
+            "tunic"
+        ],
+        "pareo",
+        "tankini",
+        [
+            "kimono",
+            "KİMONO"
+        ],
+        [
+            "büstiyer",
+            "BÜSTİYER",
+            "BUSTİYER",
+            "bustier"
+        ],
+        "body",
+        "pelerin",
+        "bolero",
+        "kaftan",
+        "panço",
+        "polo",
+        [
+            "sweatshirt",
+            "SWEAT"
+        ],
+        "HOODIE",
+        "kurdele",
+        [
+            "denim korse",
+            "DENİM KORSE"
+        ],
+        "abiye",
+        [
+            "muun kolleksyon",
+            "Valencia",
+            "Le Monique Cream"
+        ],
+        [
+            "korseler",
+            "Straplez Korse"
+        ],
+        [
+            "gömlek",
+            "shirt"
+        ],
+        [
+            "ikili takım",
+            "İkili Takım"
+        ],
+        "triko",
+        [
+            "üst",
+            "top"
+        ],
+        [
+            "сrop",
+            "Crop"
+        ],
+        "bra",
+        [
+            "gömlek",
+            "henry",
+            "GOMLEK"
+        ]
+    ],
+    "alt giyim": [
+        [
+            "pantolon",
+            "mom jean",
+            "pants",
+            "TROUSER",
+            "palazzo",
+            "Wide-Leg Jean",
+            "pantalon",
+            "Straight Fit Jean",
+            "pant",
+            "high-waist jeans",
+            "Lacivert Beli Lastikli Renk Bloklu Kadife",
+            "Slim Fit Jean",
+            "Low Waist Jean",
+            "Straight Jean",
+            "Full Lenght Jean",
+            "Full Length Jean",
+            "Slouchy Fit Jean",
+            "High Waist Jean",
+            "Long Length Jean",
+            "Denim Shopping with Sun Embroidered - Jean",
+            "Palmer Jeans"
+        ],
+        [
+            "tayt",
+            "leggings",
+            "Legging"
+        ],
+        [
+            "etek",
+            "skirt",
+            "Sassy Black"
+        ],
+        "bermuda",
+        "alt$",
+        "Jogger",
+        [
+            "loungwear altı",
+            "loungewear altı"
+        ],
+        [
+            "eşofman",
+            "tracksuit"
+        ],
+        [
+            "kapri",
+            "capris"
+        ],
+        [
+            "pantolon",
+            "yüksek bel"
+        ],
+        [
+            "şort",
+            "short",
+            "SORT"
+        ]
+    ],
+    "dış giyim": [
+        [
+            "сeket",
+            "Ceket",
+            "blazer",
+            "jacket"
+        ],
+        "mont",
+        "parka",
+        [
+            "kaban",
+            "coat"
+        ],
+        "palto",
+        [
+            "yelek",
+            "vest"
+        ],
+        [
+            "trençkot",
+            "TRENCH",
+            "TRENCKOT",
+            "TRENC COAT"
+        ],
+        "bomber",
+        "pardösü",
+        [
+            "yağmurluk",
+            "yağmurluğu"
+        ],
+        "kürk$",
+        "manto",
+        "kap",
+        [
+            "kaftan",
+            "caftan"
+        ],
+        "kürk"
+    ],
+    "jean": [
+        "jean"
+    ],
+    "çanta": [
+        [
+            "sırt çantası",
+            "backpack"
+        ],
+        [
+            "çanta",
+            "canta",
+            "CANTA",
+            "Çanta",
+            "sırt çantası"
+        ],
+        [
+            "bavul",
+            "suitcase"
+        ],
+        [
+            "сüzdan",
+            "Cüzdan",
+            "wallet",
+            "card"
+        ],
+        [
+            "kartlık",
+            "card holder",
+            "KARTLIK",
+            "Kartlığı"
+        ],
+        "torba",
+        "portföy",
+        [
+            "сlucth",
+            "Clucth",
+            "Clutch"
+        ],
+        "travel organızer",
+        "valiz",
+        "anahtarlık",
+        "pasaport kılıfı",
+        [
+            "telefon Kılıfı",
+            "phone case"
+        ],
+        "hobo",
+        "kartvizitlik",
+        [
+            "çanta",
+            "bag"
+        ]
+    ],
+    "ayakkabı": [
+        "babet",
+        [
+            "sandalet",
+            "Sandals",
+            "Heeled Sandal"
+        ],
+        [
+            "sandal:",
+            "Men's Sandal"
+        ],
+        [
+            "çizme",
+            "ÇİZME"
+        ],
+        [
+            "terlik",
+            "slippers",
+            "slide",
+            "slipper",
+            "Terliği",
+            "EV TERLİĞİ",
+            "AYAK ISITICISI"
+        ],
+        [
+            "panduf",
+            "Paduf"
+        ],
+        [
+            "patik",
+            "Patiği"
+        ],
+        [
+            "stiletto",
+            "sitiletto"
+        ],
+        "platform ayakkabı",
+        "sneaker",
+        "espadril",
+        "espardenya",
+        "loafer",
+        "kar Botu",
+        "yağmur botu",
+        [
+            "makosen",
+            "moccasin"
+        ],
+        [
+            "ballerin",
+            "ballerina"
+        ],
+        "kalın taban anna",
+        "Çapraz bağlamalı anna",
+        [
+            "gece ayakkabısı",
+            "GECE AYAKKABISI",
+            "gece-ayakkabisi"
+        ],
+        [
+            "günlük ayakkabı",
+            "gunluk-ayakkabi"
+        ],
+        [
+            "topuklu",
+            "pump"
+        ],
+        [
+            "bot",
+            "botu",
+            "boots",
+            "Boot"
+        ],
+        [
+            "oxford ayakkabı",
+            "Men's Oxford"
+        ],
+        "postal",
+        [
+            "ayakkabı",
+            "Shoe",
+            "AYAKKABI"
+        ]
+    ],
+    "başlık": [
+        [
+            "şapka",
+            "Şapka",
+            "SAPKA"
+        ],
+        "bere",
+        "kasket",
+        [
+            "kulaklık",
+            "Kulak Isıtıcı",
+            "Kulaklık"
+        ],
+        "Beanie",
+        [
+            "şapka",
+            "hat"
+        ]
+    ],
+    "atkı": [
+        "fular",
+        [
+            "eşarp",
+            "ESARP"
+        ],
+        "bandana",
+        "boyunluk",
+        "kaşkol",
+        "kafa bandı",
+        [
+            "atkı",
+            "ATKI"
+        ],
+        [
+            "şal",
+            "shawl",
+            "SAL"
+        ],
+        [
+            "atkı",
+            "scarf",
+            "foulard"
+        ],
+        [
+            "Poplin Yaka"
+        ]
+    ],
+    "aksesuar": [
+        "kravat",
+        "papyon",
+        "boyun aksesuarı",
+        "omuz aksesuarı",
+        "omuzluk",
+        [
+            "boyunluk",
+            "collar",
+            "Neck Wrap"
+        ],
+        [
+            "çorap",
+            "socks",
+            "çorabı",
+            "Çorabı",
+            "corap"
+        ],
+        "yelpaze",
+        [
+            "çetik",
+            "Çetik"
+        ],
+        [
+            "eldiven",
+            "gloves",
+            "El Isıtıcısı"
+        ],
+        [
+            "mendil",
+            "handkerchief"
+        ],
+        "küçük şemsiye",
+        "maske",
+        "KOL DÜĞMESİ",
+        "keychain",
+        [
+            "uyku bandı",
+            "Uyku Gözlüğü"
+        ],
+        "pelüş kulaklık",
+        "balaklava",
+        [
+            "el bandı",
+            "handband"
+        ],
+        [
+            "gift card",
+            "GIFT CARD"
+        ],
+        [
+            "telefon kılıfı",
+            "TELEFON KILIFI"
+        ],
+        [
+            "kemer",
+            "belt",
+            "kemeri"
+        ],
+        [
+            "kravat",
+            "tie"
+        ],
+        [
+            "kemer",
+            "belt",
+            "kemeri"
+        ],
+        "kuşak"
+    ],
+    "elbise aksesuarı": [
+        [
+            "omuz aksesuarı",
+            "narciso сherry",
+            "ribbon pearl",
+            "perla navy",
+            "ribbon black",
+            "ribbon cherry",
+            "Narciso Cherry",
+            "Coco Stole",
+            "Narciso Silver",
+            "Perla Diamond",
+            "Perla Ruby",
+            "Perla Nero",
+            "Narciso Manolia",
+            "Narciso Red",
+            "Narciso Nero",
+            "Narciso Blanca",
+            "Narciso Lavanda",
+            "Blossom Nero",
+            "Blossom Sorbe",
+            "Blossom Love",
+            "Coco Etol",
+            "Narciso Kırmızı"
+        ]
+    ],
+    "saç-aksesuar": [
+        [
+            "saç bandı",
+            "Saçbandı",
+            "headband",
+            "Saçbandi"
+        ],
+        "saç tacı",
+        [
+            "saç kravat",
+            "hair tie"
+        ],
+        [
+            "toka",
+            "toka seti",
+            "hair buckle",
+            "Hair Clip"
+        ],
+        [
+            "saç aksesuarı",
+            "SAÇ AKSESUARI"
+        ],
+        "taç"
+    ],
+    "saat": [
+        "saat"
+    ],
+    "gözlük ve optik ürünler": [
+        [
+            "gözlük",
+            "sunglasses"
+        ],
+        [
+            "gözlük kılıfı",
+            "gözlık kılıfı"
+        ],
+        [
+            "güneş gözlüğü",
+            "Güneş Gözlüğü"
+        ],
+        "göz Bandı",
+        [
+            "büyüteç",
+            "BÜYÜTEÇ"
+        ]
+    ],
+    "plaj, havuz": [
+        [
+            "bikini",
+            "bkini"
+        ],
+        [
+            "mayo",
+            "swimsuit"
+        ],
+        [
+            "plaj aksesuarı",
+            "https://www_penti_com/tr/c/plaj-aksesuarlari",
+            "havuz bonesi",
+            "yüzücü bonesi",
+            "kulak tıkacı",
+            "burun tıkacı",
+            "Deniz Gözlüğü"
+        ],
+        [
+            "plaj havlusu",
+            "beach towel"
+        ],
+        [
+            "peştemal",
+            "peştemâli",
+            "sarong"
+        ],
+        "plaj gömleği",
+        "plaj eteği"
+    ],
+    "ev": [
+        [
+            "pijama",
+            "pjama"
+        ],
+        "gecelik",
+        "sabahlık",
+        "babydoll",
+        "tee-jama"
+    ],
+    "gelinlik": [
+        "GELİNLİK"
+    ],
+    "anne": [
+        "emzirme sütyeni",
+        "hamile"
+    ],
+    "iç giyim": [
+        [
+            "sütyen",
+            "sütyeni",
+            "Sütyen"
+        ],
+        [
+            "külot",
+            "klüot",
+            "Külot",
+            "Külodu"
+        ],
+        "bralet",
+        "jartiyer çorabı",
+        "push-Up takım",
+        "bel korse",
+        "boxer",
+        "tanga",
+        "teddy",
+        "thong",
+        "slip",
+        "brazillian",
+        "jartiyer",
+        [
+            "iç giyim",
+            "İç Giyim",
+            "https://www_penti_com/tr/c/kombinezon-jupon"
+        ],
+        "hipster",
+        "Termal İçlik",
+        [
+            "iç giyim aksesuar",
+            "Göğüs Ucu Gizleyici",
+            "Göğüs Bandı",
+            "silikon yapışkanlı kap",
+            "Dekoltemiz",
+            "Emzirme Pedi"
+        ],
+        [
+            "korse:",
+            "https://www_penti_com/tr/c/korse"
+        ],
+        [
+            "sütyen",
+            "sütyeni"
+        ],
+        "külot",
+        "bralet",
+        "jartiyer çorabı",
+        "push-Up takım",
+        "bel korse",
+        "boxer",
+        "tanga",
+        "teddy",
+        "thong",
+        "brazillian",
+        "jartiyer",
+        "İç Giyim",
+        "hipster",
+        "privee koleksiyonu",
+        [
+            "Termal İçlik"
+        ],
+        "İçlik"
+    ],
+    "hediye": [
+        "yılbaşı gecesi"
+    ],
+    "spor ve outdoor": [
+        [
+            "sporсu bra",
+            "sporcu-bra",
+            "matara",
+            "termos"
+        ]
+    ],
+    "kozmetik": [
+        [
+            "parfüm",
+            "parfum",
+            "Atomic Rose 90ml",
+            "Soft Radiance Foundation Sabl",
+            "kozmetik"
+        ],
+        "vücut spreyi",
+        "koku seti",
+        [
+            "deodorant"
+        ],
+        "oda kokusu",
+        "kolonya",
+        [
+            "parfüm",
+            "parfum"
+        ],
+        [
+            "dudak parlatıcısı",
+            "dudak parlatıcı"
+        ],
+        "vücut spreyi",
+        "koku seti",
+        "spray$",
+        "oda kokusu",
+        "dudak Dolgunlaştırıcı"
+    ],
+    "dudak bakımı": [
+        [
+            "dudak parlatıcı",
+            "dudak parlatıcısı"
+        ],
+        "dudak bakımı seti",
+        "dudak yağı",
+        "DUDAK NEMLENDİRİCİ",
+        "dudak kremi",
+        "dudak peelingi",
+        "dudak Dolgunlaştırıcı",
+        "ruj",
+        "dudak bakımı seti",
+        "dudak yağı",
+        "DUDAK NEMLENDİRİCİ",
+        "dudak kremi"
+    ],
+    "cilt bakımı": [
+        [
+            "vücut kremi",
+            "skin-care"
+        ],
+        "duş jeli",
+        "vücut peelingi",
+        "vücut yağı",
+        "nemlendirici",
+        "vücut losyonu",
+        "el kremi",
+        "vücut bakım ritüeli",
+        "göz serumu",
+        "peptit serum",
+        "yüz kremi",
+        "güneş koruyucu krem",
+        "yüz temizleme jeli",
+        "Göz ve Dudak Makyaj Temizleyicisi",
+        "yüz maskesi",
+        [
+            "vücut kremi",
+            "skin-care"
+        ],
+        "duş jeli",
+        "vücut peelingi",
+        "vücut yağı",
+        "nemlendirici",
+        "vücut losyonu",
+        "el kremi",
+        "vücut bakım ritüeli",
+        "dudak peelingi",
+        "göz serumu",
+        "peptit serum",
+        "yüz kremi",
+        "güneş koruyucu krem",
+        "yüz temizleme jeli",
+        "Göz ve Dudak Makyaj Temizleyicisi",
+        "yüz maskesi"
+    ],
+    "saç bakımı": [
+        [
+            "saç bakım",
+            "Hair-Care"
+        ],
+        [
+            "saç bakım",
+            "Hair-Care"
+        ]
+    ],
+    "hijyen": [
+        "şampuan",
+        "sabun",
+        "hijyen",
+        "şampuan",
+        "sabun",
+        "hijyen"
+    ],
+    "tümü": [
+        [
+            "kolye",
+            "necklace",
+            "Mini Koly"
+        ],
+        [
+            "küpe",
+            "earrings"
+        ],
+        [
+            "bileklik",
+            "bracelet"
+        ],
+        "taç$",
+        [
+            "broş",
+            "Brosch",
+            "brooch"
+        ],
+        [
+            "yüzük",
+            "ring",
+            "YUZUK"
+        ],
+        "bilezik",
+        "Zincir Choker",
+        "şahmeran",
+        "yaka rozeti",
+        "halhal",
+        [
+            "manşet",
+            "cuff"
+        ],
+        "gold bel zinciri"
+    ],
+    "kombinler": [
+        "kombinler"
+    ],
+    "koleksiyon": [
+        [
+            "ethereal waters",
+            "ethereal-waters"
+        ],
+        [
+            "FALL/WINTER",
+            "fall-winter",
+            "fw-22-23"
+        ],
+        [
+            "glamyou bridal",
+            "glamyou-bridal",
+            "glam-you-bridal"
+        ]
+    ]
+}
