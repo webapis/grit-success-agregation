@@ -15,27 +15,32 @@ for (let d in data) {
     const current = data[d]
     const h4Value = current['h4']
     const h3Value = current['h3']
+    if (h4Value && h3Value) {
+        const h3FromParent = getParentNodeName(h4Value, [mergedKeywords])
+        if (h3FromParent) {
+            const {
+                parentNodeName, subcategories } = h3FromParent
+            if (parentNodeName !== h3Value) {
 
-    const h3FromParent = getParentNodeName(h4Value, [mergedKeywords])
-    if (h3FromParent) {
-        const {
-            parentNodeName, subcategories } = h3FromParent
-        if (parentNodeName !== h3Value) {
-
-          //  throw `keyword for h3 wrong: ${JSON.stringify(current)}`
-            data[d]={...current,isValid:false}
+                //  throw `keyword for h3 wrong: ${JSON.stringify(current)}`
+                data[d] = { ...current, isValid: false }
 
 
+            } else {
+
+                data[d] = { ...current, isValid: true }
+
+                console.log(`h3: ${h3Value} is value`)
+            }
         } else {
-
-            data[d]={...current,isValid:true}
-
-            console.log(`h3: ${h3Value} is value`)
+            data[d] = { ...current, isValid: false }
+            debugger
         }
+
     } else {
-            data[d]={...current,isValid:false}
-        debugger
+        data[d] = { ...current, isValid: false }
     }
+
 
 
 
@@ -44,6 +49,7 @@ for (let d in data) {
 debugger
 console.log('After Validation', data.length)
 await makeDirectory('data/3.2.step-data')
-fs.writeFileSync('data/3.2.step-data/validation.json', JSON.stringify(data))
+fs.writeFileSync('data/3.2.step-data/validation.json', JSON.stringify(data.filter(f => f.isValid)))
+fs.writeFileSync('data/3.2.step-data/invalid.json', JSON.stringify(data.filter(f => !f.isValid)))
 
 debugger

@@ -52,6 +52,7 @@ export default function getParentNodeName(keyword, data) {
             }
         }
     } catch (error) {
+        debugger
         throw error
     }
 
