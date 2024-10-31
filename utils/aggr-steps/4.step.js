@@ -46,7 +46,7 @@ function groupByHierarchy(arr) {
 
             // Limit children at the h5 level
             if (level === 4) {
-                group.children = group.children.slice(0, 2); // Limit to 2 items at h5 level
+                group.children = group.children.sort((a, b) => b.isLinkCandidate - a.isLinkCandidate).slice(0, 2); // Limit to 2 items at h5 level
             }
         });
 

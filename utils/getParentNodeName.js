@@ -40,12 +40,12 @@ export default function getParentNodeName(keyword, data) {
                     if (Array.isArray(subcategory)) {
                    
                         if (subcategory.map(m=>m.toLowerCase()).includes(keyword.toLowerCase())) {
-                            return { parentNodeName, subcategories };
+                            return { parentNodeName, subcategory };
                         }
                     } else {
                         if (subcategory.toLowerCase() === keyword.toLowerCase()) {
                           
-                            return { parentNodeName, subcategories };
+                            return { parentNodeName, subcategory };
                         }
                     }
                 }
