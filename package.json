@@ -10,6 +10,7 @@
     "3.0.step": "node utils/aggr-steps/3.0.step.js && echo 'aggregating data' ",
     "3.1.step": "node utils/aggr-steps/3.1.step.js && echo 'convert price to float' ",
     "3.2.step": "node utils/aggr-steps/3.2.step.js && echo 'keyword validation' ",
+    "3.3.step": "node utils/aggr-steps/3.3.step.js && echo 'imageUrl validation' ",
     "4.step": "node utils/aggr-steps/4.step.js && echo 'group data for navigation'",
     "5.step": "node utils/aggr-steps/5.step.js && echo 'split to navigation and references'",
     "6.step": "node utils/aggr-steps/6.step.js && echo 'upload navigation and references'"
