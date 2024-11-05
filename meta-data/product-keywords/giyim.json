@@ -60,7 +60,8 @@
             "SMOKİN",
             [
                 "bluz",
-                "blouse"
+                "blouse",
+                "blouses"
             ],
             "atlet",
             [
@@ -128,7 +129,8 @@
                 "High Waist Jean",
                 "Long Length Jean",
                 "Denim Shopping with Sun Embroidered - Jean",
-                "Palmer Jeans"
+                "Palmer Jeans",
+                "Bol Kesim Jean"
             ],
             [
                 "tayt",
@@ -166,8 +168,7 @@
             "mont",
             "parka",
             [
-                "kaban",
-                "coat"
+                "kaban"
             ],
             "palto",
             [
@@ -243,7 +244,7 @@
                 "Heeled Sandal"
             ],
             [
-                "sandal:",
+                "sandallar",
                 "Men's Sandal"
             ],
             [
@@ -343,7 +344,12 @@
                 "socks",
                 "çorabı",
                 "Çorabı",
-                "corap"
+                "corap",
+                "suba"
+            ],
+            [
+                "bebek önlüğü",
+                "Bebek Önlüğü"
             ],
             "yelpaze",
             [

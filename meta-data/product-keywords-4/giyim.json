@@ -1,5 +1,7 @@
 [
     {
+        
+       
         "üst giyim": [
             [
                 "gömlek",
@@ -17,12 +19,17 @@
             "taç"
         ],
         "dış giyim": [
+          
             "kap",
             [
                 "kaftan",
                 "caftan"
             ],
-            "kürk"
+          
+            [
+                "kaban",
+                "coat"
+            ]
         ],
         "atkı": [
             [
@@ -57,13 +64,9 @@
             ],
             "kuşak"
         ],
-        "alt giyim": [
-      
-            [
-                "şort",
-                "short",
-                "SORT"
-            ]
+        
+        "köpek giyisi": [
+            "köpek giysisi"
         ]
     }
 ]

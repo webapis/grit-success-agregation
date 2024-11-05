@@ -68,6 +68,15 @@
                 "Shoe",
                 "AYAKKABI"
             ]
+        ],
+        "dış giyim":[  "kürk"],
+
+        "alt giyim": [
+            [
+                "şort",
+                "short",
+                "SORT"
+            ]
         ]
     }
 ]
