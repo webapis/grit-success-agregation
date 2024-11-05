@@ -114,7 +114,8 @@ async function groupByHierarchy(arr) {
                                     ++ notValidImageCounter
                                     console.log(`Image validation result for ${child.img}:`, 
                                         child.imageValidation,'counter:',notValidImageCounter); 
-                            }else{
+                            }else
+                            {
                                ++ validImageCounter
                              
                             }
