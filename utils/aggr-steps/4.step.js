@@ -4,7 +4,8 @@ import ImageValidator from '../ImageValidator.js';
 
 const data = JSON.parse(fs.readFileSync(`${process.cwd()}/data/3.2.step-data/validation.json`, { encoding: 'utf-8' }));
 debugger;
-
+let notValidImageCounter=0
+let validImageCounter =0
 const { hierarchy } = await groupByHierarchy(data);
 debugger;
 
@@ -84,17 +85,15 @@ async function groupByHierarchy(arr) {
                     const validatedChildren = await Promise.all(
                         slicedChildren.map(async (child) => {
                             if (child.img) {
-                                if(child.img.includes('cdn.beymen.com')){
+                              
                                     const imageValidation = await validateImage(child.img);
                              
-                                    if(imageValidation.statusCode ===404){
-                                        debugger
-                                    }
+                             
                                     return {
                                         ...child,
                                         imageValidation
                                     };
-                                }
+                                
                             
                             }
                             return child;
@@ -111,10 +110,13 @@ async function groupByHierarchy(arr) {
                         if (child.imageValidation) {
                             debugger
                             if(!child.imageValidation.isValid){
-                                console.log(`Image validation result for ${child.img}:`, 
-                                    child.imageValidation);
+
+                                    ++ notValidImageCounter
+                                    console.log(`Image validation result for ${child.img}:`, 
+                                        child.imageValidation,'counter:',notValidImageCounter); 
                             }else{
-                                console.log('----')
+                               ++ validImageCounter
+                             
                             }
 
                         }
@@ -127,5 +129,7 @@ async function groupByHierarchy(arr) {
     };
 
     const hierarchy = await buildHierarchy(arr);
+    console.log('validImageCounter',validImageCounter)
+    console.log('notValidImageCounter',notValidImageCounter)
     return { hierarchy };
 }
