@@ -1,0 +1,15 @@
+name: Scheduled Runner
+
+on:
+  workflow_dispatch:  # Keep manual trigger option
+  schedule:
+    # Runs at 00:00 UTC every Wednesday
+    - cron: '0 0 * * 3'
+
+env:
+  GH_TOKEN: ${{secrets.GH_TOKEN}}
+
+jobs:
+  penti_job:
+    uses: ./.github/workflows/reusable.yml
+    secrets: inherit
