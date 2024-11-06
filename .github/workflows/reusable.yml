@@ -1,0 +1,69 @@
+name: Reusable
+on:
+   workflow_call:
+
+env:
+  CLOUD: true
+
+  GH_TOKEN: ${{secrets.GH_TOKEN}}
+
+jobs:
+  aggregator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          ref: main
+
+      - name: Start MongoDB
+        uses: supercharge/mongodb-github-action@1.10.0
+        with:
+          mongodb-version: '6.0'
+          mongodb-port: 27017
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: 'npm install'
+
+      - name: 1.0.step
+        id: downloadData
+        run: node utils/aggr-steps/1.0.step.js && echo 'downloading data' 
+
+      - name: 1.1.step
+        id: importDataToMongoDB
+        run: node utils/aggr-steps/1.1.step.js && echo 'import data to mongodb' 
+
+      - name: 2.step
+        id: prepKeywords
+        run: node utils/aggr-steps/2.step.js && echo 'preparing keywords'
+
+      - name: 3.0.step
+        id: aggregateData
+        run: node utils/aggr-steps/3.0.step.js && echo 'aggregating data' 
+
+      - name: 3.1.step
+        id: convertPrice
+        run: node utils/aggr-steps/3.1.step.js && echo 'convert price to float'
+
+      - name: 3.2.step
+        id: validateKeywords
+        run: node utils/aggr-steps/3.2.step.js && echo 'keyword validation'
+
+      - name: 4.step
+        id: groubDataForNavigation
+        run: node utils/aggr-steps/4.step.js && echo 'group data for navigation'
+
+      - name: 5.step
+        id: splitAsNavigationAndReferences
+        run: node utils/aggr-steps/5.step.js && echo 'split to navigation and references'
+
+      - name: 6.step
+        id: uploadData
+        run: node utils/aggr-steps/6.step.js && echo 'upload navigation and references'

@@ -1,0 +1,11 @@
+name: manualcall
+on:
+   workflow_dispatch:
+env:
+  GH_TOKEN: ${{secrets.GH_TOKEN}}
+
+jobs:
+  penti_job:
+    uses: ./.github/workflows/reusable.yml
+    with:
+    secrets: inherit
