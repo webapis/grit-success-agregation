@@ -2,14 +2,17 @@
     {
         "üst giyim": [
             [
-                "üst",
-                "top"
-            ],
-            [
-                "сrop",
-                "Crop"
-            ],
-            "bra"
+                "tişört",
+                "tshirt",
+                "tişört",
+                "tsihrt",
+                "t-Shirt",
+                "TSHİRT",
+                "TİŞÖRT",
+                "Kısa Kol Basic",
+                "T-Shirt"
+            ]
+           
         ],
         "aksesuar": [
             [
@@ -62,6 +65,7 @@
             ]
         ],
         "ayakkabı": [
+            "babet",
             "postal",
             [
                 "ayakkabı",
@@ -69,8 +73,9 @@
                 "AYAKKABI"
             ]
         ],
-        "dış giyim":[  "kürk"],
-
+        "dış giyim": [
+            "kürk"
+        ],
         "alt giyim": [
             [
                 "şort",

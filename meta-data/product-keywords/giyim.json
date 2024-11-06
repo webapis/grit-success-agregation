@@ -8,22 +8,11 @@
                 "Elbise",
                 "ELBİSE",
                 "DRESS",
-                "Valencia Black"
+                "Valencia Black",
+                "babette"
             ],
             [
                 "pardesü"
-            ],
-            [
-                "tişört",
-                "tshirt",
-                "tişört",
-                "tsihrt",
-                "t-Shirt",
-                "TSHİRT",
-                "TİŞÖRT",
-                "Kısa Kol Basic",
-                "T-Shirt",
-                "Ecru"
             ],
             "okul gömleği",
             [
@@ -35,7 +24,7 @@
             ],
             [
                 "kazak",
-                "knit",
+                "knitwear",
                 "Vanilla 139429950001d3",
                 "Roll Neck",
                 "Anthracıte"
@@ -50,13 +39,7 @@
                 "süveter",
                 "süeter"
             ],
-            [
-                "takım elbise",
-                "Classic Suit",
-                "Mix Suit",
-                "Wool Suit",
-                "Suit"
-            ],
+           
             "SMOKİN",
             [
                 "bluz",
@@ -74,24 +57,17 @@
                 "kimono",
                 "KİMONO"
             ],
-            [
-                "büstiyer",
-                "BÜSTİYER",
-                "BUSTİYER",
-                "bustier"
-            ],
-            "body",
+           
+        
             "pelerin",
             "bolero",
             "kaftan",
             "panço",
-            "polo",
             [
                 "sweatshirt",
                 "SWEAT"
             ],
             "HOODIE",
-            "kurdele",
             [
                 "denim korse",
                 "DENİM KORSE"
@@ -234,10 +210,12 @@
                 "phone case"
             ],
             "hobo",
-            "kartvizitlik"
+            "kartvizitlik",
+            [
+                "kılıf"
+            ]
         ],
         "ayakkabı": [
-            "babet",
             [
                 "sandalet",
                 "Sandals",
@@ -547,7 +525,8 @@
             [
                 "korse:",
                 "https://www_penti_com/tr/c/korse"
-            ]
+            ],
+            ["bodysuit"]
         ],
         "hediye": [
             "yılbaşı gecesi"

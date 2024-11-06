@@ -1,12 +1,21 @@
 [
     {
-        
-       
         "üst giyim": [
             [
                 "gömlek",
+                "shirt",
+                "gömlek",
                 "henry",
                 "GOMLEK"
+            ],
+    
+            "bra",
+            [
+                "takım elbise",
+                "Classic Suit",
+                "Mix Suit",
+                "Wool Suit",
+                "Suit"
             ]
         ],
         "çanta": [
@@ -19,13 +28,11 @@
             "taç"
         ],
         "dış giyim": [
-          
             "kap",
             [
                 "kaftan",
                 "caftan"
             ],
-          
             [
                 "kaban",
                 "coat"
@@ -64,7 +71,6 @@
             ],
             "kuşak"
         ],
-        
         "köpek giyisi": [
             "köpek giysisi"
         ]
