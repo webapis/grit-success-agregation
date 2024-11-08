@@ -39,7 +39,6 @@
                 "süveter",
                 "süeter"
             ],
-           
             "SMOKİN",
             [
                 "bluz",
@@ -57,8 +56,6 @@
                 "kimono",
                 "KİMONO"
             ],
-           
-        
             "pelerin",
             "bolero",
             "kaftan",
@@ -172,11 +169,40 @@
                 "backpack"
             ],
             [
-                "çanta",
-                "canta",
-                "CANTA",
-                "Çanta",
-                "sırt çantası"
+                "el çanta",
+                "top-handle",
+                "https://manuatelier_com/collections/ilda",
+                "https://manuatelier_com/collections/gala",
+                "https://manuatelier_com/collections/le-cambon-20",
+                "https://manuatelier_com/collections/le-cambon-25"
+            ],
+            [
+                "çapraz çanta",
+                "crossbody"
+            ],
+            [
+                "omuz çanta",
+                "https://manuatelier_com/collections/shoulder"
+            ],
+            [
+                "zincir askılı çanta",
+                "prism-chain-prism"
+            ],
+            [
+                "silindirik çanta",
+                "https://manuatelier_com/collections/xx-mini-cylinder",
+                "https://manuatelier_com/collections/cylinder"
+            ],
+            [
+                "mini çanta",
+                "https://manuatelier_com/collections/mini-pristine",
+                "https://manuatelier_com/collections/mini-gala"
+            ],
+            [
+                "büyük boy çanta",
+                "https://manuatelier_com/collections/xl-du-jour",
+                "https://manuatelier_com/collections/le-cambon-35",
+                "https://manuatelier_com/collections/le-cambon-40"
             ],
             [
                 "bavul",
@@ -192,7 +218,8 @@
                 "kartlık",
                 "card holder",
                 "KARTLIK",
-                "Kartlığı"
+                "Kartlığı",
+                "small-leather-goods"
             ],
             "torba",
             "portföy",
@@ -204,7 +231,10 @@
             "travel organızer",
             "valiz",
             "anahtarlık",
-            "pasaport kılıfı",
+            [
+                "pasaport kılıfı",
+                "passport-case"
+            ],
             [
                 "telefon Kılıfı",
                 "phone case"
@@ -213,9 +243,29 @@
             "kartvizitlik",
             [
                 "kılıf"
+            ],
+            [
+                "tote"
             ]
         ],
         "ayakkabı": [
+            [
+                "tüm ayakkabı",
+                "women-all-shoe-models-23",
+                "men-all-shoes"
+            ],
+            [
+                "klasik ayakkabı",
+                "men-shoe-models-98"
+            ],
+            [
+                "günlük ayakkabı",
+                "women-shoe-models-154"
+            ],
+            [
+                "düz ayakkabı",
+                "manu-ballet-flats"
+            ],
             [
                 "sandalet",
                 "Sandals",
@@ -312,6 +362,10 @@
             ]
         ],
         "aksesuar": [
+            [
+                "aksesuar",
+                "accessory"
+            ],
             "kravat",
             "papyon",
             "boyun aksesuarı",
@@ -323,7 +377,8 @@
                 "çorabı",
                 "Çorabı",
                 "corap",
-                "suba"
+                "suba",
+                "sock"
             ],
             [
                 "bebek önlüğü",
@@ -526,7 +581,9 @@
                 "korse:",
                 "https://www_penti_com/tr/c/korse"
             ],
-            ["bodysuit"]
+            [
+                "bodysuit"
+            ]
         ],
         "hediye": [
             "yılbaşı gecesi"
@@ -538,6 +595,55 @@
                 "matara",
                 "termos"
             ]
+        ],
+        "Kolleksiyonlar": [
+            [
+                "yeni gelenler",
+                "divarese-at-the-latest",
+                "yeni-gelenler",
+                "new-in"
+            ],
+            [
+                "george Hogg",
+                "george-hogg"
+            ],
+            [
+                "kış",
+                "winter"
+            ],
+            [
+                "İkonlar",
+                "icons"
+            ]
+        ],
+        "outlet": [
+            [
+                "outlet",
+                "GARAGE SALE",
+                "garage-sale"
+            ]
+        ],
+        "ayakkabı bakımı": [
+            [
+                "ayakkabı bakımı",
+                "https://www_divarese_com_tr/en/care-products-1272",
+                "https://www_divarese_com_tr/en/maintenance-products-1271"
+            ]
+        ],
+        "özel fırsatlar": [
+            "indirim",
+            [
+                "tekrar stokta",
+                "back-in-stock"
+            ],
+            [
+                "Ön Sipariş",
+                "pre-order"
+            ]
+        ],
+        "general": [
+            "general",
+            "https://manuatelier_com/collections/shop"
         ]
     }
 ]

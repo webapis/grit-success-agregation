@@ -48,7 +48,9 @@ const hostNames = {
         "https://sagaza.com",
         "https://tuvanam.com",
         "https://www.wheneverco.com",
-        "https://www.oxxo.com.tr"
+        "https://www.oxxo.com.tr",
+        "https://manuatelier.com",
+        "https://tr.manuatelier.com"
 
     ],
     "erkek": [

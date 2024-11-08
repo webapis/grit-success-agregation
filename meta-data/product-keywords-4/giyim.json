@@ -1,5 +1,10 @@
 [
     {
+        "ayakkabı": [
+            "tüm ayakkabı",
+            "Shoes",
+            "AYAKKABI"
+        ],
         "üst giyim": [
             [
                 "gömlek",
@@ -8,7 +13,6 @@
                 "henry",
                 "GOMLEK"
             ],
-    
             "bra",
             [
                 "takım elbise",
@@ -74,5 +78,6 @@
         "köpek giyisi": [
             "köpek giysisi"
         ]
+
     }
 ]

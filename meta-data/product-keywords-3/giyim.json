@@ -12,7 +12,6 @@
                 "Kısa Kol Basic",
                 "T-Shirt"
             ]
-           
         ],
         "aksesuar": [
             [
@@ -66,12 +65,7 @@
         ],
         "ayakkabı": [
             "babet",
-            "postal",
-            [
-                "ayakkabı",
-                "Shoe",
-                "AYAKKABI"
-            ]
+            "postal"
         ],
         "dış giyim": [
             "kürk"

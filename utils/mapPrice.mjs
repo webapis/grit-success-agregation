@@ -11,6 +11,7 @@ function mapPrice(raw, obj) {
             case price === '':
             case price === '0,00':
             case price === '€0,00':
+            case price==='N/A':
 
                 return 0
             case price.replace('TL', '').replaceAll(' ', '') === '0':
@@ -46,7 +47,7 @@ export default mapPrice
 
 
 function parsePrice(price) {
-    const trimPrice = price.replaceAll(' ', '').replace('Sepette%10İndirim','')
+    const trimPrice = price.replaceAll(' ', '').replace('Sepette%10İndirim', '').replace('From', "")
     switch (true) {
         //1799.95
         case /^\d\d\d[,]\d\d$/.test(trimPrice)://299,99
