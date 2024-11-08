@@ -44,10 +44,10 @@ async function runAggregation() {
 
         const pipeline = [
 
-            // setH1ByField({ id: 1, field: 'title' }),
-            // setH1ByField({ id: 2, field: 'title' }),
-            // setH1ByField({ id: 3, field: 'title' }),
-            // setH1ByField({ id: 4, field: 'title' }),
+            setH1ByField({ id: 1, field: 'title' }),
+            setH1ByField({ id: 2, field: 'title' }),
+            setH1ByField({ id: 3, field: 'title' }),
+            setH1ByField({ id: 4, field: 'title' }),
 
             // setH1ByField({ id: 1, field: 'link' }),
             // setH1ByField({ id: 2, field: 'link' }),
@@ -89,10 +89,10 @@ async function runAggregation() {
             // setH3ByFieldUrl({ id: 3, field: 'pageURLString' }),
             // setH3ByFieldUrl({ id: 4, field: 'pageURLString' }),
 
-            // setH3ByField({ id: 1, field: 'title' }),
-            // setH3ByField({ id: 2, field: 'title' }),
-            // setH3ByField({ id: 3, field: 'title' }),
-            // setH3ByField({ id: 4, field: 'title' }),
+            setH3ByField({ id: 1, field: 'title' }),
+            setH3ByField({ id: 2, field: 'title' }),
+            setH3ByField({ id: 3, field: 'title' }),
+            setH3ByField({ id: 4, field: 'title' }),
 
             // setH3ByField({ id: 1, field: 'link' }),
             // setH3ByField({ id: 2, field: 'link' }),
@@ -106,10 +106,10 @@ async function runAggregation() {
 
 
 
-            // setH4ByField({ id: 1, field: 'title' }),
-            // setH4ByField({ id: 2, field: 'title' }),
-            // setH4ByField({ id: 3, field: 'title' }),
-            // setH4ByField({ id: 4, field: 'title' }),
+            setH4ByField({ id: 1, field: 'title' }),
+            setH4ByField({ id: 2, field: 'title' }),
+            setH4ByField({ id: 3, field: 'title' }),
+            setH4ByField({ id: 4, field: 'title' }),
 
             // setH4ByField({ id: 1, field: 'link' }),
             // setH4ByField({ id: 2, field: 'link' }),
