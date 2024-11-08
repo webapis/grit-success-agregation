@@ -165,6 +165,10 @@
         ],
         "çanta": [
             [
+                "çanta kolleksiyonu",
+                "https://www_elleshoes_com/charm-koleksiyonu"
+            ],
+            [
                 "sırt çantası",
                 "backpack"
             ],
@@ -212,7 +216,8 @@
                 "сüzdan",
                 "Cüzdan",
                 "wallet",
-                "card"
+                "card",
+                "cuzdan"
             ],
             [
                 "kartlık",
@@ -277,7 +282,8 @@
             ],
             [
                 "çizme",
-                "ÇİZME"
+                "ÇİZME",
+                "cizme"
             ],
             [
                 "terlik",
@@ -363,7 +369,7 @@
         ],
         "aksesuar": [
             [
-                "aksesuar",
+                "aksesuarlar",
                 "accessory"
             ],
             "kravat",
@@ -642,8 +648,12 @@
             ]
         ],
         "general": [
-            "general",
-            "https://manuatelier_com/collections/shop"
+            [
+                "general",
+                "https://manuatelier_com/collections/shop",
+                "https://www_elleshoes_com/tum-urunler-kadin1",
+                "https://www_elleshoes_com/tum-urunler-erkek1"
+            ]
         ]
     }
 ]

@@ -1,9 +1,11 @@
 [
     {
         "ayakkabı": [
-            "tüm ayakkabı",
-            "Shoes",
-            "AYAKKABI"
+            [
+                "tüm ayakkabı",
+
+                "AYAKKABI"
+            ]
         ],
         "üst giyim": [
             [
@@ -25,7 +27,8 @@
         "çanta": [
             [
                 "çanta",
-                "bag"
+                "bag",
+                "canta"
             ]
         ],
         "saç-aksesuar": [
@@ -78,6 +81,5 @@
         "köpek giyisi": [
             "köpek giysisi"
         ]
-
     }
 ]
