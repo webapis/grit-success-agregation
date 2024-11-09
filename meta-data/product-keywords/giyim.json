@@ -212,20 +212,6 @@
                 "bavul",
                 "suitcase"
             ],
-            [
-                "сüzdan",
-                "Cüzdan",
-                "wallet",
-                "card",
-                "cuzdan"
-            ],
-            [
-                "kartlık",
-                "card holder",
-                "KARTLIK",
-                "Kartlığı",
-                "small-leather-goods"
-            ],
             "torba",
             "portföy",
             [
@@ -251,6 +237,24 @@
             ],
             [
                 "tote"
+            ]
+        ],
+        "cüzdan": [
+            [
+                "сüzdan",
+                "Cüzdan",
+                "wallet",
+                "card",
+                "cuzdan"
+            ]
+        ],
+        "kartlık": [
+            [
+                "kartlık",
+                "card holder",
+                "KARTLIK",
+                "Kartlığı",
+                "small-leather-goods"
             ]
         ],
         "ayakkabı": [
@@ -331,6 +335,14 @@
             [
                 "günlük ayakkabı",
                 "gunluk-ayakkabi"
+            ],
+            [
+                "spor ayakkabı",
+                "spor-ayakkabi"
+            ],
+            [
+                "oxford ayakkabı",
+                "oxford-ayakkabi"
             ]
         ],
         "başlık": [
