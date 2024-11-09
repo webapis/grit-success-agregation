@@ -69,7 +69,6 @@
                 "denim korse",
                 "DENİM KORSE"
             ],
-            "abiye",
             [
                 "muun kolleksyon",
                 "Valencia",
@@ -186,7 +185,8 @@
             ],
             [
                 "omuz çanta",
-                "https://manuatelier_com/collections/shoulder"
+                "https://manuatelier_com/collections/shoulder",
+                "omuz-askili-canta"
             ],
             [
                 "zincir askılı çanta",
@@ -259,13 +259,20 @@
         ],
         "ayakkabı": [
             [
+                "abiye ayakkabı",
+                "Abiye Ayakkabı",
+                "https://www_desa_com_tr/kadin-abiye/"
+            ],
+            [
                 "tüm ayakkabı",
                 "women-all-shoe-models-23",
                 "men-all-shoes"
             ],
             [
                 "klasik ayakkabı",
-                "men-shoe-models-98"
+                "Klasik Ayakkabı",
+                "men-shoe-models-98",
+                "klasik-ayakkabi"
             ],
             [
                 "düz ayakkabı",
@@ -330,7 +337,6 @@
                 "gunluk-ayakkabi",
                 "women-shoe-models-154",
                 "kadin-gunluk-ayakkabi"
-                
             ],
             [
                 "spor ayakkabı",
@@ -646,7 +652,10 @@
             ]
         ],
         "özel fırsatlar": [
-            "indirim",
+            [
+                "indirim",
+                "efsanegunler"
+            ],
             [
                 "tekrar stokta",
                 "back-in-stock"
