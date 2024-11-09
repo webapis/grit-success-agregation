@@ -65,7 +65,13 @@
         ],
         "ayakkabı": [
             "babet",
-            "postal"
+            "postal",
+            [
+                "tüm ayakkabı",
+
+                "AYAKKABI",
+                "Ayakkabı"
+            ]
         ],
         "dış giyim": [
             "kürk"
@@ -83,6 +89,17 @@
                 "bag",
                 "canta"
             ]
+        ],
+        "saç-aksesuar": [
+   
+         
+            [
+                "toka",
+                "toka seti",
+                "hair buckle",
+                "Hair Clip"
+            ]
+         
         ]
     }
 ]
