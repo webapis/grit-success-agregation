@@ -21,7 +21,7 @@ for (let d in data) {
         if (h3FromParent) {
             const {
                 parentNodeName, subcategory } = h3FromParent
-            debugger
+       
             if (parentNodeName !== h3Value) {
 
                 //  throw `keyword for h3 wrong: ${JSON.stringify(current)}`
@@ -29,19 +29,26 @@ for (let d in data) {
 
 
             } else {
+                if(current.title.includes('Günlük Ayakkabı') && current.pageURLString.includes('kadin-gunluk-ayakkabi')){
+                    debugger
+                }
                 const kwords = Array.isArray(subcategory) ? subcategory.map(m => deaccent(m)) : [deaccent(subcategory)]
                 const isLinkCandidate = containsKeywordWithinPageUrl(current.pageURLString, kwords)
+                const isLinkCandidateTitle = containsKeywordWithinPageUrl(deaccent(current.title), kwords)
+
+          
+                const isCandidate = (isLinkCandidate && isLinkCandidateTitle) ? true : false
                 if (isLinkCandidate) {
-                  //  console.log(`pageURL isLinkCandidate:${h4Value}: ${isLinkCandidate}: ${current.pageURLString}: count:${countIsValid++}`)
+                    //  console.log(`pageURL isLinkCandidate:${h4Value}: ${isLinkCandidate}: ${current.pageURLString}: count:${countIsValid++}`)
                 }
 
-                data[d] = { ...current, isValid: true, isLinkCandidate }
+                data[d] = { ...current, isValid: true, isLinkCandidate:isCandidate }
 
                 //   console.log(`h3: ${h3Value} is value`)
             }
         } else {
             data[d] = { ...current, isValid: false, isLinkCandidate: false }
-            debugger
+         
         }
 
     } else {
@@ -56,18 +63,19 @@ for (let d in data) {
 
 function containsKeywordWithinPageUrl(str, values) {
     const lowerStr = str.toLowerCase();
-    return [...values,'aksesuar',
-        'ayakkabi',
-        'bluz',
-        't-shirt',
-        'dis-giyim',
-        'triko',
-        'ceket',
-        'elbise',
-        'smokin',
-        'gamze-ercel',
-        'cuzdan',
-        'kol-dugmesi'
+    return [...values,
+        //  'aksesuar',
+        // 'ayakkabi',
+        // 'bluz',
+        // 't-shirt',
+        // 'dis-giyim',
+        // 'triko',
+        // 'ceket',
+        // 'elbise',
+        // 'smokin',
+        // 'gamze-ercel',
+        // 'cuzdan',
+        // 'kol-dugmesi'
     ].some(value => lowerStr.includes(value));
 }
 debugger

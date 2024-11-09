@@ -268,10 +268,6 @@
                 "men-shoe-models-98"
             ],
             [
-                "günlük ayakkabı",
-                "women-shoe-models-154"
-            ],
-            [
                 "düz ayakkabı",
                 "manu-ballet-flats"
             ],
@@ -306,10 +302,6 @@
                 "patik",
                 "Patiği"
             ],
-            [
-                "stiletto",
-                "sitiletto"
-            ],
             "platform ayakkabı",
             "sneaker",
             "espadril",
@@ -334,10 +326,15 @@
             ],
             [
                 "günlük ayakkabı",
-                "gunluk-ayakkabi"
+                "Günlük Ayakkabı",
+                "gunluk-ayakkabi",
+                "women-shoe-models-154",
+                "kadin-gunluk-ayakkabi"
+                
             ],
             [
                 "spor ayakkabı",
+                "Spor Ayakkabı",
                 "spor-ayakkabi"
             ],
             [
