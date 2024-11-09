@@ -29,7 +29,7 @@ for (let d in data) {
 
 
             } else {
-                if(current.title.includes('Rosalie Siyah Kadın Mary Jane Ayakkabı') ){
+                if(current.title.includes('Mailo Siyah Kadın Kapitone Deri Bot') ){
                     debugger
                 }
                 const kwords = Array.isArray(subcategory) ? subcategory.map(m => deaccent(m)) : [deaccent(subcategory)]

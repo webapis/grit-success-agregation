@@ -1,0 +1,156 @@
+[
+    {
+        "üst giyim": [
+            [
+                "gömlek",
+                "shirt",
+                "gömlek",
+                "henry",
+                "GOMLEK"
+            ],
+            [
+                "elbise",
+                "ebise",
+                "DRESS"
+            ],
+            [
+                "tulum",
+                "tuluım",
+                "jumpsuit",
+                "playsuit",
+                "overall"
+            ],
+            [
+                "kazak",
+                "knitwear",
+                "Vanilla 139429950001d3",
+                "Roll Neck",
+                "Anthracıte"
+            ],
+            [
+                "hırka",
+                "сardigan",
+                "Cardigan",
+                "HIRKA"
+            ],
+            "atlet",
+            [
+                "tunik",
+                "tunic"
+            ],
+            "pareo",
+            "panço"
+            
+        ],
+        "alt giyim": [
+            [
+                "pantolon",
+                "pants"
+            ],
+            [
+                "kapri",
+                "capris"
+            ]
+        ],
+        "dış giyim": [
+            [
+                "сeket",
+                "Ceket",
+                "blazer",
+                "jacket"
+            ],
+            "parka",
+            [
+                "kaban"
+            ],
+            "palto",
+            [
+                "yelek"
+            ],
+            "manto",
+            [
+                "kaban"
+            ],
+            "parka",
+            "bomber"
+        ],
+        "iç giyim": [
+            [
+                "külot",
+                "klüot",
+                "Külot",
+                "Külodu"
+            ],
+            "boxer",
+            "tanga",
+            "teddy",
+            "thong"
+        ],
+        "ayakkabı": [
+            
+           
+            [
+                "oxford ayakkabı",
+                "Men's Oxford"
+            ],
+            [
+                "çizme",
+                "ÇİZME",
+                "cizme"
+            ],
+            [
+                "terlik",
+                "slide"
+            ],
+            [
+                "patik",
+                "Patiği"
+            ]
+        ],
+        "çanta": [
+            [
+                "bavul",
+                "suitcase"
+            ],
+            "torba",
+            "valiz",
+            [
+                "kılıf"
+            ]
+        ],
+        "başlık": [
+            [
+                "şapka",
+                "Şapka",
+                "SAPKA"
+            ]
+        ],
+        "atkı": [
+            "fular",
+            [
+                "eşarp",
+                "ESARP"
+            ]
+        ],
+        "aksesuar": [
+            [
+                "çorap",
+                "socks",
+                "çorabı",
+                "Çorabı",
+                "corap"
+            ],
+            [
+                "çetik",
+                "Çetik"
+            ],
+            "maske"
+        ],
+        "Kolleksiyonlar": [
+            [
+                "İkonlar",
+                "icons"
+            ]
+        ]
+    }
+]

@@ -1,73 +1,127 @@
 [
     {
-       
         "üst giyim": [
+           
             [
-                "gömlek",
-                "shirt",
-                "gömlek",
-                "henry",
-                "GOMLEK"
-            ],
-            "bra",
-            [
-                "takım elbise",
-                "Classic Suit",
-                "Mix Suit",
-                "Wool Suit",
-                "Suit"
-            ]
-        ],
-        
-        "saç-aksesuar": [
-            "taç"
-        ],
-        "dış giyim": [
-            "kap",
-            [
-                "kaftan",
-                "caftan"
-            ],
-            [
-                "kaban",
-                "coat"
-            ]
-        ],
-        "atkı": [
-            [
-                "şal",
-                "shawl",
-                "SAL"
-            ],
-            [
-                "atkı",
-                "scarf",
-                "foulard"
-            ],
-            [
-                "Poplin Yaka"
-            ]
-        ],
-        "başlık": [
-            [
-                "şapka",
-                "hat"
+                "bluz",
+                "blouse",
+                "blouses"
             ]
         ],
         "aksesuar": [
-            [
-                "kravat",
-                "tie"
-            ],
             [
                 "kemer",
                 "belt",
                 "kemeri"
             ],
-            "kuşak"
+            [
+                "çorap",
+                "suba",
+                "sock"
+            ]
         ],
-        "köpek giyisi": [
-            "köpek giysisi"
+
+        "kombinler": [
+            "kombinler"
+        ],
+        "koleksiyon": [
+            [
+                "ethereal waters",
+                "ethereal-waters"
+            ],
+            [
+                "FALL/WINTER",
+                "fall-winter",
+                "fw-22-23"
+            ],
+            [
+                "glamyou bridal",
+                "glamyou-bridal",
+                "glam-you-bridal"
+            ]
+        ],
+        "ayakkabı": [
+            "babet",
+            "postal",
+            [
+                "tüm ayakkabı",
+                "AYAKKABI",
+                "Ayakkabı"
+            ]
+        ],
+        "dış giyim": [
+            "kürk",
+            [
+                "yelek",
+                "vest"
+            ],
+            "mont",
+            [
+                "kaban",
+                "coat"
+            ]
+        ],
+        "alt giyim": [
+            [
+                "şort",
+                "short",
+                "SORT"
+            ],
+            [
+                "tayt",
+                "leggings",
+                "Legging"
+            ],
+            [
+                "etek",
+                "skirt",
+                "Sassy Black"
+            ],
+            [
+                "pantolon",
+                "pant"
+            ]
+        ],
+        "çanta": [
+            [
+                "çanta",
+                "bag",
+                "canta"
+            ],
+            "hobo",
+            [
+                "tote"
+            ]
+        ],
+        "kartlık": [
+            [
+                "kartlık",
+                "card"
+            ]
+        ],
+        "başlık": [
+            "bere"
+        ],
+        "atkı": [
+            [
+                "atkı",
+                "ATKI"
+            ],
+            [
+                "atkı",
+                "scarf",
+                "foulard"
+            ]
+        ],
+        "saç-aksesuar": [
+            [
+                "toka seti",
+                "hair buckle",
+                "Hair Clip"
+            ]
+        ],
+        "saat": [
+            "saat"
         ]
     }
 ]

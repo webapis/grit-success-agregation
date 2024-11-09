@@ -1,105 +1,62 @@
 [
     {
-        "üst giyim": [
+  
+        "saç-aksesuar": [
+            "taç"
+        ],
+        "ayakkabı": [
             [
-                "tişört",
-                "tshirt",
-                "tişört",
-                "tsihrt",
-                "t-Shirt",
-                "TSHİRT",
-                "TİŞÖRT",
-                "Kısa Kol Basic",
-                "T-Shirt"
+                "bot",
+                "botu",
+                "boots",
+                "Boot",
+                "Toka Detaylı Bot"
+            ]
+        ],
+        "üst giyim": [
+            
+            "bra",
+            [
+                "takım elbise",
+                "Classic Suit",
+                "Mix Suit",
+                "Wool Suit",
+                "Suit"
+            ]
+        ],
+        "dış giyim": [
+            "kap",
+            [
+                "kaftan",
+                "caftan"
+            ]
+        ],
+     
+        "atkı": [
+            [
+                "şal",
+                "shawl",
+                "SAL"
+            ]
+        ],
+        "başlık": [
+            [
+                "şapka",
+                "hat"
             ]
         ],
         "aksesuar": [
             [
-                "kemer",
-                "belt",
-                "kemeri"
+                "kravat",
+                "tie"
             ]
         ],
-        "iç giyim": [
-            [
-                "sütyen",
-                "sütyeni"
-            ],
-            "külot",
-            "bralet",
-            "jartiyer çorabı",
-            "push-Up takım",
-            "bel korse",
-            "boxer",
-            "tanga",
-            "teddy",
-            "thong",
-            "brazillian",
-            "jartiyer",
-            "İç Giyim",
-            "hipster",
-            "privee koleksiyonu",
-            [
-                "Termal İçlik"
-            ],
-            "İçlik"
-        ],
-        "kombinler": [
-            "kombinler"
-        ],
-        "koleksiyon": [
-            [
-                "ethereal waters",
-                "ethereal-waters"
-            ],
-            [
-                "FALL/WINTER",
-                "fall-winter",
-                "fw-22-23"
-            ],
-            [
-                "glamyou bridal",
-                "glamyou-bridal",
-                "glam-you-bridal"
-            ]
-        ],
-        "ayakkabı": [
-            "babet",
-            "postal",
-            [
-                "tüm ayakkabı",
 
-                "AYAKKABI",
-                "Ayakkabı"
-            ]
-        ],
-        "dış giyim": [
-            "kürk"
-        ],
-        "alt giyim": [
+        "Kolleksiyonlar": [
             [
-                "şort",
-                "short",
-                "SORT"
+                "kış",
+                "winter"
             ]
-        ],
-        "çanta": [
-            [
-                "çanta",
-                "bag",
-                "canta"
-            ]
-        ],
-        "saç-aksesuar": [
-   
-         
-            [
-                "toka",
-                "toka seti",
-                "hair buckle",
-                "Hair Clip"
-            ]
-         
         ]
     }
 ]

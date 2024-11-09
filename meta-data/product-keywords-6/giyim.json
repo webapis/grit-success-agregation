@@ -2,12 +2,14 @@
     {
         "üst giyim": [
             [
+                "ikili takım",
+                "İkili Takım"
+            ],
+            [
                 "elbise",
                 "elibise",
-                "ebise",
                 "Elbise",
                 "ELBİSE",
-                "DRESS",
                 "Valencia Black",
                 "babette"
             ],
@@ -16,41 +18,10 @@
             ],
             "okul gömleği",
             [
-                "tulum",
-                "tuluım",
-                "jumpsuit",
-                "playsuit",
-                "overall"
-            ],
-            [
-                "kazak",
-                "knitwear",
-                "Vanilla 139429950001d3",
-                "Roll Neck",
-                "Anthracıte"
-            ],
-            [
-                "hırka",
-                "сardigan",
-                "Cardigan",
-                "HIRKA"
-            ],
-            [
                 "süveter",
                 "süeter"
             ],
             "SMOKİN",
-            [
-                "bluz",
-                "blouse",
-                "blouses"
-            ],
-            "atlet",
-            [
-                "tunik",
-                "tunic"
-            ],
-            "pareo",
             "tankini",
             [
                 "kimono",
@@ -59,7 +30,6 @@
             "pelerin",
             "bolero",
             "kaftan",
-            "panço",
             [
                 "sweatshirt",
                 "SWEAT"
@@ -77,19 +47,27 @@
             [
                 "korseler",
                 "Straplez Korse"
+            ],
+            [
+                "tişört",
+                "tshirt",
+                "tişört",
+                "tsihrt",
+                "t-Shirt",
+                "TSHİRT",
+                "TİŞÖRT",
+                "Kısa Kol Basic",
+                "T-Shirt"
             ]
         ],
         "alt giyim": [
             [
                 "pantolon",
                 "mom jean",
-                "pants",
                 "TROUSER",
                 "palazzo",
                 "Wide-Leg Jean",
-                "pantalon",
                 "Straight Fit Jean",
-                "pant",
                 "high-waist jeans",
                 "Lacivert Beli Lastikli Renk Bloklu Kadife",
                 "Slim Fit Jean",
@@ -104,18 +82,7 @@
                 "Palmer Jeans",
                 "Bol Kesim Jean"
             ],
-            [
-                "tayt",
-                "leggings",
-                "Legging"
-            ],
-            [
-                "etek",
-                "skirt",
-                "Sassy Black"
-            ],
             "bermuda",
-            "alt$",
             "Jogger",
             [
                 "loungwear altı",
@@ -124,43 +91,20 @@
             [
                 "eşofman",
                 "tracksuit"
-            ],
-            [
-                "kapri",
-                "capris"
             ]
         ],
         "dış giyim": [
-            [
-                "сeket",
-                "Ceket",
-                "blazer",
-                "jacket"
-            ],
-            "mont",
-            "parka",
-            [
-                "kaban"
-            ],
-            "palto",
-            [
-                "yelek",
-                "vest"
-            ],
             [
                 "trençkot",
                 "TRENCH",
                 "TRENCKOT",
                 "TRENC COAT"
             ],
-            "bomber",
             "pardösü",
             [
                 "yağmurluk",
                 "yağmurluğu"
-            ],
-            "kürk$",
-            "manto"
+            ]
         ],
         "çanta": [
             [
@@ -208,11 +152,6 @@
                 "https://manuatelier_com/collections/le-cambon-35",
                 "https://manuatelier_com/collections/le-cambon-40"
             ],
-            [
-                "bavul",
-                "suitcase"
-            ],
-            "torba",
             "portföy",
             [
                 "сlucth",
@@ -220,7 +159,6 @@
                 "Clutch"
             ],
             "travel organızer",
-            "valiz",
             "anahtarlık",
             [
                 "pasaport kılıfı",
@@ -230,21 +168,13 @@
                 "telefon Kılıfı",
                 "phone case"
             ],
-            "hobo",
-            "kartvizitlik",
-            [
-                "kılıf"
-            ],
-            [
-                "tote"
-            ]
+            "kartvizitlik"
         ],
         "cüzdan": [
             [
                 "сüzdan",
                 "Cüzdan",
                 "wallet",
-                "card",
                 "cuzdan"
             ]
         ],
@@ -288,14 +218,8 @@
                 "Men's Sandal"
             ],
             [
-                "çizme",
-                "ÇİZME",
-                "cizme"
-            ],
-            [
                 "terlik",
                 "slippers",
-                "slide",
                 "slipper",
                 "Terliği",
                 "EV TERLİĞİ",
@@ -304,10 +228,6 @@
             [
                 "panduf",
                 "Paduf"
-            ],
-            [
-                "patik",
-                "Patiği"
             ],
             "platform ayakkabı",
             "sneaker",
@@ -346,15 +266,15 @@
             [
                 "oxford ayakkabı",
                 "oxford-ayakkabi"
+            ],
+            [
+                "topuklu",
+                "stiletto",
+                "stiletto",
+                "sitiletto"
             ]
         ],
         "başlık": [
-            [
-                "şapka",
-                "Şapka",
-                "SAPKA"
-            ],
-            "bere",
             "kasket",
             [
                 "kulaklık",
@@ -364,11 +284,6 @@
             "Beanie"
         ],
         "atkı": [
-            "fular",
-            [
-                "eşarp",
-                "ESARP"
-            ],
             "bandana",
             [
                 "boyunluk",
@@ -376,11 +291,7 @@
                 "Neck Wrap"
             ],
             "kaşkol",
-            "kafa bandı",
-            [
-                "atkı",
-                "ATKI"
-            ]
+            "kafa bandı"
         ],
         "aksesuar": [
             [
@@ -397,19 +308,13 @@
                 "socks",
                 "çorabı",
                 "Çorabı",
-                "corap",
-                "suba",
-                "sock"
+                "corap"
             ],
             [
                 "bebek önlüğü",
                 "Bebek Önlüğü"
             ],
             "yelpaze",
-            [
-                "çetik",
-                "Çetik"
-            ],
             [
                 "eldiven",
                 "gloves",
@@ -420,7 +325,6 @@
                 "handkerchief"
             ],
             "küçük şemsiye",
-            "maske",
             "KOL DÜĞMESİ",
             "keychain",
             [
@@ -480,14 +384,10 @@
                 "saç kravat",
                 "hair tie"
             ],
-
             [
                 "saç aksesuarı",
                 "SAÇ AKSESUARI"
             ]
-        ],
-        "saat": [
-            "saat"
         ],
         "gözlük ve optik ürünler": [
             [
@@ -561,21 +461,10 @@
                 "sütyeni",
                 "Sütyen"
             ],
-            [
-                "külot",
-                "klüot",
-                "Külot",
-                "Külodu"
-            ],
             "bralet",
             "jartiyer çorabı",
             "push-Up takım",
             "bel korse",
-            "boxer",
-            "tanga",
-            "teddy",
-            "thong",
-            "slip",
             "brazillian",
             "jartiyer",
             [
@@ -593,6 +482,11 @@
                 "Dekoltemiz",
                 "Emzirme Pedi"
             ],
+            "privee koleksiyonu",
+            [
+                "Termal İçlik"
+            ],
+            "İçlik",
             [
                 "korse:",
                 "https://www_penti_com/tr/c/korse"
@@ -622,10 +516,6 @@
             [
                 "george Hogg",
                 "george-hogg"
-            ],
-            [
-                "kış",
-                "winter"
             ],
             [
                 "İkonlar",
@@ -667,6 +557,9 @@
                 "https://www_elleshoes_com/tum-urunler-kadin1",
                 "https://www_elleshoes_com/tum-urunler-erkek1"
             ]
+        ],
+        "köpek giyisi": [
+            "köpek giysisi"
         ]
     }
 ]
