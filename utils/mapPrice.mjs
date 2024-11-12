@@ -5,13 +5,13 @@ function mapPrice(raw, obj) {
         if (raw === undefined) {
             return 0
         }
-        const price = raw.replace('İtibaren', '')
+        const price = raw.replace('İtibaren', '').trim().replaceAll(' ', '').replace('Sepette%10İndirim', '').replace('From', "").trim()
         switch (true) {
             case price === undefined:
             case price === '':
             case price === '0,00':
             case price === '€0,00':
-            case price==='N/A':
+            case price === 'N/A':
 
                 return 0
             case price.replace('TL', '').replaceAll(' ', '') === '0':
@@ -47,8 +47,10 @@ export default mapPrice
 
 
 function parsePrice(price) {
-    const trimPrice = price.replaceAll(' ', '').replace('Sepette%10İndirim', '').replace('From', "")
+    const trimPrice = price
+
     switch (true) {
+
         //1799.95
         case /^\d\d\d[,]\d\d$/.test(trimPrice)://299,99
 
@@ -133,6 +135,9 @@ function parsePrice(price) {
         case /^\d\d[,]\d\d\d$/.test(trimPrice)://14,918
 
             return parseFloat(trimPrice.replace(',', ''))
+
+        case price === '0,00':
+            return 0
         default:
             debugger
             throw 'unhandled error'

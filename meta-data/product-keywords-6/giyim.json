@@ -14,7 +14,8 @@
                 "babette"
             ],
             [
-                "pardesü"
+                "pardesü",
+                "pardosu"
             ],
             "okul gömleği",
             [
@@ -31,8 +32,7 @@
             "bolero",
             "kaftan",
             [
-                "sweatshirt",
-                "SWEAT"
+                "sweatshirt"
             ],
             "HOODIE",
             [
@@ -58,6 +58,11 @@
                 "TİŞÖRT",
                 "Kısa Kol Basic",
                 "T-Shirt"
+            ],
+            [
+                "büstiyer",
+                "Bustier",
+                "Büstier"
             ]
         ],
         "alt giyim": [
@@ -80,7 +85,8 @@
                 "Long Length Jean",
                 "Denim Shopping with Sun Embroidered - Jean",
                 "Palmer Jeans",
-                "Bol Kesim Jean"
+                "Bol Kesim Jean",
+                "Sweatpants"
             ],
             "bermuda",
             "Jogger",
@@ -103,10 +109,17 @@
             "pardösü",
             [
                 "yağmurluk",
-                "yağmurluğu"
-            ]
+                "yağmurluğu",
+                "yagmurluk",
+                "yagmurluk"
+            ],
+            ["rüzgarlık","Rüzgarlık"]
         ],
         "çanta": [
+            [
+                "alışveriş çantası",
+                "Alışveriş Çantası"
+            ],
             [
                 "çanta kolleksiyonu",
                 "https://www_elleshoes_com/charm-koleksiyonu"
@@ -185,6 +198,59 @@
                 "KARTLIK",
                 "Kartlığı",
                 "small-leather-goods"
+            ]
+        ],
+        "aksesuar": [
+            [
+                "aksesuarlar",
+                "accessory"
+            ],
+
+            "papyon",
+            "boyun aksesuarı",
+            "omuz aksesuarı",
+            "omuzluk",
+            [
+                "çorap",
+                "socks",
+                "çorabı",
+                "Çorabı",
+                "corap"
+            ],
+            [
+                "bebek önlüğü",
+                "Bebek Önlüğü"
+            ],
+            "yelpaze",
+            [
+                "eldiven",
+                "gloves",
+                "El Isıtıcısı"
+            ],
+            [
+                "mendil",
+                "handkerchief"
+            ],
+            "küçük şemsiye",
+            "KOL DÜĞMESİ",
+            "keychain",
+            [
+                "uyku bandı",
+                "Uyku Gözlüğü"
+            ],
+            "pelüş kulaklık",
+            "balaklava",
+            [
+                "el bandı",
+                "handband"
+            ],
+            [
+                "gift card",
+                "GIFT CARD"
+            ],
+            [
+                "telefon kılıfı",
+                "TELEFON KILIFI"
             ]
         ],
         "ayakkabı": [
@@ -272,6 +338,9 @@
                 "stiletto",
                 "stiletto",
                 "sitiletto"
+            ],
+            [
+                "koşu ayakkabısı"
             ]
         ],
         "başlık": [
@@ -285,67 +354,11 @@
         ],
         "atkı": [
             "bandana",
-            [
-                "boyunluk",
-                "collar",
-                "Neck Wrap"
-            ],
+
             "kaşkol",
             "kafa bandı"
         ],
-        "aksesuar": [
-            [
-                "aksesuarlar",
-                "accessory"
-            ],
-            "kravat",
-            "papyon",
-            "boyun aksesuarı",
-            "omuz aksesuarı",
-            "omuzluk",
-            [
-                "çorap",
-                "socks",
-                "çorabı",
-                "Çorabı",
-                "corap"
-            ],
-            [
-                "bebek önlüğü",
-                "Bebek Önlüğü"
-            ],
-            "yelpaze",
-            [
-                "eldiven",
-                "gloves",
-                "El Isıtıcısı"
-            ],
-            [
-                "mendil",
-                "handkerchief"
-            ],
-            "küçük şemsiye",
-            "KOL DÜĞMESİ",
-            "keychain",
-            [
-                "uyku bandı",
-                "Uyku Gözlüğü"
-            ],
-            "pelüş kulaklık",
-            "balaklava",
-            [
-                "el bandı",
-                "handband"
-            ],
-            [
-                "gift card",
-                "GIFT CARD"
-            ],
-            [
-                "telefon kılıfı",
-                "TELEFON KILIFI"
-            ]
-        ],
+
         "elbise aksesuarı": [
             [
                 "omuz aksesuarı",
@@ -381,20 +394,14 @@
             ],
             "saç tacı",
             [
-                "saç kravat",
-                "hair tie"
-            ],
-            [
                 "saç aksesuarı",
                 "SAÇ AKSESUARI"
             ]
         ],
         "gözlük ve optik ürünler": [
             [
-                "gözlük",
-                "sunglasses"
-            ],
-            [
+                "gözlük aksesuarı",
+                "Gözlük Zinciri",
                 "gözlük kılıfı",
                 "gözlık kılıfı"
             ],
@@ -406,6 +413,10 @@
             [
                 "büyüteç",
                 "BÜYÜTEÇ"
+            ],
+            [
+                "gözlük",
+                "sunglasses"
             ]
         ],
         "plaj, havuz": [
@@ -555,7 +566,8 @@
                 "general",
                 "https://manuatelier_com/collections/shop",
                 "https://www_elleshoes_com/tum-urunler-kadin1",
-                "https://www_elleshoes_com/tum-urunler-erkek1"
+                "https://www_elleshoes_com/tum-urunler-erkek1",
+                "https://www_bsl_com_tr/tr/tatil-bavulu/"
             ]
         ],
         "köpek giyisi": [

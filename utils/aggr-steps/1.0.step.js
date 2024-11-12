@@ -8,8 +8,8 @@ const localRootFolder = 'data/1.0.step-data'
 const gitRepo = 'crawler-state-2'
 const folders = [
 
-    'sponsor-ayakkabi',
-    //'sponsor-product'
+    //'sponsor-ayakkabi',
+    'sponsor-product'
     //,'sponsor-product-1'
 ]
 debugger

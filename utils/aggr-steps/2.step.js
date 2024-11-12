@@ -91,12 +91,13 @@ async function prepareKeywords2({ id }) {
 
 }
 
+await prepareKeywords2({ id: 2 })
 await prepareKeywords2({ id: 3 })
 await prepareKeywords2({ id: 4 })
 await prepareKeywords2({ id: 5 })
 await prepareKeywords2({ id: 6 })
 
-
+await prepareKeywords({ id: 2 })
 await prepareKeywords({ id: 3 })
 await prepareKeywords({ id: 4 })
 await prepareKeywords({ id: 5 })

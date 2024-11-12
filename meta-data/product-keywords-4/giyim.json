@@ -8,18 +8,7 @@
                 "blouses"
             ]
         ],
-        "aksesuar": [
-            [
-                "kemer",
-                "belt",
-                "kemeri"
-            ],
-            [
-                "çorap",
-                "suba",
-                "sock"
-            ]
-        ],
+   
 
         "kombinler": [
             "kombinler"
@@ -122,6 +111,18 @@
         ],
         "saat": [
             "saat"
+        ],
+        "aksesuar": [
+            [
+                "kemer",
+                "belt",
+                "kemeri"
+            ],
+            [
+                "çorap",
+                "suba",
+                "sock"
+            ]
         ]
     }
 ]

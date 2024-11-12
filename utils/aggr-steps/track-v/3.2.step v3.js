@@ -29,7 +29,7 @@ for (let d in data) {
 
 
             } else {
-                if(current.title.includes('Su İtici Polar Astarlı Kapüşonlu Fermuarlı Çıtçıtlı Cepli Mevsimlik Suni Deri Uzun Yağmurluk') && current.pageURLString.includes('yagmurluk')){
+                if(current.title.includes('Mailo Siyah Kadın Kapitone Deri Bot') ){
                     debugger
                 }
                 const kwords = Array.isArray(subcategory) ? subcategory.map(m => deaccent(m)) : [deaccent(subcategory)]

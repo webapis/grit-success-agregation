@@ -2,6 +2,10 @@
     {
         "üst giyim": [
             [
+                "tunik",
+                "tunic"
+            ],
+            [
                 "gömlek",
                 "shirt",
                 "gömlek",
@@ -28,19 +32,20 @@
                 "Anthracıte"
             ],
             [
+                "sweatshirt",
+                "SWEAT"
+            ],
+            [
                 "hırka",
                 "сardigan",
                 "Cardigan",
                 "HIRKA"
             ],
             "atlet",
-            [
-                "tunik",
-                "tunic"
-            ],
+
             "pareo",
-            "panço"
-            
+            "panço",
+            "bornoz"
         ],
         "alt giyim": [
             [
@@ -74,6 +79,13 @@
             "parka",
             "bomber"
         ],
+        "triko": [
+            [
+                "triko",
+                "Kapüşonlu Triko",
+                "TRİKO"
+            ]
+        ],
         "iç giyim": [
             [
                 "külot",
@@ -83,12 +95,10 @@
             ],
             "boxer",
             "tanga",
-            "teddy",
+
             "thong"
         ],
         "ayakkabı": [
-            
-           
             [
                 "oxford ayakkabı",
                 "Men's Oxford"
@@ -112,7 +122,6 @@
                 "bavul",
                 "suitcase"
             ],
-            "torba",
             "valiz",
             [
                 "kılıf"

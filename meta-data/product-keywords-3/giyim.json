@@ -1,6 +1,5 @@
 [
     {
-  
         "saç-aksesuar": [
             "taç"
         ],
@@ -14,14 +13,21 @@
             ]
         ],
         "üst giyim": [
-            
-            "bra",
+          
             [
                 "takım elbise",
                 "Classic Suit",
                 "Mix Suit",
                 "Wool Suit",
                 "Suit"
+            ],
+            [
+                "kapüşonlu üst",
+                "kapüşonlu"
+            ],
+            [
+                "kaftan",
+                "Caftan"
             ]
         ],
         "dış giyim": [
@@ -31,7 +37,6 @@
                 "caftan"
             ]
         ],
-     
         "atkı": [
             [
                 "şal",
@@ -45,13 +50,6 @@
                 "hat"
             ]
         ],
-        "aksesuar": [
-            [
-                "kravat",
-                "tie"
-            ]
-        ],
-
         "Kolleksiyonlar": [
             [
                 "kış",

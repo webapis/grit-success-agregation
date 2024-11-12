@@ -1,0 +1,24 @@
+[
+    {
+        "üst giyim": [
+            "bra"
+        ],
+        "çanta": [
+            "torba"
+        ],
+        "aksesuar": [
+            [
+                "kravat",
+                "tie"
+            ],
+            [
+                "boyunluk",
+                "collar",
+                "Neck Wrap"
+            ]
+        ],
+        "iç giyim": [
+            "teddy"
+        ]
+    }
+]
