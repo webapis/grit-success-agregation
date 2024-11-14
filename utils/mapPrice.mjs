@@ -48,6 +48,8 @@ export default mapPrice
 
 function parsePrice(price) {
     const trimPrice = price
+try {
+    
 
     switch (true) {
 
@@ -143,5 +145,7 @@ function parsePrice(price) {
             throw 'unhandled error'
 
     }
-
+} catch (error) {
+    debugger
+}
 }

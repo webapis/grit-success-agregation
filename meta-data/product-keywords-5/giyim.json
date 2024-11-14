@@ -42,10 +42,12 @@
                 "HIRKA"
             ],
             "atlet",
-
-            "pareo",
             "panço",
-            "bornoz"
+            "bornoz",
+            [
+                "yelek",
+                "vest"
+            ]
         ],
         "alt giyim": [
             [
@@ -69,9 +71,6 @@
                 "kaban"
             ],
             "palto",
-            [
-                "yelek"
-            ],
             "manto",
             [
                 "kaban"
@@ -95,7 +94,6 @@
             ],
             "boxer",
             "tanga",
-
             "thong"
         ],
         "ayakkabı": [
@@ -135,7 +133,6 @@
             ]
         ],
         "atkı": [
-            "fular",
             [
                 "eşarp",
                 "ESARP"

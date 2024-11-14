@@ -1,7 +1,8 @@
 [
     {
         "üst giyim": [
-            "bra"
+            "bra",
+            "pareo"
         ],
         "çanta": [
             "torba"
@@ -19,6 +20,9 @@
         ],
         "iç giyim": [
             "teddy"
+        ],
+        "atkı": [
+            "fular"
         ]
     }
 ]

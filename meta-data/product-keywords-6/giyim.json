@@ -63,6 +63,10 @@
                 "büstiyer",
                 "Bustier",
                 "Büstier"
+            ],
+            [
+                "crop top",
+                "Crop Üst"
             ]
         ],
         "alt giyim": [
@@ -107,13 +111,17 @@
                 "TRENC COAT"
             ],
             "pardösü",
+            "anorak",
             [
                 "yağmurluk",
                 "yağmurluğu",
                 "yagmurluk",
                 "yagmurluk"
             ],
-            ["rüzgarlık","Rüzgarlık"]
+            [
+                "rüzgarlık",
+                "Rüzgarlık"
+            ]
         ],
         "çanta": [
             [
@@ -205,7 +213,6 @@
                 "aksesuarlar",
                 "accessory"
             ],
-
             "papyon",
             "boyun aksesuarı",
             "omuz aksesuarı",
@@ -354,11 +361,9 @@
         ],
         "atkı": [
             "bandana",
-
             "kaşkol",
             "kafa bandı"
         ],
-
         "elbise aksesuarı": [
             [
                 "omuz aksesuarı",
