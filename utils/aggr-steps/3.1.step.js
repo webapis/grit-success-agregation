@@ -7,11 +7,11 @@ const data = JSON.parse(fs.readFileSync(`${process.cwd()}/data/3.0.step-data/agg
 console.log('Before Price Map', data.length)
 const priceMapped = data.map((m) => {
     try {
-        return { ...m, price: mapPrice(m.price.toString(), m), priceString:  m.price}
+        return { ...m, price: (m.price ? mapPrice(m.price.toString()) : 0, m), priceString: m.price }
     } catch (error) {
         debugger
         throw error
- 
+
     }
 
 })
