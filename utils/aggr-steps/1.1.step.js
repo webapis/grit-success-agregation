@@ -1,28 +1,59 @@
 //import data to mongodb
-
+import 'dotenv/config'
 import { MongoClient } from 'mongodb';
 import { getFolderNames } from '../getFolderNames.js';
 import getJsonDataFileNameFromFolder from '../file/getJsonDataFromFolder.mjs'
+
+import getBaseDomain from '../getBaseDomain.js';
 const uri = "mongodb://localhost:27017"; // Replace with your MongoDB URI
 const dbName = "grit-success-aggregation";
 const collectionName = "products";
-//const datas = await getJsonDataFileNameFromFolder('data/1.0.step-data/unzipped-data/sponsor-product')
+
+const LOCAL = process.env.LOCAL
+
+
 const foldNmes = await getFolderNames('data/1.0.step-data/unzipped-data')
 debugger
 let datas = []
-for (let folder of foldNmes) {
+
+if (LOCAL === 'true') {
+  
+    const FOLDER = process.env.FOLDER
+    const data1 = await getJsonDataFileNameFromFolder(`data/1.0.step-data/unzipped-data/${FOLDER}`)
+
+
+    for (let brandData of data1) {
+      
+        const firstObj =brandData[0]
+        const HOSTNAME =process.env.HOSTNAME
+   
+        const host = getBaseDomain(firstObj.link,firstObj)
+        if(host ===HOSTNAME){
+            datas = [brandData]
+            debugger
+        }
+
+
+
+    }
     debugger
-    try {
-        const data1 = await getJsonDataFileNameFromFolder(`data/1.0.step-data/unzipped-data/${folder}`)  
+
+} else {
+    debugger
+    for (let folder of foldNmes) {
+        debugger
+
+        const data1 = await getJsonDataFileNameFromFolder(`data/1.0.step-data/unzipped-data/${folder}`)
         debugger
         datas = [...datas, ...data1]
-    } catch (error) {
+
+
         debugger
+
     }
 
-    debugger
-  
 }
+
 debugger
 
 
