@@ -67,6 +67,9 @@
             [
                 "crop top",
                 "Crop Üst"
+            ],
+            [
+                "tattoo top"
             ]
         ],
         "alt giyim": [
@@ -90,7 +93,9 @@
                 "Denim Shopping with Sun Embroidered - Jean",
                 "Palmer Jeans",
                 "Bol Kesim Jean",
-                "Sweatpants"
+                "Sweatpants",
+                "Bootcut Jeans",
+                "Bootcut"
             ],
             "bermuda",
             "Jogger",
@@ -145,10 +150,19 @@
                 "https://manuatelier_com/collections/le-cambon-25"
             ],
             [
+                "makyaj çantası",
+                "makyaj çanta"
+            ],
+            [
+                "postacı çantası",
+                "postacı çanta"
+            ],
+            [
                 "çapraz çanta",
                 "crossbody"
             ],
             [
+                "omuz çantası",
                 "omuz çanta",
                 "https://manuatelier_com/collections/shoulder",
                 "omuz-askili-canta"
@@ -181,15 +195,11 @@
             ],
             "travel organızer",
             "anahtarlık",
+            "Sümen Takımı",
             [
-                "pasaport kılıfı",
-                "passport-case"
-            ],
-            [
-                "telefon Kılıfı",
-                "phone case"
-            ],
-            "kartvizitlik"
+                "çanta aksesuarı",
+                "bags-accessories"
+            ]
         ],
         "cüzdan": [
             [
@@ -197,15 +207,19 @@
                 "Cüzdan",
                 "wallet",
                 "cuzdan"
-            ]
-        ],
-        "kartlık": [
+            ],
+            [
+                "pasaportluk",
+                "pasaport kılıfı",
+                "passport-case"
+            ],
             [
                 "kartlık",
                 "card holder",
                 "KARTLIK",
                 "Kartlığı",
-                "small-leather-goods"
+                "small-leather-goods",
+                "kartvizitlik"
             ]
         ],
         "aksesuar": [
@@ -254,11 +268,33 @@
             [
                 "gift card",
                 "GIFT CARD"
+            ]
+        ],
+        "telefon": [
+            [
+                "telefon çantası",
+                "telefon çanta"
             ],
             [
-                "telefon kılıfı",
-                "TELEFON KILIFI"
+                "telefon Kılıfı",
+                "phone case",
+                "case"
+            ],
+            [
+                "universal strap",
+                "Universal Wrist Strap"
             ]
+        ],
+        "seyahat": [
+            [
+                "seyahat seti"
+            ],
+            [
+                "seyahat çantası",
+                "seyahat çanta",
+                "https://www_matras_com/kadin/deri-seyahat"
+            ],
+            "seyahat"
         ],
         "ayakkabı": [
             [
@@ -341,7 +377,10 @@
                 "oxford-ayakkabi"
             ],
             [
-                "topuklu",
+                "topuklu ayakkabı",
+                "topuklu"
+            ],
+            [
                 "stiletto",
                 "stiletto",
                 "sitiletto"
@@ -357,7 +396,11 @@
                 "Kulak Isıtıcı",
                 "Kulaklık"
             ],
-            "Beanie"
+            "Beanie",
+            [
+                "beyzbol şapkası",
+                "Baseball cap"
+            ]
         ],
         "atkı": [
             "bandana",
@@ -457,7 +500,8 @@
         "ev": [
             [
                 "pijama",
-                "pjama"
+                "pjama",
+                "PİJAMA"
             ],
             "gecelik",
             "sabahlık",
@@ -509,7 +553,11 @@
             ],
             [
                 "bodysuit"
-            ]
+            ],
+            [
+                "thermal üst"
+            ],
+            "thermal alt"
         ],
         "hediye": [
             "yılbaşı gecesi"

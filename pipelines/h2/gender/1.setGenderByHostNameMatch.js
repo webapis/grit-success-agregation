@@ -56,7 +56,8 @@ const hostNames = {
     "erkek": [
         "https://www.avva.com.tr"
     ],
-  
+    "unisex": ["https://eclecticconceptstore.com.tr"]
+
 }
 // Load regex patterns from JSON file
 

@@ -68,7 +68,8 @@ const genderValues = {
     "https://www.penti.com/tr/#",
     "https://www.penti.com/tr/c/anime-koleksiyon",
     "https://www.penti.com/tr/c/ilk-sutyenim",
-    "https://www.dahliabianca.com/tisort"
+    "https://www.dahliabianca.com/tisort",
+    "https://eclecticconceptstore_com_tr/product-category/jewellery"
   ],
   unisex: [
     "https://www.ilvi.com/en/accessories-shoe-care-products",
@@ -84,7 +85,8 @@ const genderValues = {
     "https://dericompany.com.tr/deri-canta-aksesuar",
     "https://dericompany.com.tr/magaza",
     "https://dericompany.com.tr/outlet",
-    "https://www.wcollection.com.tr/outlet-c-103"
+    "https://www.wcollection.com.tr/outlet-c-103",
+    "https://eclecticconceptstore_com_tr/product-category/old-but-gold/"
     // 
     //   "https://www.network.com.tr/outlet-canta-1807",
     //   "https://www.network.com.tr/en/outlet-bag-1807",
