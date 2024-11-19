@@ -54,6 +54,7 @@
                 "tişört",
                 "tsihrt",
                 "t-Shirt",
+                "T-Shırt",
                 "TSHİRT",
                 "TİŞÖRT",
                 "Kısa Kol Basic",
@@ -95,7 +96,8 @@
                 "Bol Kesim Jean",
                 "Sweatpants",
                 "Bootcut Jeans",
-                "Bootcut"
+                "Bootcut",
+                "Havuç Jean"
             ],
             "bermuda",
             "Jogger",
@@ -166,6 +168,30 @@
                 "omuz çanta",
                 "https://manuatelier_com/collections/shoulder",
                 "omuz-askili-canta"
+            ],
+            [
+                "bel çantası",
+                "bel çanta"
+            ],
+            [
+                "para çantası",
+                "para çanta"
+            ],
+            [
+                "kalem çantası",
+                "kalem çanta"
+            ],
+            [
+                "okul çantası",
+                "okul çanta"
+            ],
+            [
+                "spor çantası",
+                "spor çanta"
+            ],
+            [
+                "beslenme çantası",
+                "beslenme çanta"
             ],
             [
                 "zincir askılı çanta",
@@ -565,10 +591,10 @@
         "spor ve outdoor": [
             [
                 "sporсu bra",
-                "sporcu-bra",
-                "matara",
-                "termos"
-            ]
+                "sporcu-bra"
+            ],
+            "matara",
+            "termos"
         ],
         "Kolleksiyonlar": [
             [
