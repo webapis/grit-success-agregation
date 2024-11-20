@@ -18,6 +18,7 @@ export default [
     'sponsor-product-17',//gant
     'sponsor-product-18',//lacoste
     'sponsor-product-19',//pierrecardin
+    'sponsor-product-21',  //marksandspencer
     'sponsor-product-24',//morrez 
     'sponsor-product-25',//yaygan
     'sponsor-product-M-4',//mudo
