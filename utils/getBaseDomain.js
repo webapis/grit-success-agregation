@@ -1,6 +1,6 @@
 export default function getBaseDomain(url) {
     // Remove protocol and www if present
-    let domain = url.replace(/^(https?:\/\/)?(www\.)?/, '');
+    let domain = url.replace(/^(https?:\/\/)?(www\.)?(www2\.)?/, '');
 
     // Remove path, query parameters, and hash
     domain = domain.split('/')[0].split('?')[0].split('#')[0];

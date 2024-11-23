@@ -20,7 +20,7 @@ if (LOCAL === 'true') {
   
     const FOLDER = process.env.FOLDER
     const data1 = await getJsonDataFileNameFromFolder(`data/1.0.step-data/unzipped-data/${FOLDER}`)
-
+debugger
 
     for (let brandData of data1) {
       
