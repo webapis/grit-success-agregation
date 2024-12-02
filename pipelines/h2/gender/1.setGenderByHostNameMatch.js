@@ -54,7 +54,11 @@ const hostNames = {
 
     ],
     "erkek": [
-        "https://www.avva.com.tr"
+        "https://www.avva.com.tr",
+        "https://victorbaron.com.tr",
+        "https://www.altinyildizclassics.com",
+        "https://www.brango.com.tr",
+        "https://www.wemsey.com.tr"
     ],
     "unisex": ["https://eclecticconceptstore.com.tr"]
 

@@ -6,6 +6,13 @@
                 "İkili Takım"
             ],
             [
+                "takım elbise"
+            ],
+            [
+                "smokin takim",
+                "smokin"
+            ],
+            [
                 "elbise",
                 "elibise",
                 "Elbise",
@@ -142,6 +149,14 @@
             [
                 "sırt çantası",
                 "backpack"
+            ],
+            [
+                "kolej çantası",
+                "Kolej Çantaları"
+            ],
+            [
+                "çekçekli çanta",
+                "Çekçekli Çantalar"
             ],
             [
                 "el çanta",
@@ -331,7 +346,8 @@
             [
                 "tüm ayakkabı",
                 "women-all-shoe-models-23",
-                "men-all-shoes"
+                "men-all-shoes",
+                "VIBRAM"
             ],
             [
                 "klasik ayakkabı",

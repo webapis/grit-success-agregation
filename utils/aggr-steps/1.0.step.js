@@ -9,11 +9,35 @@ const localRootFolder = 'data/1.0.step-data'
 const gitRepo = 'crawler-state-2'
 const dev = (process.env.LOCAL === 'true')
 const folders = dev ? [
-  // 'sponsor-product-21',  //marksandspencer
- // 'sponsor-product-2', //koton
-  // 'sponsor-product-3', //mango
-   'sponsor-product-22', //hm
-  // 'sponsor-product-23'   //paulmark
+
+
+'mango'
+
+//'ateliergalin'
+//'lovemetoo'
+//'eclecticconceptstore'
+//'edwards'
+
+//'pullandbear'
+
+//'hm'
+//'paulmark'
+
+
+//'ltbjeans'
+
+//'edliskids'
+
+
+//'sagaza'
+
+//'marksandspencer'
+
+
+
+
+
+
 ] : foldersTodownload
 
 console.log('folders to download:', folders.length)
