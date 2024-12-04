@@ -77,6 +77,9 @@
                 "Crop Üst"
             ],
             [
+                "tank top"
+            ],
+            [
                 "tattoo top"
             ]
         ],
@@ -104,7 +107,13 @@
                 "Sweatpants",
                 "Bootcut Jeans",
                 "Bootcut",
-                "Havuç Jean"
+                "Havuç Jean",
+                "Geniş Paça Jean",
+                "Bel Boru Paça Jean",
+                "Wide Leg Jeans",
+                "Yüksel Bel",
+                "High Waist",
+                "Baggy Jean"
             ],
             "bermuda",
             "Jogger",
@@ -288,10 +297,6 @@
                 "eldiven",
                 "gloves",
                 "El Isıtıcısı"
-            ],
-            [
-                "mendil",
-                "handkerchief"
             ],
             "küçük şemsiye",
             "KOL DÜĞMESİ",
@@ -551,7 +556,9 @@
             "tee-jama"
         ],
         "gelinlik": [
-            "GELİNLİK"
+            "gelinlik",
+            "GELİNLİK",
+            "bridal"
         ],
         "anne": [
             "emzirme sütyeni",

@@ -85,6 +85,32 @@ export default [
     'duk',
     'kigili',
     'maleindustry',
-    'wemsey'
+    'wemsey',
+
+
+    'tubabutik',
+    'tarikediz',
+    'hollylolly',
+    'perspectivewoman',
+    'rivus',
+    'arzukaprol',
+    'sorbe',
+    'victoriassecret',
+    'maisonju',
+    'berr-in',
+    'nevermore',
+    'dilekhanif',
+    'bizeonline',
+    'dressweden',
+    'niqozza',
+    'olegcassini',
+    'silkandcashmere',
+    'aldoshoes',
+    'ninewest',
+    'shopseizetheday',
+    'serpil',
+    'bejfinefactory',
+    'dilvin',
+    'ihandmore'
 
 ]

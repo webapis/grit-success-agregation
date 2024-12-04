@@ -1,6 +1,7 @@
 [
     {
         "üst giyim": [
+            "top",
             "bra",
             "pareo"
         ],
@@ -14,8 +15,11 @@
             ],
             [
                 "boyunluk",
-                "collar",
                 "Neck Wrap"
+            ],
+            [
+                "mendil",
+                "handkerchief"
             ]
         ],
         "iç giyim": [
@@ -25,12 +29,16 @@
             "fular"
         ],
         "alt giyim": [
-            
-                [
-                    "tayt",
-                    "legging"
-                ]
-            
+            [
+                "tayt",
+                "legging"
+            ]
+        ],
+        "Kolleksiyonlar": [
+            [
+                "kış",
+                "winter"
+            ]
         ]
     }
 ]

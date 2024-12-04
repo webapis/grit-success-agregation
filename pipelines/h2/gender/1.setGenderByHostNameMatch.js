@@ -50,7 +50,26 @@ const hostNames = {
         "https://www.wheneverco.com",
         "https://www.oxxo.com.tr",
         "https://manuatelier.com",
-        "https://tr.manuatelier.com"
+        "https://tr.manuatelier.com",
+        "https://tubabutik.com",
+        "https://www.tarikediz.com",
+        "https://www.hollylolly.net",
+        "https://perspectivewoman.com",
+        "https://rivus.com.tr",
+        "https://arzukaprol.com",
+        "https://www.sorbe.co",
+        "https://www.victoriassecret.com",
+        "https://www.maisonju.com",
+        "https://berr-in.com",
+        "https://www.nevermore.com.tr",
+        "https://www.dilekhanif.com",
+        "https://www.bizeonline.com",
+        "https://dressweden.com",
+        "https://www.niqozza.com",
+        "https://olegcassini.com.tr",
+        "https://www.ninewest.com.tr",
+        "https://www.shopseizetheday.com",
+        "https://www.bejfinefactory.com"
 
     ],
     "erkek": [

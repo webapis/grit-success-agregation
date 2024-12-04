@@ -10,28 +10,70 @@ const gitRepo = 'crawler-state-2'
 const dev = (process.env.LOCAL === 'true')
 const folders = dev ? [
 
+  //'tubabutik',
+  //'tarikediz',
+  //'hollylolly',
+  //'perspectivewoman',
+  //'rivus',
+  //'arzukaprol',
+  //'sorbe',
+  //'victoriassecret',
+  //'maisonju',
+  //'berr-in',
+  //'nevermore',
+  //'dilekhanif',
+  //'bizeonline',
+  //'dressweden',
+  //'niqozza',
+   // 'olegcassini',
+ //'silkandcashmere',
+//'aldoshoes',
+//'ninewest',
+//'shopseizetheday',
+//'serpil',
+//'bejfinefactory',
+//'dilvin',
+//'ihandmore'
 
-'mango'
+//https://www.knitss.com/
+//https://tr.kutnia.com/
+//https://museforall.com/tr
+//https://www.naarstore.com/
+//https://www.upgrade.moda/
+//https://atolyemariposa.com/
+//https://www.collare.com.tr/
+//https://elli2.com.tr/
+//https://www.feudeelu.com/
+//https://www.istanbulfashioncenter.com/gullay
+//https://jabotter.com/
+//https://lalucegiyim.com.tr/
+//https://ladyginacompany.com/
+//https://www.love-onfriday.com/
+//https://www.maisaistanbul.com/
+//https://misirli1951.com/
 
-//'ateliergalin'
-//'lovemetoo'
-//'eclecticconceptstore'
-//'edwards'
+//'tubaergin'
+  //'mango'
 
-//'pullandbear'
+  //'ateliergalin'
+  //'lovemetoo'
+  //'eclecticconceptstore'
+  //'edwards'
 
-//'hm'
-//'paulmark'
+  //'pullandbear'
 
-
-//'ltbjeans'
-
-//'edliskids'
+  //'hm'
+  //'paulmark'
 
 
-//'sagaza'
+  //'ltbjeans'
 
-//'marksandspencer'
+  //'edliskids'
+
+
+  //'sagaza'
+
+  //'marksandspencer'
 
 
 
